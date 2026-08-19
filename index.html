@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>기출 변형문제 열람 — 화면 프로토타입</title>
+<style>
+:root{
+  /* 딥블루 */
+  --blue:#0f2f66;
+  --blue-hover:#0a2350;
+  --blue-soft:#eaeff8;
+  --blue-text:#1a4694;
+
+  /* 뉴트럴 */
+  --bg:#f2f4f6;
+  --surface:#ffffff;
+  --surface-2:#f7f8fa;
+  --line:#e8ebed;
+  --t1:#191f28;
+  --t2:#4e5968;
+  --t3:#8b95a1;
+  --t4:#b0b8c1;
+  --amber:#8a6a12;
+  --amber-bg:#fdf6e3;
+
+  --r-lg:24px;
+  --r-md:16px;
+  --r-sm:12px;
+  --sans:"Pretendard","Pretendard Variable",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg);
+  color:var(--t1);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.68;
+  letter-spacing:-.01em;
+  -webkit-text-size-adjust:100%;
+  -webkit-font-smoothing:antialiased;
+}
+button{font:inherit;color:inherit;font-family:var(--sans)}
+[hidden]{display:none !important}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
+
+/* ================= 화면 1 · 랜딩 + 선택 ================= */
+#screen-select{min-height:100dvh;background:var(--bg)}
+.land{max-width:560px;margin:0 auto;padding:0 20px 64px}
+
+.hero{padding:72px 4px 32px}
+.kicker{display:inline-block;font-size:.84rem;font-weight:700;color:var(--blue-text);background:var(--blue-soft);border-radius:999px;padding:6px 13px;margin:0 0 18px}
+.hero h1{margin:0;font-size:1.92rem;font-weight:700;line-height:1.42;letter-spacing:-.04em}
+.lead{margin:16px 0 0;color:var(--t2);font-size:1.02rem;line-height:1.65}
+
+.points{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.points li{background:var(--surface);border-radius:var(--r-lg);padding:24px 22px}
+.points h2{margin:0;font-size:1.06rem;font-weight:700;letter-spacing:-.03em}
+.points p{margin:8px 0 0;color:var(--t2);font-size:.95rem;line-height:1.62}
+
+.picker h2{margin:0 0 12px;padding-left:4px;font-size:1.02rem;font-weight:700;letter-spacing:-.03em}
+
+.picker{margin-top:32px}
+.field{margin-bottom:12px}
+.field label{display:block;font-size:.86rem;font-weight:600;color:var(--t2);margin:0 0 8px;padding-left:4px}
+.field select{
+  width:100%;padding:17px 46px 17px 18px;font-size:1.02rem;font-weight:600;font-family:inherit;
+  color:var(--t1);background:var(--surface);border:none;border-radius:var(--r-md);appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M5 8l5 5 5-5' fill='none' stroke='%238b95a1' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;
+}
+.field select:hover{background-color:#fbfcfd}
+.field select option:disabled{color:var(--t4)}
+.hint{font-size:.86rem;color:var(--t3);margin:8px 0 0;padding-left:4px}
+
+.cta-wrap{padding:20px 0 0}
+.go{
+  width:100%;padding:18px;background:var(--blue);color:#fff;border:none;border-radius:var(--r-md);
+  font-size:1.05rem;font-weight:700;letter-spacing:-.02em;cursor:pointer;transition:background .15s ease;
+}
+.go:disabled{background:#dfe3e8;color:var(--t4);cursor:not-allowed}
+.go:hover:not(:disabled){background:var(--blue-hover)}
+
+/* ================= 화면 2·3 · 목록 ================= */
+.topbar{position:sticky;top:0;z-index:20;background:rgba(242,244,246,.86);backdrop-filter:saturate(180%) blur(14px)}
+.topbar-in{max-width:860px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:12px}
+.back{
+  display:flex;align-items:center;gap:6px;background:none;border:none;padding:8px 12px 8px 6px;
+  border-radius:var(--r-sm);cursor:pointer;font-size:.95rem;font-weight:600;color:var(--t2);
+}
+.back:hover{background:rgba(0,0,0,.04)}
+.crumb{font-weight:700;letter-spacing:-.02em}
+.crumb small{display:block;font-weight:500;color:var(--t3);font-size:.8rem;letter-spacing:-.01em;line-height:1.4}
+main{max-width:860px;margin:0 auto;padding:12px 20px 96px}
+
+.item{background:var(--surface);border-radius:var(--r-lg);margin-bottom:16px;overflow:hidden;box-shadow:0 1px 2px rgba(25,31,40,.04)}
+.item-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:26px 26px 0}
+.no{font-size:.86rem;font-weight:700;color:var(--blue-text);letter-spacing:0}
+.head-main{padding:10px 26px 0}
+.item h2{margin:0;font-size:1.22rem;font-weight:700;letter-spacing:-.033em;line-height:1.45}
+
+/* 오마주 출처 칩 */
+.stamp{
+  flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;
+  background:var(--blue-soft);color:var(--blue-text);border-radius:999px;padding:6px 13px;white-space:nowrap;
+}
+.stamp-k{font-size:.72rem;font-weight:700;opacity:.62}
+.stamp-v{font-size:.82rem;font-weight:700;letter-spacing:-.02em}
+
+.qbody{padding:14px 26px 4px;color:#333d4b;font-size:1rem}
+.qbody p{margin:.6em 0}
+.dwgs{padding:12px 26px 4px;display:grid;gap:14px}
+.dwg{margin:0;background:var(--surface-2);border-radius:var(--r-md);overflow:hidden}
+.dwg img{display:block;width:100%;height:auto;max-height:58vh;object-fit:contain;background:#fff;cursor:zoom-in}
+.dwg figcaption{display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:.82rem;color:var(--t3);font-weight:500}
+.zoom{
+  margin-left:auto;background:var(--surface);border:none;border-radius:999px;padding:6px 14px;
+  font-size:.8rem;font-weight:600;color:var(--t2);cursor:pointer;box-shadow:0 1px 2px rgba(25,31,40,.06);
+}
+.zoom:hover{color:var(--blue-text)}
+
+.titleblock{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:18px;padding:0 26px 24px}
+.chip{background:var(--surface-2);color:var(--t2);border-radius:999px;padding:6px 12px;font-size:.82rem;font-weight:600}
+.stars{color:var(--amber);letter-spacing:.02em}
+.tb-action{margin-left:auto;display:flex;align-items:center;gap:10px}
+.pending{font-size:.8rem;font-weight:600;color:var(--amber);background:var(--amber-bg);border-radius:999px;padding:6px 12px;white-space:nowrap}
+.btn{
+  background:var(--blue);color:#fff;border:none;border-radius:var(--r-sm);padding:12px 22px;
+  cursor:pointer;font-size:.95rem;font-weight:700;letter-spacing:-.02em;transition:background .15s ease;
+}
+.btn:hover:not(:disabled){background:var(--blue-hover)}
+.btn:disabled{background:#f0f2f4;color:var(--t4);cursor:not-allowed}
+.btn.ghost{background:var(--surface-2);color:var(--t2)}
+.btn.ghost:hover{background:#eef0f3;color:var(--t1)}
+
+/* 해설 */
+.ans{padding:0 26px 26px}
+.ans-in{background:var(--bg);border-radius:var(--r-md);padding:24px 22px}
+.ans-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.eyebrow{font-size:.82rem;font-weight:700;color:var(--blue-text)}
+.ans p{margin:.7em 0;color:#333d4b}
+.ans ul,.ans ol{margin:.6em 0;padding-left:1.25em;color:#333d4b}
+.ans ul.sub{margin:.3em 0 .5em;padding-left:1em;color:var(--t2)}
+.ans li{margin:.35em 0}
+.ans li::marker{color:var(--t3)}
+.ans strong{font-weight:700;color:var(--t1)}
+.ans .dwgs{padding:8px 0 0}
+.ans .dwg{background:var(--surface)}
+.ans .zoom{background:var(--bg);box-shadow:none}
+.ans-foot{margin-top:20px}
+.tablewrap{overflow-x:auto;margin:1em 0;background:var(--surface);border-radius:var(--r-sm)}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{color:var(--t2);font-weight:700;white-space:nowrap;background:var(--surface-2)}
+tr:last-child td{border-bottom:none}
+
+/* 도면 확대 */
+#lb{position:fixed;inset:0;z-index:50;background:#191f28;display:flex;flex-direction:column}
+.lb-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;color:#f2f4f6;flex-wrap:wrap}
+.lb-bar .cap{font-size:.86rem;font-weight:600;margin-right:auto;color:#d1d6db}
+.lb-bar button{
+  background:rgba(255,255,255,.1);border:none;border-radius:999px;color:#f2f4f6;
+  padding:8px 15px;cursor:pointer;font-size:.84rem;font-weight:600;
+}
+.lb-bar button:hover{background:rgba(255,255,255,.2)}
+.lb-scroll{flex:1;overflow:auto;padding:0 16px 20px;display:flex;align-items:flex-start;justify-content:center}
+.lb-scroll img{display:block;height:auto;max-width:none;background:#fff;border-radius:var(--r-sm);flex:0 0 auto}
+
+@media (prefers-reduced-motion:no-preference){
+  .item{transition:box-shadow .18s ease}
+  .item.open{box-shadow:0 4px 16px rgba(25,31,40,.07)}
+}
+@media (max-width:640px){
+  body{font-size:15px}
+  .land{padding-left:16px;padding-right:16px}
+  .hero{padding:48px 2px 26px}
+  .hero h1{font-size:1.62rem}
+  .points li{padding:20px 18px}
+  .item-head{padding:22px 18px 0}
+  .head-main,.qbody,.dwgs,.titleblock,.ans{padding-left:18px;padding-right:18px}
+  .titleblock{padding-bottom:20px}
+  .ans-in{padding:20px 16px}
+  .item h2{font-size:1.12rem}
+  .tb-action{margin-left:0;width:100%;justify-content:space-between;margin-top:4px}
+  .tb-action .btn{flex:1}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== 화면 1 · 선택 ========== -->
+<section id="screen-select">
+  <div class="land">
+
+    <header class="hero">
+      <p class="kicker">토목구조기술사</p>
+      <h1>기출을 변형한 문제로 풀고,<br>모범답안과 도면을 확인합니다.</h1>
+      <p class="lead">토목구조기술사 기출문제를 변형한 문항과 그 해설을 회차·교시별로 열람하는 서비스입니다. 로그인 없이 바로 볼 수 있습니다.</p>
+    </header>
+
+    <ul class="points">
+      <li>
+        <h2>기출 원문이 아닙니다</h2>
+        <p>원 기출이 묻는 사고 과정은 그대로 두고, 상황과 질문의 관점을 바꾼 변형문제입니다. 답을 외운 상태로는 풀리지 않습니다.</p>
+      </li>
+      <li>
+        <h2>문제와 해설이 한 곳에 있습니다</h2>
+        <p>문항마다 모범답안 본문과 도면이 함께 붙어 있습니다. 문제를 먼저 풀고, 원할 때 문항별로 해설을 엽니다.</p>
+      </li>
+      <li>
+        <h2>어떤 기출을 변형했는지 밝힙니다</h2>
+        <p>문항마다 원 기출의 회차·교시·번호를 표기합니다. 출처 표기까지만 하고 기출 원문은 게재하지 않습니다.</p>
+      </li>
+    </ul>
+
+    <section class="picker" aria-labelledby="picker-h">
+      <h2 id="picker-h">회차와 교시 선택</h2>
+      <div class="field">
+        <label for="sel-round">회차</label>
+        <select id="sel-round">
+          <option value="139" selected>제139회</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="sel-session">교시</label>
+        <select id="sel-session">
+          <option value="" selected>교시 선택</option>
+          <option value="1" disabled>1교시 · 준비 중</option>
+          <option value="2" disabled>2교시 · 준비 중</option>
+          <option value="3">3교시</option>
+          <option value="4" disabled>4교시 · 준비 중</option>
+        </select>
+      </div>
+      <p class="hint">공개된 문항이 있는 회차·교시만 선택할 수 있어요.</p>
+    </section>
+
+    <div class="cta-wrap">
+      <button class="go" id="go" disabled>문항 보기</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== 화면 2·3 · 문항 목록 / 해설 펼침 ========== -->
+<div id="screen-items" hidden>
+  <div class="topbar">
+    <div class="topbar-in">
+      <button class="back" id="back">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 4L6.5 10l6 6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        다시 선택
+      </button>
+      <div class="crumb">제139회 3교시<small>변형문제 6문항 · 해설 3문항</small></div>
+    </div>
+  </div>
+  <main>
+
+<article class="item" id="item-139-3-A">
+  <header class="item-head">
+    <span class="no">문항 1</span>
+    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 1번">
+      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 1번</span>
+    </span>
+  </header>
+  <div class="head-main"><h2>곡선교 받침 — 공용 중 손상의 원인 진단과 개선 배치</h2></div>
+
+  <div class="qbody"><p>공용 중인 곡선 램프교(평면 곡선반경이 작은 연속교)에서 정기점검 결과, 일부 교각의 <strong>곡선 내측 받침에서 들림 흔적과 잔류 이격</strong>이, 인접 교각의 <strong>가동받침 가이드에서 손상과 이동 흔적의 방향 불일치</strong>가 관측되었다. ① 각 손상에 대해 발생 가능한 원인을 곡선교의 구조적 특성과 연계하여 추정하는 절차를 제시하고, ② 원인별 개선 대책(받침 재배치·교체 포함)을 설명하시오.</p></div>
+  <div class="dwgs"><figure class="dwg">
+  <img src="drawings/svg/139-3-A-P01.svg" alt="개념도(평면) 139-3-A-P01"
+       data-full="drawings/svg/139-3-A-P01.svg" data-cap="139-3-A-P01 · 개념도(평면)" loading="lazy">
+  <figcaption><span class="mono">139-3-A-P01</span> 개념도(평면)<button class="zoom" type="button">확대</button></figcaption>
+</figure></div>
+
+  <div class="titleblock">
+    <span class="chip">서술형</span>
+    <span class="chip">난이도 <span class="stars">★★★★☆</span></span>
+    <span class="tb-action"><button class="btn toggle" type="button" data-t="139-3-A" aria-expanded="false" aria-controls="ans-139-3-A">해설보기</button></span>
+  </div>
+
+  <div class="ans" id="ans-139-3-A" hidden>
+    <div class="ans-in">
+      <div class="ans-head"><span class="eyebrow">모범답안</span></div>
+      <p><strong>【핵심 키워드】 내측 들림 = 곡률 편심 비틀림·부반력 / 가이드 손상 = </strong>설계된 가동방향과 실제 신축 이동궤적의 불일치<strong> → 구속력 — 진단 = 반력·이동궤적 해석 재현 → 계측 대조</strong></p>
+<p><strong>Ⅰ. 서론</strong> — 곡선교 받침 손상은 개별 부품 열화가 아니라 <strong>배치 가정과 실거동의 불일치</strong>가 드러난 신호인 경우가 많다. 관측된 두 손상은 곡선교의 3대 특성(비틀림·신축방향·부반력) 중 각각 부반력과 이동방향 문제를 지시하므로, 진단은 이 가설에서 출발하되 계측으로 확증한다.</p>
+<p><strong>Ⅱ. 본론</strong></p>
+<ol start="1"><li><strong>손상 A: 내측 받침 들림·잔류 이격 — 원인 추정</strong></li></ol>
+<ul>
+<li>가설: 자중·활하중 합력의 곡률 편심에 의한 상시 비틀림 → 외측 반력 집중·내측 반력 감소 → 활하중 편재하·온도 조합 시 <strong>부반력(들림)</strong> 발생. 받침 간격·경간과 곡률의 조합 등은 <strong>필수 원인이 아니라 가능한 배경 요인으로 추가 검토</strong>한다.</li>
+<li>진단 절차: ① 준공도서의 받침 배치·설계 반력 확인 → ② 현행 하중조합(편재하·온도 포함) 반력 해석 재현 → ③ 잭업 계측 또는 반력 측정으로 실반력 대조 → ④ 들림 발생 조합·빈도 특정.</li>
+</ul>
+<ol start="2"><li><strong>손상 B: 가동받침 가이드 손상·이동 흔적 방향 불일치 — 원인 추정</strong></li></ol>
+<ul>
+<li>가설: <strong>설계된 가동방향이 실제 신축 이동궤적과 불일치</strong>하여 이동이 구속 → 가이드·앵커에 구속력 → 손상. (곡선교의 적정 가동방향은 고정점 위치·받침 배치·곡률·실제 이동궤적을 종합하여 결정되는 것이므로, 특정 방향을 정답으로 전제하지 않는다.) 다점 고정 또는 고정점 위치 부적절도 동일 증상을 유발할 수 있다.</li>
+<li>진단 절차: ① 도서에서 고정점 위치와 <strong>설계된 가동방향</strong> 확인 → ② 해석으로 <strong>실제 예상 신축 이동궤적</strong> 산정 → ③ 양자의 <strong>불일치 여부</strong>를 실측 이동 흔적(스크래치 방향)과 함께 대조 → ④ 불일치 시 구속력 크기 추정(하부구조 균열 병행 점검).</li>
+</ul>
+<ol start="3"><li><strong>원인별 개선 대책</strong></li></ol>
+<div class="tablewrap"><table>
+<thead><tr><th>원인</th><th>대책</th></tr></thead>
+<tbody>
+<tr><td>내측 부반력</td><td>받침 간격 확대 재배치, 인장 구속(업리프트 방지) 받침 교체, 카운터웨이트, 필요시 지점 강성 조정</td></tr>
+<tr><td>설계 가동방향–실제 이동궤적 불일치</td><td>해석으로 확인한 이동궤적에 맞춘 가동방향 재설정(받침 교체), 전방향 가동+가이드 재계획</td></tr>
+<tr><td>고정점 부적절</td><td>고정점 재배치(강성 큰 하부구조로), 수평력 분산장치 검토</td></tr>
+<tr><td>공통</td><td>교체 시 잭업 계획·단계별 교통 제어, 개선 후 반력·이동량 계측으로 검증</td></tr>
+</tbody></table></div>
+<p><strong>Ⅲ. 결론</strong> — 곡선교 받침 손상 진단의 요체는 "<strong>해석으로 배치 가정을 재현하고 계측으로 실거동과 대조</strong>"하는 것이다. 부품 교체만으로는 재발하며, 반력 불균형과 이동 궤적이라는 원인 구조를 바로잡는 재배치가 근본 대책이다. 개선 후에는 스마트 받침 등 상시 반력 계측으로 배치 가정을 지속 검증함이 바람직하다.</p>
+      <div class="dwgs"><figure class="dwg">
+  <img src="drawings/svg/139-3-A-A01.svg" alt="메커니즘도 139-3-A-A01"
+       data-full="drawings/svg/139-3-A-A01.svg" data-cap="139-3-A-A01 · 메커니즘도" loading="lazy">
+  <figcaption><span class="mono">139-3-A-A01</span> 메커니즘도<button class="zoom" type="button">확대</button></figcaption>
+</figure></div>
+      <div class="ans-foot"><button class="btn ghost toggle" type="button" data-t="139-3-A">해설 닫기</button></div></div>
+  </div>
+</article>
+
+<article class="item" id="item-139-3-B">
+  <header class="item-head">
+    <span class="no">문항 2</span>
+    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 2번">
+      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 2번</span>
+    </span>
+  </header>
+  <div class="head-main"><h2>a/d에 따른 파괴모드 — 실무 부재의 설계법 판단</h2></div>
+
+  <div class="qbody"><p>다음 4개 부재에 대하여, 각 부재의 전단경간-깊이비(a/d) 특성에 근거하여 ① 전단보강이 없다고 가정할 때 예상되는 지배 파괴모드를 설명하고, ② 각 부재에 적합한 설계 방법(일반 휨·전단 설계식 또는 스트럿-타이 모델)을 선택하여 그 근거를 제시하시오. 또한 ③ 부재 (라)와 같은 대형 무보강 부재에서 추가로 고려해야 할 사항을 설명하시오.</p>
+<p>(가) 기둥에서 돌출된 브래킷(코벨), a/d ≈ 0.7 (나) 상부 벽체 하중을 받는 전이보, a/d ≈ 1.8 (다) 일반 건물 보, a/d ≈ 4.5 (라) 대형 무근 확대기초(1방향 전단 검토), <strong>a/d ≈ 6.0이며 유효깊이가 매우 큰 부재</strong></p></div>
+  <div class="dwgs"><figure class="dwg">
+  <img src="drawings/svg/139-3-B-P01.svg" alt="개념도(부재 4종) 139-3-B-P01"
+       data-full="drawings/svg/139-3-B-P01.svg" data-cap="139-3-B-P01 · 개념도(부재 4종)" loading="lazy">
+  <figcaption><span class="mono">139-3-B-P01</span> 개념도(부재 4종)<button class="zoom" type="button">확대</button></figcaption>
+</figure></div>
+
+  <div class="titleblock">
+    <span class="chip">서술형</span>
+    <span class="chip">난이도 <span class="stars">★★★☆☆</span></span>
+    <span class="tb-action"><button class="btn toggle" type="button" data-t="139-3-B" aria-expanded="false" aria-controls="ans-139-3-B">해설보기</button></span>
+  </div>
+
+  <div class="ans" id="ans-139-3-B" hidden>
+    <div class="ans-in">
+      <div class="ans-head"><span class="eyebrow">모범답안</span></div>
+      <p><strong>【핵심 키워드】 a/d = 하중전달 메커니즘 판단의 주요 지표(설계법 자동 결정 기준 아님) → B/D영역 판단 → 설계법 선택 / a/d 중간 = 사인장 취성 → 최소 전단보강 규정 확인 / 대형 부재 = 사이즈 이펙트</strong></p>
+<p><strong>Ⅰ. 서론</strong> — 설계법 선택의 기준은 부재의 명칭이 아니라 <strong>하중이 지점으로 전달되는 경로</strong>다. a/d가 작을수록 보 이론(평면 유지)이 깨지고 아치작용(직접 스트럿)이 지배하므로, 각 부재의 a/d에서 메커니즘을 판정한 뒤 그에 맞는 설계법을 선택한다.</p>
+<p><strong>Ⅱ. 본론</strong></p>
+<div class="tablewrap"><table>
+<thead><tr><th>부재</th><th>a/d</th><th>지배 메커니즘</th><th>예상 파괴모드(무보강)</th><th>설계법과 근거</th></tr></thead>
+<tbody>
+<tr><td>(가) 코벨</td><td>≈0.7</td><td>아치작용(직접 스트럿)</td><td>스트럿 압축파쇄·지압, 상면 인장타이 파단</td><td><strong>D영역으로 판단</strong>하고 STM 또는 이에 준하는 스트럿-타이 기반 검토</td></tr>
+<tr><td>(나) 전이보</td><td>≈1.8</td><td>아치+보 혼재</td><td>사인장균열 후 전단압축/전단인장(부착 할렬)</td><td>a/d가 작고 하중·지점의 국부 전달영역(<strong>D영역) 거동이 지배적이므로 STM 적용을 우선 검토</strong> — 형상·하중 도입 위치·지점조건 병행 판단</td></tr>
+<tr><td>(다) 일반 보</td><td>≈4.5</td><td>보작용</td><td><strong>사인장 취성파괴</strong>(균열내력≈파괴내력)</td><td>일반 휨·전단식 + <strong>최소 전단보강 규정 및 적용 예외 확인</strong> — 가장 취성적 구간</td></tr>
+<tr><td>(라) 대형 무근기초</td><td>≈6.0(大)</td><td>보작용(휨-전단 경계)</td><td>휨 지배에 근접하나 <strong>큰 유효깊이의 사이즈 이펙트로 단위 전단강도가 저하</strong>되어 사인장 파괴 가능성 재부상</td><td>일반식 적용 시 <strong>크기효과 반영</strong></td></tr>
+</tbody></table></div>
+<ul>
+<li>판정 논리(순서가 핵심): <strong>a/d → 하중전달 메커니즘 추정 → B/D영역 판단(형상·하중 도입·지점조건 병행) → 적합한 설계법 선택.</strong> (가)(나)는 하중과 지점이 가까워 압축장이 직결되는 D영역 거동 지배 → STM 우선 검토. (다)는 보작용에서 사인장이 휨보다 먼저 도달하는 구간 → 최소 전단보강 규정(적용 예외 포함) 확인으로 방어. (라)는 균열면 골재 맞물림의 상대 기여 감소로 깊이 증가 시 전단강도가 비례 증가하지 않음.</li>
+</ul>
+<p>③ (라)의 추가 고려: 크기효과 계수 반영, 무근이므로 균열 후 취성 급진 — 검토 단면 위치·1방향/2방향 구분, 시공이음·양생(온도균열)이 전단면 저하로 직결됨을 함께 관리.</p>
+<p><strong>Ⅲ. 결론</strong> — 판단의 순서는 <strong>"a/d → 하중전달 메커니즘 → B/D영역 판단 → 적합한 설계법 선택"</strong>이며, a/d는 판단의 주요 지표이지 설계법을 자동 결정하는 기준이 아니다. 실무 오류의 대부분은 (나)류 중간 부재를 일반식으로 설계하거나 (라)류 대형 부재의 크기효과를 누락하는 데서 발생하며, 최신 기준이 전단강도식에 크기·변형률 효과를 반영해가는 흐름도 같은 근거에서 이해할 수 있다.</p>
+      <div class="dwgs"><figure class="dwg">
+  <img src="drawings/svg/139-3-B-A01.svg" alt="메커니즘도 139-3-B-A01"
+       data-full="drawings/svg/139-3-B-A01.svg" data-cap="139-3-B-A01 · 메커니즘도" loading="lazy">
+  <figcaption><span class="mono">139-3-B-A01</span> 메커니즘도<button class="zoom" type="button">확대</button></figcaption>
+</figure></div>
+      <div class="ans-foot"><button class="btn ghost toggle" type="button" data-t="139-3-B">해설 닫기</button></div></div>
+  </div>
+</article>
+
+<article class="item" id="item-139-3-C">
+  <header class="item-head">
+    <span class="no">문항 3</span>
+    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 3번">
+      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 3번</span>
+    </span>
+  </header>
+  <div class="head-main"><h2>설계 VE — 교량 설계 시나리오 적용과 한계</h2></div>
+
+  <div class="qbody"><p>하천을 횡단하는 중지간 교량의 기본설계(원안: 3경간 강합성 박스거더교)에 대해 설계 VE를 수행하게 되었다. ① 이 사업에서 VE 준비단계의 핵심 활동(대상 선정 포함)을 구체적으로 제시하고, ② 분석단계에서 "교량 상부구조"를 대상으로 기능분석(FAST 관점)과 대안 창출·평가를 어떻게 수행할지 절차에 따라 설명하시오. ③ 아울러 실무에서 지적되는 형식적 VE의 한계와 그 개선방안을 본인의 견해로 제시하시오.</p></div>
+  
+
+  <div class="titleblock">
+    <span class="chip">서술형</span>
+    <span class="chip">난이도 <span class="stars">★★★☆☆</span></span>
+    <span class="tb-action"><button class="btn toggle" type="button" data-t="139-3-C" aria-expanded="false" aria-controls="ans-139-3-C">해설보기</button></span>
+  </div>
+
+  <div class="ans" id="ans-139-3-C" hidden>
+    <div class="ans-in">
+      <div class="ans-head"><span class="eyebrow">모범답안</span></div>
+      <p><strong>【핵심 키워드】 V=F/C · 대상 선정(예: 비용모델·파레토) / 기능분석 = "하중을 전달한다·통행을 제공한다" 등 명사+동사 기능 분해 → 수단 재검토 / 한계 = 절감액 실적주의·원안 방어 → 독립성·초기 적용·LCC 기준</strong></p>
+<p><strong>Ⅰ. 서론</strong> — VE는 "싸게 만드는 기법"이 아니라 <strong>기능(F)을 기준으로 비용(C)을 재구성</strong>하는 기법이다. 본 시나리오의 요체는 상부구조 형식(강합성 박스)을 전제로 두지 않고, "하중을 전달한다·통행을 제공한다"는 기능에서 대안을 다시 여는 것이다.</p>
+<p><strong>Ⅱ. 본론</strong></p>
+<ol start="1"><li><strong>준비단계</strong>: 다분야 팀(구조·수리·시공·유지관리)+VE 리더 구성, 설계도서·수리조건·형하 제약·민원 정보 수집, 발주자 요구 기능 중요도 조사(품질모델) → <strong>대상 선정</strong>: 실무적 방법의 예로 비용모델·파레토 분석을 활용하여 상부구조가 비용 비중·개선 잠재력이 큰 항목임을 확인하고 대상 확정.</li><li><strong>분석단계(상부구조)</strong></li></ol>
+<ul>
+<li>기능 정의: 기본기능을 <strong>"하중을 전달한다"·"통행을 제공한다"·"하천 횡단을 확보한다"</strong> 로 분해하고, 2차기능("미관을 제공한다"·"유지관리를 허용한다" 등)과 함께 명사+동사로 정의 — <strong>프로젝트 목적과 기능 정의를 혼동하지 않도록 기능 단위로 분해</strong>한다. FAST로 목적–수단을 구조화하면 "강합성 박스"는 기능이 아니라 <strong>하나의 수단</strong>임이 드러남.</li>
+<li>대안 창출(비판 금지 발상): 경간 분할 변경, PSC 거더·강플레이트거더 등 형식 대안, 하부공 최적화 연계.</li>
+<li>평가: 개략 평가로 압축 → 기능 충족도(수리 안전·형하·유지관리)와 <strong>LCC(초기비+유지관리비)</strong> 로 상세 평가, 구조 검토서 첨부 → 원안 대비 성능·비용 비교표로 제안(가치향상 유형 명시).</li>
+</ul>
+<ol start="3"><li><strong>실행단계</strong>: 발주자 심의·채택 → 설계 반영 → 사후관리(시공·공용 성과 모니터링, DB화).</li><li><strong>형식적 VE의 한계와 개선(견해)</strong></li></ol>
+<div class="tablewrap"><table>
+<thead><tr><th>한계</th><th>개선</th></tr></thead>
+<tbody>
+<tr><td>절감액 실적주의(안전·유지관리 기능 훼손 우려)</td><td>평가 기준을 절감액이 아닌 <strong>가치(F/C)·LCC</strong>로 명문화</td></tr>
+<tr><td>원안 설계자의 방어 논리 지배</td><td>제3자 팀 독립성 확보, 기능분석 선행 의무화</td></tr>
+<tr><td>실시설계 말기의 요식 수행</td><td><strong>기본설계 초기 적용</strong>(개선 여지 최대 시점)</td></tr>
+<tr><td>대안 검토의 정량성 부족</td><td>BIM 물량·LCC 자동 산출 연계</td></tr>
+</tbody></table></div>
+<p><strong>Ⅲ. 결론</strong> — VE의 성패는 절차 준수가 아니라 <strong>기능분석의 깊이와 팀의 독립성</strong>에 있다. 본 시나리오처럼 형식이 전제된 설계일수록 "형식은 수단"임을 드러내는 FAST가 결정적이며, LCC 기준 평가와 초기 적용이 형식화의 처방이라 판단된다.</p>
+      <div class="dwgs"><figure class="dwg">
+  <img src="drawings/svg/139-3-C-A01.svg" alt="개념도(프로세스) 139-3-C-A01"
+       data-full="drawings/svg/139-3-C-A01.svg" data-cap="139-3-C-A01 · 개념도(프로세스)" loading="lazy">
+  <figcaption><span class="mono">139-3-C-A01</span> 개념도(프로세스)<button class="zoom" type="button">확대</button></figcaption>
+</figure></div>
+      <div class="ans-foot"><button class="btn ghost toggle" type="button" data-t="139-3-C">해설 닫기</button></div></div>
+  </div>
+</article>
+
+<article class="item" id="item-139-3-D">
+  <header class="item-head">
+    <span class="no">문항 4</span>
+    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 4번">
+      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 4번</span>
+    </span>
+  </header>
+  <div class="head-main"><h2>프랫 트러스 사재 영향선과 이동하중 최대 부재력</h2></div>
+
+  <div class="qbody"><p>그림과 같은 프랫(Pratt) 트러스(지간 32 m, 8패널 @4 m, 높이 4 m, 하현 재하, L0 힌지·L8 롤러)에서 ① 사재 U3–L4의 영향선을 구하시오. ② 간격 4 m의 두 이동 집중하중 100 kN + 100 kN이 하현을 통과할 때, 부재 U3–L4의 최대 인장력과 최대 압축력 및 각 재하 위치를 구하시오.</p></div>
+  <div class="dwgs"><figure class="dwg">
+  <img src="drawings/svg/139-3-D-P01.svg" alt="구조도(트러스 형상) 139-3-D-P01"
+       data-full="drawings/svg/139-3-D-P01.svg" data-cap="139-3-D-P01 · 구조도(트러스 형상)" loading="lazy">
+  <figcaption><span class="mono">139-3-D-P01</span> 구조도(트러스 형상)<button class="zoom" type="button">확대</button></figcaption>
+</figure></div>
+
+  <div class="titleblock">
+    <span class="chip">계산형</span>
+    <span class="chip">난이도 <span class="stars">★★★★☆</span></span>
+    <span class="tb-action"><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
+  </div>
+
+  <div class="ans" id="ans-139-3-D" hidden>
+    <div class="ans-in"></div>
+  </div>
+</article>
+
+<article class="item" id="item-139-3-E">
+  <header class="item-head">
+    <span class="no">문항 5</span>
+    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 5번">
+      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 5번</span>
+    </span>
+  </header>
+  <div class="head-main"><h2>중앙 탄성지지 단순보 — 강성 분담과 역산</h2></div>
+
+  <div class="qbody"><p>지간 L = 8 m 단순보(EI = 4×10⁴ kN·m² 일정)의 중앙점이 스프링(계수 k)으로 지지되어 있고, 등분포하중 w = 15 kN/m가 전 지간에 작용한다. ① 중앙 처짐이 5 mm가 되기 위한 k, ② k → ∞일 때 중앙 지지점의 반력, ③ 스프링이 "k=∞일 때 반력의 50%"를 분담하게 되는 k를 구하고 그 결과의 구조적 의미를 설명하시오.</p></div>
+  <div class="dwgs"><figure class="dwg">
+  <img src="drawings/svg/139-3-E-P01.svg" alt="구조도 139-3-E-P01"
+       data-full="drawings/svg/139-3-E-P01.svg" data-cap="139-3-E-P01 · 구조도" loading="lazy">
+  <figcaption><span class="mono">139-3-E-P01</span> 구조도<button class="zoom" type="button">확대</button></figcaption>
+</figure></div>
+
+  <div class="titleblock">
+    <span class="chip">계산형</span>
+    <span class="chip">난이도 <span class="stars">★★★☆☆</span></span>
+    <span class="tb-action"><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
+  </div>
+
+  <div class="ans" id="ans-139-3-E" hidden>
+    <div class="ans-in"></div>
+  </div>
+</article>
+
+<article class="item" id="item-139-3-F">
+  <header class="item-head">
+    <span class="no">문항 6</span>
+    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 6번">
+      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 6번</span>
+    </span>
+  </header>
+  <div class="head-main"><h2>PSC 합성거더 — 두 조건을 만족하는 긴장력 범위</h2></div>
+
+  <div class="qbody"><p>지간 30 m 단순 PSC 합성거더교에서 긴장(직선 배치)은 바닥판 합성 이전에 도입한다. 다음 두 조건을 <strong>동시에 만족하는 초기 긴장력 P_i의 범위</strong>를 구하시오. ① 사용하중 시(유효율 η=0.85 적용) 지간 중앙 하연에 인장응력이 발생하지 않을 것 ② 긴장 도입 시(지점부, 외력 모멘트 0) 하연 압축응력이 허용값 18 MPa를 초과하지 않을 것. 또한 ③ 장기 손실 증가로 유효율이 η=0.75로 저하되는 경우 범위의 성립 여부를 검토하고, 불성립 시의 설계 대책을 제시하시오.</p>
+<p>〈조건〉 합성 전 단면: A=800,000 mm², I=360×10⁹ mm⁴, y_b=900 mm, 긴장재 도심은 하연에서 150 mm(→ e=750 mm) / 합성 후: 하연 단면계수 S_cb=500×10⁶ mm³ / 하중: 합성 전(자중+바닥판) w₁=25 kN/m, 합성 후 고정 w₂=8 kN/m, 활하중 모멘트(충격 포함) M_L=2,400 kN·m / 응력은 총단면 탄성계산, 압축(+).</p></div>
+  <div class="dwgs"><figure class="dwg">
+  <img src="drawings/svg/139-3-F-P01.svg" alt="구조도+단면도 139-3-F-P01"
+       data-full="drawings/svg/139-3-F-P01.svg" data-cap="139-3-F-P01 · 구조도+단면도" loading="lazy">
+  <figcaption><span class="mono">139-3-F-P01</span> 구조도+단면도<button class="zoom" type="button">확대</button></figcaption>
+</figure></div>
+
+  <div class="titleblock">
+    <span class="chip">계산형</span>
+    <span class="chip">난이도 <span class="stars">★★★★★</span></span>
+    <span class="tb-action"><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
+  </div>
+
+  <div class="ans" id="ans-139-3-F" hidden>
+    <div class="ans-in"></div>
+  </div>
+</article>
+  </main>
+</div>
+
+<!-- 도면 확대 -->
+<div id="lb" hidden>
+  <div class="lb-bar">
+    <span class="cap" id="lb-cap"></span>
+    <button type="button" data-z="out">축소</button>
+    <button type="button" data-z="fit">화면 맞춤</button>
+    <button type="button" data-z="in">확대</button>
+    <button type="button" id="lb-close">닫기</button>
+  </div>
+  <div class="lb-scroll" id="lb-scroll"><img id="lb-img" alt=""></div>
+</div>
+
+<script>
+(function(){
+  var sel = document.getElementById('sel-session');
+  var go  = document.getElementById('go');
+  var s1  = document.getElementById('screen-select');
+  var s2  = document.getElementById('screen-items');
+
+  sel.addEventListener('change', function(){ go.disabled = !sel.value; });
+
+  go.addEventListener('click', function(){
+    s1.hidden = true; s2.hidden = false; window.scrollTo(0,0);
+  });
+  document.getElementById('back').addEventListener('click', function(){
+    s2.hidden = true; s1.hidden = false; window.scrollTo(0,0);
+  });
+
+  /* 해설 열람·닫기 — 문항별 개별 동작 */
+  document.addEventListener('click', function(e){
+    var t = e.target.closest('.toggle');
+    if(!t) return;
+    var item = t.closest('.item');
+    var panel = item.querySelector('.ans');
+    var opener = item.querySelector('.tb-action .toggle');
+    var open = panel.hidden;
+    panel.hidden = !open;
+    item.classList.toggle('open', open);
+    opener.textContent = open ? '해설 닫기' : '해설보기';
+    opener.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if(!open){
+      var y = item.getBoundingClientRect().top;
+      if(y < 0) item.scrollIntoView({block:'start'});
+      opener.focus();
+    }
+  });
+
+  /* 도면 확대 — 원본 비율 유지, 배율만 변경 */
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img'),
+      lbCap = document.getElementById('lb-cap'), lbScroll = document.getElementById('lb-scroll'),
+      zoom = 1, lastFocus = null;
+
+  function base(){ return Math.max(240, lbScroll.clientWidth - 32); }
+  function apply(){ lbImg.style.width = Math.round(base() * zoom) + 'px'; }
+  function open(img){
+    lastFocus = document.activeElement;
+    lbImg.src = img.dataset.full; lbImg.alt = img.alt;
+    lbCap.textContent = img.dataset.cap;
+    lb.hidden = false; zoom = 1; apply();
+    document.body.style.overflow = 'hidden';
+    document.getElementById('lb-close').focus();
+  }
+  function close(){
+    lb.hidden = true; lbImg.src = ''; document.body.style.overflow = '';
+    if(lastFocus) lastFocus.focus();
+  }
+  window.addEventListener('resize', function(){ if(!lb.hidden) apply(); });
+
+  document.addEventListener('click', function(e){
+    var z = e.target.closest('.zoom');
+    if(z){ open(z.closest('.dwg').querySelector('img')); return; }
+    var im = e.target.closest('.dwg img');
+    if(im){ open(im); return; }
+    var b = e.target.closest('.lb-bar button');
+    if(!b) return;
+    if(b.id === 'lb-close') return close();
+    if(b.dataset.z === 'in')  { zoom = Math.min(zoom * 1.4, 8); apply(); }
+    if(b.dataset.z === 'out') { zoom = Math.max(zoom / 1.4, .5); apply(); }
+    if(b.dataset.z === 'fit') { zoom = 1; apply(); lbScroll.scrollTo(0,0); }
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !lb.hidden) close(); });
+})();
+</script>
+</body>
+</html>

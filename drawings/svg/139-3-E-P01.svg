@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 545" font-family="Noto Sans CJK KR, NanumGothic, sans-serif">
+<defs><pattern id="hz" width="8" height="8" patternTransform="rotate(45)"
+ patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="8" stroke="#000" stroke-width="1"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+ orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker>
+<marker id="arS" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5"
+ orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker>
+<marker id="tk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+ orient="auto"><line x1="2" y1="8" x2="8" y2="2" stroke="#000" stroke-width="1.6"/></marker></defs>
+<rect width="1180" height="545" fill="#fff"/>
+<text x="70" y="38" font-size="19" fill="#000" font-weight="bold">139-3-E-P01  중앙 탄성지지 단순보 — 구조계</text>
+<text x="70" y="60" font-size="12" fill="#444">양단 단순지지 · 중앙 스프링 지지 · 전 지간 등분포하중</text>
+<line x1="200" y1="178" x2="980" y2="178" stroke="#000" stroke-width="2"/>
+<line x1="200.0" y1="180" x2="200.0" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="255.71428571428572" y1="180" x2="255.71428571428572" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="311.42857142857144" y1="180" x2="311.42857142857144" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="367.1428571428571" y1="180" x2="367.1428571428571" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="422.8571428571429" y1="180" x2="422.8571428571429" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="478.57142857142856" y1="180" x2="478.57142857142856" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="534.2857142857142" y1="180" x2="534.2857142857142" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="590.0" y1="180" x2="590.0" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="645.7142857142858" y1="180" x2="645.7142857142858" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="701.4285714285714" y1="180" x2="701.4285714285714" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="757.1428571428571" y1="180" x2="757.1428571428571" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="812.8571428571429" y1="180" x2="812.8571428571429" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="868.5714285714286" y1="180" x2="868.5714285714286" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="924.2857142857143" y1="180" x2="924.2857142857143" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<line x1="980.0" y1="180" x2="980.0" y2="264" stroke="#000" stroke-width="1.5" marker-end="url(#arS)"/>
+<text x="590" y="166" font-size="15" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">w = 15 kN/m</text>
+<rect x="200" y="268" width="780" height="16" fill="#fff" stroke="#000" stroke-width="2" rx="0"/>
+<text x="216" y="326" font-size="14" fill="#000" text-anchor="start" font-weight="bold" font-style="normal">EI = 4×10⁴ kN·m² (일정)</text>
+<polygon points="200,284 189,300.5 211,300.5" fill="none" stroke="#000" stroke-width="2"/>
+<line x1="183.5" y1="300.5" x2="216.5" y2="300.5" stroke="#000" stroke-width="2"/>
+<circle cx="980" cy="294" r="10" fill="none" stroke="#000" stroke-width="2"/>
+<line x1="964.0" y1="304" x2="996.0" y2="304" stroke="#000" stroke-width="2"/>
+<polyline points="590,284 602,296.3 578,304.90000000000003 602,313.50000000000006 578,322.1000000000001 602,330.7000000000001 578,339.3000000000001 602,347.90000000000015 578,356.50000000000017 602,365.1000000000002 578,373.7000000000002 590,378 590,386" fill="none" stroke="#000" stroke-width="2"/>
+<line x1="520" y1="386" x2="660" y2="386" stroke="#000" stroke-width="2"/>
+<line x1="520.0" y1="386" x2="512.0" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="531.6666666666666" y1="386" x2="523.6666666666666" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="543.3333333333334" y1="386" x2="535.3333333333334" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="555.0" y1="386" x2="547.0" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="566.6666666666666" y1="386" x2="558.6666666666666" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="578.3333333333334" y1="386" x2="570.3333333333334" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="590.0" y1="386" x2="582.0" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="601.6666666666666" y1="386" x2="593.6666666666666" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="613.3333333333334" y1="386" x2="605.3333333333334" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="625.0" y1="386" x2="617.0" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="636.6666666666666" y1="386" x2="628.6666666666666" y2="395" stroke="#888" stroke-width="1.2"/>
+<line x1="648.3333333333333" y1="386" x2="640.3333333333333" y2="395" stroke="#888" stroke-width="1.2"/>
+<text x="616" y="348" font-size="16" fill="#000" text-anchor="start" font-weight="bold" font-style="italic">k</text>
+<text x="590" y="430" font-size="12" fill="#444" text-anchor="middle" font-weight="normal" font-style="normal">중앙 탄성지지 (스프링계수 k)</text>
+<line x1="200" y1="470" x2="590" y2="470" stroke="#000" stroke-width="1.3"/>
+<line x1="200" y1="470" x2="590" y2="470" stroke="#000" stroke-width="1.3" marker-start="url(#arS)" marker-end="url(#arS)"/>
+<line x1="200" y1="464" x2="200" y2="476" stroke="#000" stroke-width="1.3"/>
+<line x1="590" y1="464" x2="590" y2="476" stroke="#000" stroke-width="1.3"/>
+<text x="395.0" y="463.7" font-size="13" fill="#000" text-anchor="middle" font-weight="bold" font-style="italic">4 m</text>
+<line x1="590" y1="470" x2="980" y2="470" stroke="#000" stroke-width="1.3"/>
+<line x1="590" y1="470" x2="980" y2="470" stroke="#000" stroke-width="1.3" marker-start="url(#arS)" marker-end="url(#arS)"/>
+<line x1="590" y1="464" x2="590" y2="476" stroke="#000" stroke-width="1.3"/>
+<line x1="980" y1="464" x2="980" y2="476" stroke="#000" stroke-width="1.3"/>
+<text x="785.0" y="463.7" font-size="13" fill="#000" text-anchor="middle" font-weight="bold" font-style="italic">4 m</text>
+<line x1="200" y1="512" x2="980" y2="512" stroke="#000" stroke-width="1.3"/>
+<line x1="200" y1="512" x2="980" y2="512" stroke="#000" stroke-width="1.3" marker-start="url(#arS)" marker-end="url(#arS)"/>
+<line x1="200" y1="506" x2="200" y2="518" stroke="#000" stroke-width="1.3"/>
+<line x1="980" y1="506" x2="980" y2="518" stroke="#000" stroke-width="1.3"/>
+<text x="590.0" y="505.7" font-size="13" fill="#000" text-anchor="middle" font-weight="bold" font-style="italic">L = 8 m</text>
+<line x1="200" y1="310" x2="200" y2="464" stroke="#888" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="980" y1="310" x2="980" y2="464" stroke="#888" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="590" y1="400" x2="590" y2="464" stroke="#888" stroke-width="1" stroke-dasharray="3 3"/>
+</svg>

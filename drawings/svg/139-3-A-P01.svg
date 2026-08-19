@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" font-family="Noto Sans CJK KR, NanumGothic, sans-serif">
+<defs><pattern id="hz" width="8" height="8" patternTransform="rotate(45)"
+ patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="8" stroke="#000" stroke-width="1"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+ orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker>
+<marker id="arS" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5"
+ orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker>
+<marker id="tk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+ orient="auto"><line x1="2" y1="8" x2="8" y2="2" stroke="#000" stroke-width="1.6"/></marker></defs>
+<rect width="1400" height="760" fill="#fff"/>
+<text x="70" y="38" font-size="19" fill="#000" font-weight="bold">139-3-A-P01  곡선 램프교 평면 — 교각 배치와 손상 위치</text>
+<text x="70" y="60" font-size="12" fill="#444">평면도 · 각 교각에 받침 2열(내측/외측) · 손상 2개소는 인접 교각</text>
+<polyline points="66.5,465.7 79.2,458.1 92.0,450.8 104.9,443.5 117.9,436.4 131.0,429.5 144.1,422.8 157.4,416.2 170.7,409.7 184.1,403.4 197.5,397.3 211.1,391.4 224.7,385.6 238.3,379.9 252.1,374.5 265.9,369.2 279.8,364.0 293.7,359.0 307.7,354.2 321.7,349.6 335.8,345.1 350.0,340.9 364.2,336.7 378.4,332.8 392.7,329.0 407.1,325.4 421.5,322.0 435.9,318.7 450.3,315.6 464.8,312.7 479.4,309.9 493.9,307.4 508.5,305.0 523.1,302.8 537.8,300.7 552.5,298.9 567.2,297.2 581.9,295.7 596.6,294.4 611.3,293.2 626.1,292.2 640.9,291.4 655.6,290.8 670.4,290.4 685.2,290.1 700.0,290.0 714.8,290.1 729.6,290.4 744.4,290.8 759.1,291.4 773.9,292.2 788.7,293.2 803.4,294.4 818.1,295.7 832.8,297.2 847.5,298.9 862.2,300.7 876.9,302.8 891.5,305.0 906.1,307.4 920.6,309.9 935.2,312.7 949.7,315.6 964.1,318.7 978.5,322.0 992.9,325.4 1007.3,329.0 1021.6,332.8 1035.8,336.7 1050.0,340.9 1064.2,345.1 1078.3,349.6 1092.3,354.2 1106.3,359.0 1120.2,364.0 1134.1,369.2 1147.9,374.5 1161.7,379.9 1175.3,385.6 1188.9,391.4 1202.5,397.3 1215.9,403.4 1229.3,409.7 1242.6,416.2 1255.9,422.8 1269.0,429.5 1282.1,436.4 1295.1,443.5 1308.0,450.8 1320.8,458.1 1333.5,465.7" fill="none" stroke="#000" stroke-width="2.6"/>
+<polyline points="138.6,585.7 149.9,579.0 161.2,572.5 172.7,566.1 184.2,559.8 195.8,553.6 207.4,547.7 219.1,541.8 230.9,536.1 242.8,530.5 254.7,525.1 266.7,519.8 278.8,514.7 290.9,509.7 303.1,504.8 315.3,500.1 327.6,495.6 339.9,491.2 352.3,486.9 364.8,482.8 377.3,478.9 389.8,475.1 402.4,471.4 415.0,467.9 427.7,464.6 440.4,461.4 453.2,458.3 465.9,455.4 478.8,452.7 491.6,450.1 504.5,447.7 517.4,445.4 530.3,443.3 543.3,441.3 556.3,439.5 569.3,437.9 582.3,436.4 595.3,435.0 608.4,433.9 621.4,432.8 634.5,432.0 647.6,431.3 660.7,430.7 673.8,430.3 686.9,430.1 700.0,430.0 713.1,430.1 726.2,430.3 739.3,430.7 752.4,431.3 765.5,432.0 778.6,432.8 791.6,433.9 804.7,435.0 817.7,436.4 830.7,437.9 843.7,439.5 856.7,441.3 869.7,443.3 882.6,445.4 895.5,447.7 908.4,450.1 921.2,452.7 934.1,455.4 946.8,458.3 959.6,461.4 972.3,464.6 985.0,467.9 997.6,471.4 1010.2,475.1 1022.7,478.9 1035.2,482.8 1047.7,486.9 1060.1,491.2 1072.4,495.6 1084.7,500.1 1096.9,504.8 1109.1,509.7 1121.2,514.7 1133.3,519.8 1145.3,525.1 1157.2,530.5 1169.1,536.1 1180.9,541.8 1192.6,547.7 1204.2,553.6 1215.8,559.8 1227.3,566.1 1238.8,572.5 1250.1,579.0 1261.4,585.7" fill="none" stroke="#000" stroke-width="2.6"/>
+<line x1="138.6" y1="585.7" x2="66.5" y2="465.7" stroke="#000" stroke-width="2.6"/>
+<line x1="1261.4" y1="585.7" x2="1333.5" y2="465.7" stroke="#000" stroke-width="2.6"/>
+<line x1="141.7" y1="590.8" x2="63.4" y2="460.5" stroke="#000" stroke-width="3.0"/>
+<text x="34.6" y="412.5" font-size="15" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">A1</text>
+<line x1="410.3" y1="475.4" x2="369.7" y2="329.0" stroke="#000" stroke-width="3.0"/>
+<text x="354.7" y="275.0" font-size="15" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">P1</text>
+<line x1="700.0" y1="436.0" x2="700.0" y2="284.0" stroke="#000" stroke-width="3.0"/>
+<text x="700.0" y="228.0" font-size="15" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">P2</text>
+<line x1="989.7" y1="475.4" x2="1030.3" y2="329.0" stroke="#000" stroke-width="3.0"/>
+<text x="1045.3" y="275.0" font-size="15" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">P3</text>
+<line x1="1258.3" y1="590.8" x2="1336.6" y2="460.5" stroke="#000" stroke-width="3.0"/>
+<text x="1365.4" y="412.5" font-size="15" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">A2</text>
+<rect x="111.1" y="550.3" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<rect x="72.0" y="485.1" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<rect x="389.2" y="430.8" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<circle cx="400.2" cy="438.8" r="14" fill="none" stroke="#000" stroke-width="2.6"/>
+<rect x="368.8" y="357.6" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<rect x="689.0" y="390.0" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<rect x="689.0" y="314.0" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<line x1="688.0" y1="348.0" x2="712.0" y2="372.0" stroke="#000" stroke-width="2.8"/>
+<line x1="712.0" y1="348.0" x2="688.0" y2="372.0" stroke="#000" stroke-width="2.8"/>
+<rect x="988.8" y="430.8" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<rect x="1009.2" y="357.6" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<rect x="1266.9" y="550.3" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<rect x="1306.0" y="485.1" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<line x1="400.2" y1="454.8" x2="360.2" y2="534.8" stroke="#000" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="354.2" y="550.8" font-size="14" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">손상 ①</text>
+<line x1="700.0" y1="344.0" x2="740.0" y2="284.0" stroke="#000" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="746.0" y="276.0" font-size="14" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">손상 ②</text>
+<text x="400" y="214" font-size="16" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">곡선 외측</text>
+<line x1="400" y1="262" x2="400" y2="224" stroke="#000" stroke-width="2" marker-end="url(#ar)"/>
+<text x="700" y="556" font-size="16" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">곡선 내측</text>
+<line x1="700" y1="512" x2="700" y2="546" stroke="#000" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="700" y1="588" x2="700" y2="646" stroke="#000" stroke-width="2.2" marker-end="url(#ar)"/>
+<text x="700" y="668" font-size="14" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">곡률중심 방향</text>
+<text x="700" y="688" font-size="11" fill="#444" text-anchor="middle" font-weight="normal" font-style="normal">(곡률중심은 도면 하단측)</text>
+<rect x="70" y="604" width="546" height="116" fill="#f7f7f7" stroke="#000" stroke-width="1.6" rx="0"/>
+<text x="88" y="630" font-size="13" fill="#000" text-anchor="start" font-weight="bold" font-style="normal">〈범례〉</text>
+<circle cx="106" cy="654" r="12" fill="none" stroke="#000" stroke-width="2.4"/>
+<text x="130" y="659" font-size="13" fill="#000" text-anchor="start" font-weight="normal" font-style="normal">손상 ① — 곡선 내측 받침의 들림</text>
+<line x1="96" y1="682" x2="118" y2="704" stroke="#000" stroke-width="2.6"/>
+<line x1="118" y1="682" x2="96" y2="704" stroke="#000" stroke-width="2.6"/>
+<text x="130" y="700" font-size="13" fill="#000" text-anchor="start" font-weight="normal" font-style="normal">손상 ② — 인접 교각 가동받침 가이드 손상</text>
+<rect x="392" y="646" width="22" height="16" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<text x="424" y="659" font-size="12" fill="#444" text-anchor="start" font-weight="normal" font-style="normal">받침 (교각당 내·외측 2열)</text>
+<text x="424" y="700" font-size="12" fill="#444" text-anchor="start" font-weight="normal" font-style="normal">A1·A2 = 교대,  P1~P3 = 교각</text>
+</svg>

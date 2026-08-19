@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>기출 변형문제 열람 — 화면 프로토타입</title>
+<style>
+:root{
+  /* 딥블루 */
+  --blue:#0f2f66;
+  --blue-hover:#0a2350;
+  --blue-soft:#eaeff8;
+  --blue-text:#1a4694;
+
+  /* 뉴트럴 */
+  --bg:#f2f4f6;
+  --surface:#ffffff;
+  --surface-2:#f7f8fa;
+  --line:#e8ebed;
+  --t1:#191f28;
+  --t2:#4e5968;
+  --t3:#8b95a1;
+  --t4:#b0b8c1;
+  --amber:#8a6a12;
+  --amber-bg:#fdf6e3;
+
+  --r-lg:24px;
+  --r-md:16px;
+  --r-sm:12px;
+  --sans:"Pretendard","Pretendard Variable",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg);
+  color:var(--t1);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.68;
+  letter-spacing:-.01em;
+  -webkit-text-size-adjust:100%;
+  -webkit-font-smoothing:antialiased;
+}
+button{font:inherit;color:inherit;font-family:var(--sans)}
+[hidden]{display:none !important}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
+
+/* ================= 화면 1 · 랜딩 + 선택 ================= */
+#screen-select{min-height:100dvh;background:var(--bg)}
+.land{max-width:560px;margin:0 auto;padding:0 20px 64px}
+
+.hero{padding:72px 4px 32px}
+.kicker{display:inline-block;font-size:.84rem;font-weight:700;color:var(--blue-text);background:var(--blue-soft);border-radius:999px;padding:6px 13px;margin:0 0 18px}
+.hero h1{margin:0;font-size:1.92rem;font-weight:700;line-height:1.42;letter-spacing:-.04em}
+.lead{margin:16px 0 0;color:var(--t2);font-size:1.02rem;line-height:1.65}
+
+.points{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.points li{background:var(--surface);border-radius:var(--r-lg);padding:24px 22px}
+.points h2{margin:0;font-size:1.06rem;font-weight:700;letter-spacing:-.03em}
+.points p{margin:8px 0 0;color:var(--t2);font-size:.95rem;line-height:1.62}
+
+.picker h2{margin:0 0 12px;padding-left:4px;font-size:1.02rem;font-weight:700;letter-spacing:-.03em}
+
+.picker{margin-top:32px}
+.field{margin-bottom:12px}
+.field label{display:block;font-size:.86rem;font-weight:600;color:var(--t2);margin:0 0 8px;padding-left:4px}
+.field select{
+  width:100%;padding:17px 46px 17px 18px;font-size:1.02rem;font-weight:600;font-family:inherit;
+  color:var(--t1);background:var(--surface);border:none;border-radius:var(--r-md);appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M5 8l5 5 5-5' fill='none' stroke='%238b95a1' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 16px center;
+}
+.field select:hover{background-color:#fbfcfd}
+.field select option:disabled{color:var(--t4)}
+.hint{font-size:.86rem;color:var(--t3);margin:8px 0 0;padding-left:4px}
+
+.cta-wrap{padding:20px 0 0}
+.go{
+  width:100%;padding:18px;background:var(--blue);color:#fff;border:none;border-radius:var(--r-md);
+  font-size:1.05rem;font-weight:700;letter-spacing:-.02em;cursor:pointer;transition:background .15s ease;
+}
+.go:disabled{background:#dfe3e8;color:var(--t4);cursor:not-allowed}
+.go:hover:not(:disabled){background:var(--blue-hover)}
+
+/* ================= 화면 2·3 · 목록 ================= */
+.topbar{position:sticky;top:0;z-index:20;background:rgba(242,244,246,.86);backdrop-filter:saturate(180%) blur(14px)}
+.topbar-in{max-width:860px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:12px}
+.back{
+  display:flex;align-items:center;gap:6px;background:none;border:none;padding:8px 12px 8px 6px;
+  border-radius:var(--r-sm);cursor:pointer;font-size:.95rem;font-weight:600;color:var(--t2);
+}
+.back:hover{background:rgba(0,0,0,.04)}
+.crumb{font-weight:700;letter-spacing:-.02em}
+.crumb small{display:block;font-weight:500;color:var(--t3);font-size:.8rem;letter-spacing:-.01em;line-height:1.4}
+main{max-width:860px;margin:0 auto;padding:12px 20px 96px}
+
+.item{background:var(--surface);border-radius:var(--r-lg);margin-bottom:16px;overflow:hidden;box-shadow:0 1px 2px rgba(25,31,40,.04)}
+.item-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:26px 26px 0}
+.no{font-size:.86rem;font-weight:700;color:var(--blue-text);letter-spacing:0}
+.head-main{padding:10px 26px 0}
+.item h2{margin:0;font-size:1.22rem;font-weight:700;letter-spacing:-.033em;line-height:1.45}
+
+/* 오마주 출처 칩 */
+.stamp{
+  flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;
+  background:var(--blue-soft);color:var(--blue-text);border-radius:999px;padding:6px 13px;white-space:nowrap;
+}
+.stamp-k{font-size:.72rem;font-weight:700;opacity:.62}
+.stamp-v{font-size:.82rem;font-weight:700;letter-spacing:-.02em}
+
+.qbody{padding:14px 26px 4px;color:#333d4b;font-size:1rem}
+.qbody p{margin:.6em 0}
+.dwgs{padding:12px 26px 4px;display:grid;gap:14px}
+.dwg{margin:0;background:var(--surface-2);border-radius:var(--r-md);overflow:hidden}
+.dwg img{display:block;width:100%;height:auto;max-height:58vh;object-fit:contain;background:#fff;cursor:zoom-in}
+.dwg figcaption{display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:.82rem;color:var(--t3);font-weight:500}
+.zoom{
+  margin-left:auto;background:var(--surface);border:none;border-radius:999px;padding:6px 14px;
+  font-size:.8rem;font-weight:600;color:var(--t2);cursor:pointer;box-shadow:0 1px 2px rgba(25,31,40,.06);
+}
+.zoom:hover{color:var(--blue-text)}
+
+.titleblock{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:18px;padding:0 26px 24px}
+.chip{background:var(--surface-2);color:var(--t2);border-radius:999px;padding:6px 12px;font-size:.82rem;font-weight:600}
+.stars{color:var(--amber);letter-spacing:.02em}
+.tb-action{margin-left:auto;display:flex;align-items:center;gap:10px}
+.pending{font-size:.8rem;font-weight:600;color:var(--amber);background:var(--amber-bg);border-radius:999px;padding:6px 12px;white-space:nowrap}
+.btn{
+  background:var(--blue);color:#fff;border:none;border-radius:var(--r-sm);padding:12px 22px;
+  cursor:pointer;font-size:.95rem;font-weight:700;letter-spacing:-.02em;transition:background .15s ease;
+}
+.btn:hover:not(:disabled){background:var(--blue-hover)}
+.btn:disabled{background:#f0f2f4;color:var(--t4);cursor:not-allowed}
+.btn.ghost{background:var(--surface-2);color:var(--t2)}
+.btn.ghost:hover{background:#eef0f3;color:var(--t1)}
+
+/* 해설 */
+.ans{padding:0 26px 26px}
+.ans-in{background:var(--bg);border-radius:var(--r-md);padding:24px 22px}
+.ans-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.eyebrow{font-size:.82rem;font-weight:700;color:var(--blue-text)}
+.ans p{margin:.7em 0;color:#333d4b}
+.ans ul,.ans ol{margin:.6em 0;padding-left:1.25em;color:#333d4b}
+.ans ul.sub{margin:.3em 0 .5em;padding-left:1em;color:var(--t2)}
+.ans li{margin:.35em 0}
+.ans li::marker{color:var(--t3)}
+.ans strong{font-weight:700;color:var(--t1)}
+.ans .dwgs{padding:8px 0 0}
+.ans .dwg{background:var(--surface)}
+.ans .zoom{background:var(--bg);box-shadow:none}
+.ans-foot{margin-top:20px}
+.tablewrap{overflow-x:auto;margin:1em 0;background:var(--surface);border-radius:var(--r-sm)}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{color:var(--t2);font-weight:700;white-space:nowrap;background:var(--surface-2)}
+tr:last-child td{border-bottom:none}
+
+/* 도면 확대 */
+#lb{position:fixed;inset:0;z-index:50;background:#191f28;display:flex;flex-direction:column}
+.lb-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;color:#f2f4f6;flex-wrap:wrap}
+.lb-bar .cap{font-size:.86rem;font-weight:600;margin-right:auto;color:#d1d6db}
+.lb-bar button{
+  background:rgba(255,255,255,.1);border:none;border-radius:999px;color:#f2f4f6;
+  padding:8px 15px;cursor:pointer;font-size:.84rem;font-weight:600;
+}
+.lb-bar button:hover{background:rgba(255,255,255,.2)}
+.lb-scroll{flex:1;overflow:auto;padding:0 16px 20px;display:flex;align-items:flex-start;justify-content:center}
+.lb-scroll img{display:block;height:auto;max-width:none;background:#fff;border-radius:var(--r-sm);flex:0 0 auto}
+
+@media (prefers-reduced-motion:no-preference){
+  .item{transition:box-shadow .18s ease}
+  .item.open{box-shadow:0 4px 16px rgba(25,31,40,.07)}
+}
+@media (max-width:640px){
+  body{font-size:15px}
+  .land{padding-left:16px;padding-right:16px}
+  .hero{padding:48px 2px 26px}
+  .hero h1{font-size:1.62rem}
+  .points li{padding:20px 18px}
+  .item-head{padding:22px 18px 0}
+  .head-main,.qbody,.dwgs,.titleblock,.ans{padding-left:18px;padding-right:18px}
+  .titleblock{padding-bottom:20px}
+  .ans-in{padding:20px 16px}
+  .item h2{font-size:1.12rem}
+  .tb-action{margin-left:0;width:100%;justify-content:space-between;margin-top:4px}
+  .tb-action .btn{flex:1}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== 화면 1 · 선택 ========== -->
+<section id="screen-select">
+  <div class="land">
+
+    <header class="hero">
+      <p class="kicker">토목구조기술사</p>
+      <h1>기출을 변형한 문제로 풀고,<br>모범답안과 도면을 확인합니다.</h1>
+      <p class="lead">토목구조기술사 기출문제를 변형한 문항과 그 해설을 회차·교시별로 열람하는 서비스입니다. 로그인 없이 바로 볼 수 있습니다.</p>
+    </header>
+
+    <ul class="points">
+      <li>
+        <h2>기출 원문이 아닙니다</h2>
+        <p>원 기출이 묻는 사고 과정은 그대로 두고, 상황과 질문의 관점을 바꾼 변형문제입니다. 답을 외운 상태로는 풀리지 않습니다.</p>
+      </li>
+      <li>
+        <h2>문제와 해설이 한 곳에 있습니다</h2>
+        <p>문항마다 모범답안 본문과 도면이 함께 붙어 있습니다. 문제를 먼저 풀고, 원할 때 문항별로 해설을 엽니다.</p>
+      </li>
+      <li>
+        <h2>어떤 기출을 변형했는지 밝힙니다</h2>
+        <p>문항마다 원 기출의 회차·교시·번호를 표기합니다. 출처 표기까지만 하고 기출 원문은 게재하지 않습니다.</p>
+      </li>
+    </ul>
+
+    <section class="picker" aria-labelledby="picker-h">
+      <h2 id="picker-h">회차와 교시 선택</h2>
+      <div class="field">
+        <label for="sel-round">회차</label>
+        <select id="sel-round">
+          <option value="139" selected>제139회</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="sel-session">교시</label>
+        <select id="sel-session">
+          <option value="" selected>교시 선택</option>
+          <option value="1" disabled>1교시 · 준비 중</option>
+          <option value="2" disabled>2교시 · 준비 중</option>
+          <option value="3">3교시</option>
+          <option value="4" disabled>4교시 · 준비 중</option>
+        </select>
+      </div>
+      <p class="hint">공개된 문항이 있는 회차·교시만 선택할 수 있어요.</p>
+    </section>
+
+    <div class="cta-wrap">
+      <button class="go" id="go" disabled>문항 보기</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== 화면 2·3 · 문항 목록 / 해설 펼침 ========== -->
+<div id="screen-items" hidden>
+  <div class="topbar">
+    <div class="topbar-in">
+      <button class="back" id="back">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 4L6.5 10l6 6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        다시 선택
+      </button>
+      <div class="crumb">제{{ROUND}}회 {{SESSION}}교시<small>변형문제 {{COUNT}}문항 · 해설 {{READY}}문항</small></div>
+    </div>
+  </div>
+  <main>
+{{CARDS}}
+  </main>
+</div>
+
+<!-- 도면 확대 -->
+<div id="lb" hidden>
+  <div class="lb-bar">
+    <span class="cap" id="lb-cap"></span>
+    <button type="button" data-z="out">축소</button>
+    <button type="button" data-z="fit">화면 맞춤</button>
+    <button type="button" data-z="in">확대</button>
+    <button type="button" id="lb-close">닫기</button>
+  </div>
+  <div class="lb-scroll" id="lb-scroll"><img id="lb-img" alt=""></div>
+</div>
+
+<script>
+(function(){
+  var sel = document.getElementById('sel-session');
+  var go  = document.getElementById('go');
+  var s1  = document.getElementById('screen-select');
+  var s2  = document.getElementById('screen-items');
+
+  sel.addEventListener('change', function(){ go.disabled = !sel.value; });
+
+  go.addEventListener('click', function(){
+    s1.hidden = true; s2.hidden = false; window.scrollTo(0,0);
+  });
+  document.getElementById('back').addEventListener('click', function(){
+    s2.hidden = true; s1.hidden = false; window.scrollTo(0,0);
+  });
+
+  /* 해설 열람·닫기 — 문항별 개별 동작 */
+  document.addEventListener('click', function(e){
+    var t = e.target.closest('.toggle');
+    if(!t) return;
+    var item = t.closest('.item');
+    var panel = item.querySelector('.ans');
+    var opener = item.querySelector('.tb-action .toggle');
+    var open = panel.hidden;
+    panel.hidden = !open;
+    item.classList.toggle('open', open);
+    opener.textContent = open ? '해설 닫기' : '해설보기';
+    opener.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if(!open){
+      var y = item.getBoundingClientRect().top;
+      if(y < 0) item.scrollIntoView({block:'start'});
+      opener.focus();
+    }
+  });
+
+  /* 도면 확대 — 원본 비율 유지, 배율만 변경 */
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img'),
+      lbCap = document.getElementById('lb-cap'), lbScroll = document.getElementById('lb-scroll'),
+      zoom = 1, lastFocus = null;
+
+  function base(){ return Math.max(240, lbScroll.clientWidth - 32); }
+  function apply(){ lbImg.style.width = Math.round(base() * zoom) + 'px'; }
+  function open(img){
+    lastFocus = document.activeElement;
+    lbImg.src = img.dataset.full; lbImg.alt = img.alt;
+    lbCap.textContent = img.dataset.cap;
+    lb.hidden = false; zoom = 1; apply();
+    document.body.style.overflow = 'hidden';
+    document.getElementById('lb-close').focus();
+  }
+  function close(){
+    lb.hidden = true; lbImg.src = ''; document.body.style.overflow = '';
+    if(lastFocus) lastFocus.focus();
+  }
+  window.addEventListener('resize', function(){ if(!lb.hidden) apply(); });
+
+  document.addEventListener('click', function(e){
+    var z = e.target.closest('.zoom');
+    if(z){ open(z.closest('.dwg').querySelector('img')); return; }
+    var im = e.target.closest('.dwg img');
+    if(im){ open(im); return; }
+    var b = e.target.closest('.lb-bar button');
+    if(!b) return;
+    if(b.id === 'lb-close') return close();
+    if(b.dataset.z === 'in')  { zoom = Math.min(zoom * 1.4, 8); apply(); }
+    if(b.dataset.z === 'out') { zoom = Math.max(zoom / 1.4, .5); apply(); }
+    if(b.dataset.z === 'fit') { zoom = 1; apply(); lbScroll.scrollTo(0,0); }
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !lb.hidden) close(); });
+})();
+</script>
+</body>
+</html>

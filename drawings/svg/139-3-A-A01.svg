@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 980" font-family="Noto Sans CJK KR, NanumGothic, sans-serif">
+<defs><pattern id="hz" width="8" height="8" patternTransform="rotate(45)"
+ patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="8" stroke="#000" stroke-width="1"/></pattern><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+ orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker>
+<marker id="arS" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5"
+ orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker>
+<marker id="tk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"
+ orient="auto"><line x1="2" y1="8" x2="8" y2="2" stroke="#000" stroke-width="1.6"/></marker></defs>
+<rect width="1340" height="980" fill="#fff"/>
+<text x="70" y="38" font-size="19" fill="#000" font-weight="bold">139-3-A-A01  곡선교 받침 들림과 가동방향 불일치 메커니즘</text>
+<text x="70" y="60" font-size="12" fill="#444">① 편심 → 비틀림 → 내·외측 반력 불균형   ·   ② 설계 가동방향 vs 실제 이동궤적</text>
+<text x="80" y="118" font-size="15" fill="#000" text-anchor="start" font-weight="bold" font-style="normal">① 교축직각 단면 — 곡률에 의한 합력 편심과 내·외측 반력 불균형</text>
+<rect x="170" y="306" width="390" height="46" fill="#fff" stroke="#000" stroke-width="2" rx="0"/>
+<rect x="210" y="386" width="310" height="30" fill="#fff" stroke="#000" stroke-width="2" rx="0"/>
+<rect x="320" y="416" width="90" height="96" fill="url(#hz)" stroke="#000" stroke-width="1.8" rx="0"/>
+<rect x="224" y="352" width="32" height="34" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<rect x="474" y="352" width="32" height="34" fill="#fff" stroke="#000" stroke-width="1.8" rx="0"/>
+<text x="240" y="462" font-size="12" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">내측 받침</text>
+<text x="490" y="462" font-size="12" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">외측 받침</text>
+<line x1="365" y1="222" x2="365" y2="392" stroke="#888" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="365" y="214" font-size="11" fill="#444" text-anchor="middle" font-weight="normal" font-style="normal">단면 도심</text>
+<line x1="428" y1="244" x2="428" y2="300" stroke="#c00" stroke-width="3" marker-end="url(#ar)"/>
+<text x="438" y="256" font-size="13" fill="#c00" text-anchor="start" font-weight="bold" font-style="normal">합력 W (외측으로 편심)</text>
+<line x1="365" y1="232" x2="428" y2="232" stroke="#000" stroke-width="1.3"/>
+<line x1="365" y1="232" x2="428" y2="232" stroke="#000" stroke-width="1.3" marker-start="url(#arS)" marker-end="url(#arS)"/>
+<line x1="365" y1="226" x2="365" y2="238" stroke="#000" stroke-width="1.3"/>
+<line x1="428" y1="226" x2="428" y2="238" stroke="#000" stroke-width="1.3"/>
+<text x="396.5" y="225.7" font-size="13" fill="#000" text-anchor="middle" font-weight="bold" font-style="italic">e</text>
+<line x1="490" y1="448" x2="490" y2="392" stroke="#000" stroke-width="4" marker-end="url(#ar)"/>
+<text x="502" y="444" font-size="13" fill="#000" text-anchor="start" font-weight="bold" font-style="normal">반력 집중</text>
+<line x1="240" y1="296" x2="240" y2="254" stroke="#c00" stroke-width="3" marker-end="url(#ar)"/>
+<text x="230" y="246" font-size="13" fill="#c00" text-anchor="middle" font-weight="bold" font-style="normal">들림 (반력 감소·부반력)</text>
+<path d="M 300 182 A 90 90 0 0 1 470 182" fill="none" stroke="#000" stroke-width="2.6" marker-end="url(#ar)"/>
+<text x="385" y="170" font-size="13" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">비틀림 우력</text>
+<line x1="150" y1="426" x2="96" y2="426" stroke="#000" stroke-width="2" marker-end="url(#ar)"/>
+<text x="122" y="448" font-size="11" fill="#444" text-anchor="middle" font-weight="normal" font-style="normal">곡률중심 방향</text>
+<text x="96" y="410" font-size="13" fill="#000" text-anchor="start" font-weight="bold" font-style="normal">내측</text>
+<text x="600" y="410" font-size="13" fill="#000" text-anchor="end" font-weight="bold" font-style="normal">외측</text>
+<rect x="660" y="196" width="600" height="214" fill="#f7f7f7" stroke="#000" stroke-width="1.6" rx="0"/>
+<text x="680" y="224" font-size="13" fill="#000" text-anchor="start" font-weight="bold" font-style="normal">〈발생 메커니즘〉</text>
+<text x="680" y="254" font-size="13" fill="#000" text-anchor="start" font-weight="normal" font-style="normal">곡선 평면 → 상부구조 합력의 작용선이 받침선 중앙에서</text>
+<text x="680" y="282" font-size="13" fill="#000" text-anchor="start" font-weight="normal" font-style="normal">외측으로 편심 → 단면에 비틀림 우력 발생</text>
+<text x="680" y="310" font-size="13" fill="#000" text-anchor="start" font-weight="normal" font-style="normal">→ 외측 받침 반력 집중 / 내측 받침 반력 감소</text>
+<text x="680" y="338" font-size="13" fill="#000" text-anchor="start" font-weight="normal" font-style="normal">→ 내측 반력이 0 이하가 되면 받침 들림(부반력)</text>
+<text x="680" y="366" font-size="13" fill="#000" text-anchor="start" font-weight="normal" font-style="normal">→ 들림·재접촉 반복이 받침과 가이드에 충격·마모를 누적</text>
+<text x="80" y="542" font-size="15" fill="#000" text-anchor="start" font-weight="bold" font-style="normal">② 평면 — 설계된 가동방향과 실제 예상 신축 이동궤적의 불일치</text>
+<polyline points="275.6,686.4 286.0,684.0 296.5,681.7 307.0,679.5 317.6,677.4 328.1,675.3 338.7,673.3 349.2,671.4 359.8,669.6 370.4,667.9 381.0,666.2 391.6,664.6 402.3,663.1 412.9,661.7 423.6,660.4 434.3,659.1 444.9,658.0 455.6,656.9 466.3,655.8 477.0,654.9 487.7,654.1 498.4,653.3 509.1,652.6 519.9,652.0 530.6,651.5 541.3,651.0 552.0,650.6 562.8,650.4 573.5,650.2 584.3,650.0 595.0,650.0 605.7,650.0 616.5,650.2 627.2,650.4 638.0,650.6 648.7,651.0 659.4,651.5 670.1,652.0 680.9,652.6 691.6,653.3 702.3,654.1 713.0,654.9 723.7,655.8 734.4,656.9 745.1,658.0 755.7,659.1 766.4,660.4 777.1,661.7 787.7,663.1 798.4,664.6 809.0,666.2 819.6,667.9 830.2,669.6 840.8,671.4 851.3,673.3 861.9,675.3 872.4,677.4 883.0,679.5 893.5,681.7 904.0,684.0 914.4,686.4" fill="none" stroke="#000" stroke-width="2.4"/>
+<polyline points="295.8,774.1 305.6,771.9 315.5,769.7 325.3,767.6 335.2,765.6 345.0,763.7 354.9,761.8 364.8,760.1 374.7,758.4 384.6,756.7 394.6,755.2 404.5,753.7 414.5,752.3 424.5,751.0 434.4,749.7 444.4,748.5 454.4,747.4 464.4,746.4 474.5,745.5 484.5,744.6 494.5,743.8 504.5,743.1 514.6,742.4 524.6,741.9 534.7,741.4 544.7,741.0 554.8,740.6 564.8,740.3 574.9,740.2 584.9,740.0 595.0,740.0 605.1,740.0 615.1,740.2 625.2,740.3 635.2,740.6 645.3,741.0 655.3,741.4 665.4,741.9 675.4,742.4 685.5,743.1 695.5,743.8 705.5,744.6 715.5,745.5 725.6,746.4 735.6,747.4 745.6,748.5 755.6,749.7 765.5,751.0 775.5,752.3 785.5,753.7 795.4,755.2 805.4,756.7 815.3,758.4 825.2,760.1 835.1,761.8 845.0,763.7 854.8,765.6 864.7,767.6 874.5,769.7 884.4,771.9 894.2,774.1" fill="none" stroke="#000" stroke-width="2.4"/>
+<line x1="595.0" y1="642.0" x2="595.0" y2="748.0" stroke="#000" stroke-width="3.0"/>
+<text x="595.0" y="786" font-size="12" fill="#444" text-anchor="middle" font-weight="normal" font-style="normal">교각 (가동받침)</text>
+<line x1="415.0" y1="695.0" x2="775.0" y2="695.0" stroke="#000" stroke-width="3" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="791.0" y="700.0" font-size="13" fill="#000" text-anchor="start" font-weight="bold" font-style="normal">설계된 가동방향 (도서상)</text>
+<line x1="424.8" y1="753.6" x2="765.2" y2="636.4" stroke="#c00" stroke-width="3" stroke-dasharray="9 5" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="781.2" y="630.4" font-size="13" fill="#c00" text-anchor="start" font-weight="bold" font-style="normal">실제 예상 신축 이동궤적</text>
+<path d="M 705.0 695.0 A 110 110 0 0 0 699.0 659.2" fill="none" stroke="#c00" stroke-width="2"/>
+<text x="723.0" y="675.0" font-size="12" fill="#c00" text-anchor="start" font-weight="bold" font-style="normal">Δ 불일치</text>
+<line x1="639.0" y1="609.0" x2="639.0" y2="653.0" stroke="#000" stroke-width="2.6" marker-end="url(#ar)"/>
+<line x1="551.0" y1="609.0" x2="551.0" y2="653.0" stroke="#000" stroke-width="2.6" marker-end="url(#ar)"/>
+<text x="595.0" y="597.0" font-size="13" fill="#000" text-anchor="middle" font-weight="bold" font-style="normal">가이드에 작용하는 구속력</text>
+<rect x="80" y="860" width="1180" height="96" fill="#f7f7f7" stroke="#000" stroke-width="1.6" rx="0"/>
+<text x="98" y="886" font-size="13" fill="#000" text-anchor="start" font-weight="bold" font-style="normal">〈해석〉 곡선교의 신축 이동은 교축(현) 방향과 일치하지 않고 곡률·온도·구속조건에 따라 궤적이 달라진다.</text>
+<text x="98" y="912" font-size="13" fill="#000" text-anchor="start" font-weight="normal" font-style="normal">설계된 가동방향과 실제 이동궤적이 어긋나면 가이드가 그 차이를 구속하고, 구속력이 가이드·받침에 손상을 누적시킨다.</text>
+<text x="98" y="938" font-size="12" fill="#444" text-anchor="start" font-weight="normal" font-style="normal">※ 본 도면은 두 방향의 불일치 상태만을 표현한다. 실제 방향은 설계도서 확인과 이동량 계측으로 판정할 사항이며, 특정 방향을 정답으로 전제하지 않는다.</text>
+<line x1="80" y1="512" x2="1260" y2="512" stroke="#ccc" stroke-width="1" stroke-dasharray="6 4"/>
+</svg>
