@@ -187,6 +187,52 @@ tr:last-child td{border-bottom:none}
 }
 
 
+
+/* ================= SCR-005 · 신고 입력 (모달) ================= */
+#rp{position:fixed;inset:0;z-index:60;display:flex;align-items:flex-end;justify-content:center}
+#rp .dim{position:absolute;inset:0;background:rgba(25,31,40,.45)}
+.rp-sheet{
+  position:relative;width:100%;max-width:520px;background:var(--surface);
+  border-radius:24px 24px 0 0;padding:26px 24px calc(24px + env(safe-area-inset-bottom));
+  max-height:92dvh;overflow-y:auto;
+}
+.rp-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:6px}
+.rp-head h2{margin:0;font-size:1.32rem;font-weight:700;letter-spacing:-.035em;flex:1}
+.rp-x{background:var(--surface-2);border:none;border-radius:999px;width:32px;height:32px;cursor:pointer;color:var(--t2);font-size:1rem;line-height:1}
+.rp-target{margin:2px 0 20px;color:var(--t3);font-size:.9rem}
+.rp-label{display:block;font-size:.9rem;font-weight:700;margin:0 0 9px}
+.rp-types{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.rp-types label{cursor:pointer}
+.rp-types input{position:absolute;opacity:0;width:0;height:0}
+.rp-types span{
+  display:inline-block;background:var(--surface-2);color:var(--t2);border-radius:999px;
+  padding:10px 17px;font-size:.92rem;font-weight:600;transition:background .15s ease;
+}
+.rp-types input:checked + span{background:var(--blue);color:#fff}
+.rp-types input:focus-visible + span{outline:2px solid var(--blue);outline-offset:2px}
+#rp-detail{
+  width:100%;min-height:112px;padding:14px;border:none;border-radius:var(--r-md);
+  background:var(--surface-2);font-family:inherit;font-size:.96rem;line-height:1.6;resize:vertical;color:var(--t1);
+}
+#rp-detail::placeholder{color:var(--t4)}
+.rp-count{display:block;text-align:right;margin-top:6px;font-size:.8rem;color:var(--t4)}
+.rp-err{margin:10px 0 0;color:#c0392b;font-size:.88rem;font-weight:600}
+.rp-acts{display:flex;gap:8px;margin-top:20px}
+.rp-acts .btn{flex:1;padding:15px;font-size:1rem;text-align:center}
+.rp-note{margin:14px 0 0;color:var(--t4);font-size:.8rem;line-height:1.55}
+.rp-done{text-align:center;padding:14px 4px 6px}
+.rp-done .ok{
+  width:52px;height:52px;border-radius:999px;background:var(--blue-soft);color:var(--blue-text);
+  display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:700;margin:0 auto 16px;
+}
+.rp-done h2{margin:0 0 10px;font-size:1.28rem;font-weight:700;letter-spacing:-.03em}
+.rp-done p{margin:0 0 4px;color:var(--t2);font-size:.95rem;line-height:1.6}
+.report{white-space:nowrap}
+@media (min-width:641px){
+  #rp{align-items:center}
+  .rp-sheet{border-radius:var(--r-lg);max-height:88vh}
+}
+
 /* ================= 관리자 화면 (SCR-A01~A04) ================= */
 .adminbar{position:sticky;top:0;z-index:20;background:#191f28;color:#f2f4f6}
 .adminbar-in{max-width:860px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:12px}
@@ -426,7 +472,7 @@ tr:last-child td{border-bottom:none}
     <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">서술형</span>
     <span class="chip">난이도 <span class="stars">★★★★☆</span></span>
-    <span class="tb-action"><button class="btn toggle" type="button" data-t="139-3-A" aria-expanded="false" aria-controls="ans-139-3-A">해설보기</button></span>
+    <span class="tb-action"><button class="btn ghost report" type="button">신고</button><button class="btn toggle" type="button" data-t="139-3-A" aria-expanded="false" aria-controls="ans-139-3-A">해설보기</button></span>
   </div>
 
   <div class="ans" id="ans-139-3-A" hidden>
@@ -486,7 +532,7 @@ tr:last-child td{border-bottom:none}
     <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">서술형</span>
     <span class="chip">난이도 <span class="stars">★★★☆☆</span></span>
-    <span class="tb-action"><button class="btn toggle" type="button" data-t="139-3-B" aria-expanded="false" aria-controls="ans-139-3-B">해설보기</button></span>
+    <span class="tb-action"><button class="btn ghost report" type="button">신고</button><button class="btn toggle" type="button" data-t="139-3-B" aria-expanded="false" aria-controls="ans-139-3-B">해설보기</button></span>
   </div>
 
   <div class="ans" id="ans-139-3-B" hidden>
@@ -534,7 +580,7 @@ tr:last-child td{border-bottom:none}
     <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">서술형</span>
     <span class="chip">난이도 <span class="stars">★★★☆☆</span></span>
-    <span class="tb-action"><button class="btn toggle" type="button" data-t="139-3-C" aria-expanded="false" aria-controls="ans-139-3-C">해설보기</button></span>
+    <span class="tb-action"><button class="btn ghost report" type="button">신고</button><button class="btn toggle" type="button" data-t="139-3-C" aria-expanded="false" aria-controls="ans-139-3-C">해설보기</button></span>
   </div>
 
   <div class="ans" id="ans-139-3-C" hidden>
@@ -589,7 +635,7 @@ tr:last-child td{border-bottom:none}
     <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">계산형</span>
     <span class="chip">난이도 <span class="stars">★★★★☆</span></span>
-    <span class="tb-action"><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
+    <span class="tb-action"><button class="btn ghost report" type="button">신고</button><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
   </div>
 
   <div class="ans" id="ans-139-3-D" hidden>
@@ -618,7 +664,7 @@ tr:last-child td{border-bottom:none}
     <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">계산형</span>
     <span class="chip">난이도 <span class="stars">★★★☆☆</span></span>
-    <span class="tb-action"><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
+    <span class="tb-action"><button class="btn ghost report" type="button">신고</button><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
   </div>
 
   <div class="ans" id="ans-139-3-E" hidden>
@@ -648,7 +694,7 @@ tr:last-child td{border-bottom:none}
     <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">계산형</span>
     <span class="chip">난이도 <span class="stars">★★★★★</span></span>
-    <span class="tb-action"><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
+    <span class="tb-action"><button class="btn ghost report" type="button">신고</button><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
   </div>
 
   <div class="ans" id="ans-139-3-F" hidden>
@@ -658,6 +704,48 @@ tr:last-child td{border-bottom:none}
   </main>
 </section>
 
+
+
+<!-- ================= SCR-005 · 신고 입력 (모달) ================= -->
+<div id="rp" hidden role="dialog" aria-modal="true" aria-labelledby="rp-title">
+  <div class="dim" data-rp-close></div>
+  <div class="rp-sheet">
+    <div id="rp-form">
+      <div class="rp-head">
+        <h2 id="rp-title">신고하기</h2>
+        <button class="rp-x" type="button" data-rp-close aria-label="닫기">✕</button>
+      </div>
+      <p class="rp-target" id="rp-target"></p>
+
+      <span class="rp-label">어떤 문제인가요?</span>
+      <div class="rp-types" id="rp-types" role="radiogroup" aria-label="신고 유형">
+        <label><input type="radio" name="rptype" value="오탈자"><span>오탈자</span></label>
+        <label><input type="radio" name="rptype" value="오답"><span>오답</span></label>
+        <label id="rp-mis" hidden><input type="radio" name="rptype" value="오분류"><span>오분류</span></label>
+      </div>
+
+      <label class="rp-label" for="rp-detail">어느 부분이 잘못됐나요?</label>
+      <textarea id="rp-detail" maxlength="500" placeholder="예: 세 번째 문단의 수치 표기가 도면과 다릅니다."></textarea>
+      <span class="rp-count"><span id="rp-n">0</span> / 500</span>
+
+      <p class="rp-err" id="rp-err" hidden></p>
+
+      <div class="rp-acts">
+        <button class="btn ghost" type="button" data-rp-close>취소</button>
+        <button class="btn" type="button" id="rp-submit">신고 접수</button>
+      </div>
+      <p class="rp-note">화면 프로토타입입니다. 입력한 내용은 전송·저장되지 않습니다. 실제 서비스에서는 IP 기준 일일 횟수 제한이 적용됩니다.</p>
+    </div>
+
+    <div id="rp-done" class="rp-done" hidden>
+      <div class="ok" aria-hidden="true">✓</div>
+      <h2>신고가 접수되었습니다</h2>
+      <p>관리자가 확인한 뒤 반영하거나 기각합니다.</p>
+      <p>처리 결과는 별도로 안내되지 않습니다.</p>
+      <div class="rp-acts"><button class="btn" type="button" data-rp-close>확인</button></div>
+    </div>
+  </div>
+</div>
 
 <!-- ================= SCR-A01 · 관리자 대시보드 ================= -->
 <section id="scr-a01" class="screen admin" hidden>
@@ -798,6 +886,7 @@ tr:last-child td{border-bottom:none}
         if(o){ o.textContent = '해설보기'; o.setAttribute('aria-expanded','false'); } }
     });
     cardsBox.classList.toggle('ctx-round', mode === 'round');
+    cardsBox.classList.toggle('ctx-cat', mode === 'cat');
 
     var shown = cards.filter(function(c){ return !c.hidden; }).length;
     var ready = cards.filter(function(c){ return !c.hidden && c.dataset.ready === '1'; }).length;
@@ -900,6 +989,61 @@ tr:last-child td{border-bottom:none}
 })();
 </script>
 <script>
+
+/* ===== SCR-005 신고 입력 (프로토타입 · 전송 없음) ===== */
+(function(){
+  var rp = document.getElementById('rp'),
+      form = document.getElementById('rp-form'),
+      done = document.getElementById('rp-done'),
+      detail = document.getElementById('rp-detail'),
+      err = document.getElementById('rp-err'),
+      mis = document.getElementById('rp-mis'),
+      MIN = 10, lastFocus = null;
+
+  function open(btn){
+    lastFocus = btn;
+    var item = btn.closest('.item');
+    document.getElementById('rp-target').textContent =
+      item.querySelector('.no').textContent + ' · ' + item.querySelector('h2').textContent;
+    /* 오분류는 과목별 경로에서만 (기획 초안 4절) */
+    mis.hidden = !document.getElementById('cards').classList.contains('ctx-cat');
+    form.hidden = false; done.hidden = true;
+    var r = rp.querySelectorAll('input[name=rptype]');
+    for(var i=0;i<r.length;i++) r[i].checked = false;
+    detail.value = ''; document.getElementById('rp-n').textContent = '0';
+    err.hidden = true;
+    rp.hidden = false; document.body.style.overflow = 'hidden';
+    rp.querySelector('.rp-x').focus();
+  }
+  function close(){
+    rp.hidden = true; document.body.style.overflow = '';
+    if(lastFocus) lastFocus.focus();
+  }
+
+  detail.addEventListener('input', function(){
+    document.getElementById('rp-n').textContent = detail.value.length;
+  });
+
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('.report');
+    if(b){ open(b); return; }
+    if(e.target.closest('[data-rp-close]')){ close(); return; }
+
+    if(e.target.closest('#rp-submit')){
+      var t = rp.querySelector('input[name=rptype]:checked');
+      if(!t){ err.textContent = '신고 유형을 선택해 주세요.'; err.hidden = false; return; }
+      if(detail.value.trim().length < MIN){
+        err.textContent = '어느 부분이 잘못됐는지 ' + MIN + '자 이상 적어 주세요.';
+        err.hidden = false; detail.focus(); return;
+      }
+      err.hidden = true;
+      form.hidden = true; done.hidden = false;
+      rp.querySelector('#rp-done .btn').focus();
+    }
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !rp.hidden) close(); });
+})();
+
 /* ===== 관리자 화면 (프로토타입 · 인증 없음 · 저장 없음) ===== */
 (function(){
   var REPORTS = [
