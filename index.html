@@ -56,7 +56,7 @@ button{font:inherit;color:inherit;font-family:var(--sans)}
 
 .points{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .points li{background:var(--surface);border-radius:var(--r-lg);padding:24px 22px}
-.points h2{margin:0;font-size:1.06rem;font-weight:700;letter-spacing:-.03em}
+.points h3{margin:0;font-size:1.06rem;font-weight:700;letter-spacing:-.03em}
 .points p{margin:8px 0 0;color:var(--t2);font-size:.95rem;line-height:1.62}
 
 .picker h2{margin:0 0 12px;padding-left:4px;font-size:1.02rem;font-weight:700;letter-spacing:-.03em}
@@ -185,77 +185,227 @@ tr:last-child td{border-bottom:none}
   .tb-action{margin-left:0;width:100%;justify-content:space-between;margin-top:4px}
   .tb-action .btn{flex:1}
 }
+
+
+/* ================= 관리자 화면 (SCR-A01~A04) ================= */
+.adminbar{position:sticky;top:0;z-index:20;background:#191f28;color:#f2f4f6}
+.adminbar-in{max-width:860px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:12px}
+.adminbar b{font-size:.98rem;font-weight:700;letter-spacing:-.02em}
+.adminbar .warn{background:rgba(255,255,255,.12);color:#e5e8eb;border-radius:999px;padding:5px 11px;font-size:.74rem;font-weight:600}
+.adminbar .exit{margin-left:auto;background:rgba(255,255,255,.1);border:none;border-radius:999px;color:#f2f4f6;padding:8px 15px;font-size:.84rem;font-weight:600;cursor:pointer}
+.adminbar .exit:hover{background:rgba(255,255,255,.2)}
+.adminbar .aback{background:none;border:none;color:#c6cdd4;padding:6px 8px 6px 0;font-size:.92rem;font-weight:600;cursor:pointer}
+.adminbar .aback:hover{color:#fff}
+.admin-main{max-width:860px;margin:0 auto;padding:26px 20px 80px}
+.admin-h{margin:0 0 6px;font-size:1.42rem;font-weight:700;letter-spacing:-.035em}
+.admin-sub{margin:0 0 22px;color:var(--t2);font-size:.95rem}
+
+.dash{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.dash button{background:var(--surface);border:none;border-radius:var(--r-lg);padding:22px;text-align:left;cursor:pointer}
+.dash button:hover{box-shadow:0 4px 16px rgba(25,31,40,.07)}
+.dash .n{display:block;font-size:1.9rem;font-weight:700;letter-spacing:-.04em;line-height:1.2}
+.dash .l{display:block;margin-top:4px;color:var(--t2);font-size:.92rem;font-weight:600}
+.dash .d{display:block;margin-top:2px;color:var(--t3);font-size:.82rem}
+
+.tabs{display:flex;gap:6px;margin:0 0 14px;flex-wrap:wrap}
+.tabs button{background:var(--surface);border:none;border-radius:999px;padding:8px 15px;font-size:.86rem;font-weight:600;color:var(--t2);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--blue);color:#fff}
+
+.rows{display:grid;gap:8px}
+.row{background:var(--surface);border-radius:var(--r-md);padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+.row .meta{flex:1;min-width:0}
+.row .rt{font-weight:700;letter-spacing:-.02em;font-size:.98rem}
+.row .rs{margin-top:3px;color:var(--t3);font-size:.85rem}
+.row .rbody{margin-top:8px;color:#333d4b;font-size:.92rem;line-height:1.6}
+.row .acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.mini{border:none;border-radius:var(--r-sm);padding:8px 14px;font-size:.85rem;font-weight:700;cursor:pointer;background:var(--blue);color:#fff}
+.mini.sec{background:var(--surface-2);color:var(--t2)}
+.mini.sec:hover{background:#eef0f3;color:var(--t1)}
+.mini:disabled{background:#f0f2f4;color:var(--t4);cursor:not-allowed}
+.st{flex:0 0 auto;border-radius:999px;padding:5px 11px;font-size:.78rem;font-weight:700;white-space:nowrap;background:var(--surface-2);color:var(--t2)}
+.st[data-s="접수됨"],.st[data-s="검토대기"],.st[data-s="작성중"]{background:var(--amber-bg);color:var(--amber)}
+.st[data-s="검토중"]{background:var(--blue-soft);color:var(--blue-text)}
+.st[data-s="반영"],.st[data-s="게시됨"]{background:#e7f4ec;color:#1b6b3a}
+.st[data-s="기각"],.st[data-s="반려됨"]{background:#f7e9e8;color:#9b342c}
+.reason{width:100%;margin-top:10px;padding:11px 13px;border:none;border-radius:var(--r-sm);background:var(--surface-2);font-family:inherit;font-size:.92rem;resize:vertical;min-height:64px}
+.empty{background:var(--surface);border-radius:var(--r-md);padding:28px;text-align:center;color:var(--t3);font-size:.92rem}
+.mock{margin:18px 0 0;color:var(--t3);font-size:.84rem;line-height:1.6}
+.admin-entry{margin:28px 0 0;text-align:center}
+.admin-entry button{background:none;border:none;color:var(--t4);font-size:.84rem;font-weight:600;cursor:pointer;padding:8px 12px;border-radius:var(--r-sm)}
+.admin-entry button:hover{color:var(--t2);background:rgba(0,0,0,.03)}
+@media (max-width:640px){
+  .dash{grid-template-columns:1fr}
+  .admin-main{padding:20px 16px 64px}
+}
+
+/* ================= SCR-001 메인 · SCR-002 회차 · SCR-003 과목 ================= */
+.menu{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.menu button{
+  width:100%;display:flex;align-items:center;gap:14px;text-align:left;
+  background:var(--surface);border:none;border-radius:var(--r-lg);padding:22px;cursor:pointer;
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.menu button:hover{box-shadow:0 4px 16px rgba(25,31,40,.07)}
+.menu button:active{transform:scale(.99)}
+.menu .ico{
+  flex:0 0 auto;width:42px;height:42px;border-radius:13px;background:var(--blue-soft);color:var(--blue-text);
+  display:flex;align-items:center;justify-content:center;font-size:1.02rem;font-weight:800;letter-spacing:-.04em;
+}
+.menu .txt{flex:1;min-width:0}
+.menu .txt b{display:block;font-size:1.06rem;font-weight:700;letter-spacing:-.03em}
+.menu .txt span{display:block;margin-top:3px;color:var(--t3);font-size:.9rem;font-weight:500;line-height:1.5}
+.menu .arw{flex:0 0 auto;color:var(--t4)}
+
+.sec-h{margin:36px 0 12px;padding-left:4px;font-size:1.02rem;font-weight:700;letter-spacing:-.03em}
+.sub-head{padding:28px 4px 22px}
+.sub-head h1{margin:0;font-size:1.5rem;font-weight:700;letter-spacing:-.035em}
+.sub-head p{margin:10px 0 0;color:var(--t2);font-size:.98rem}
+.crumb-btn{
+  display:inline-flex;align-items:center;gap:6px;background:none;border:none;padding:8px 10px 8px 4px;margin:22px 0 0;
+  border-radius:var(--r-sm);cursor:pointer;font-size:.95rem;font-weight:600;color:var(--t2);
+}
+.crumb-btn:hover{background:rgba(0,0,0,.04)}
+.cat-count{flex:0 0 auto;color:var(--t3);font-size:.9rem;font-weight:600}
+.reshuffle{
+  margin-left:auto;background:var(--surface);border:none;border-radius:999px;padding:8px 15px;
+  font-size:.84rem;font-weight:700;color:var(--blue-text);cursor:pointer;box-shadow:0 1px 2px rgba(25,31,40,.06);
+}
+.reshuffle:hover{background:var(--blue-soft)}
+.chip-cat{background:var(--blue-soft);color:var(--blue-text)}
+#cards.ctx-round .chip-exam{display:none}
+.item[hidden]{display:none !important}
 </style>
 </head>
 <body>
 
-<!-- ========== 화면 1 · 선택 ========== -->
-<section id="screen-select">
+<!-- ================= SCR-001 · 메인 (이용 방식 선택) ================= -->
+<section id="scr-main" class="screen">
   <div class="land">
-
     <header class="hero">
       <p class="kicker">토목구조기술사</p>
       <h1>기출을 변형한 문제로 풀고,<br>모범답안과 도면을 확인합니다.</h1>
-      <p class="lead">토목구조기술사 기출문제를 변형한 문항과 그 해설을 회차·교시별로 열람하는 서비스입니다. 로그인 없이 바로 볼 수 있습니다.</p>
+      <p class="lead">토목구조기술사 기출문제를 변형한 문항과 그 해설을 열람하는 서비스입니다. 로그인 없이 바로 볼 수 있습니다.</p>
     </header>
 
+    <h2 class="sec-h">어떻게 풀어볼까요?</h2>
+    <ul class="menu">
+      <li><button type="button" data-go="scr-round">
+        <span class="ico" aria-hidden="true">회</span>
+        <span class="txt"><b>회차별</b><span>회차와 교시를 골라 그 시험 그대로 풀어봅니다</span></span>
+        <span class="arw" aria-hidden="true">›</span>
+      </button></li>
+      <li><button type="button" data-go="scr-cat">
+        <span class="ico" aria-hidden="true">과</span>
+        <span class="txt"><b>과목별</b><span>구조역학·콘크리트구조 등 과목을 골라 모아 봅니다</span></span>
+        <span class="arw" aria-hidden="true">›</span>
+      </button></li>
+      <li><button type="button" data-random>
+        <span class="ico" aria-hidden="true">랜</span>
+        <span class="txt"><b>랜덤 연습</b><span>무작위 순서로 바로 시작합니다</span></span>
+        <span class="arw" aria-hidden="true">›</span>
+      </button></li>
+    </ul>
+
+    <h2 class="sec-h">이 서비스는</h2>
     <ul class="points">
       <li>
-        <h2>기출 원문이 아닙니다</h2>
+        <h3>기출 원문이 아닙니다</h3>
         <p>원 기출이 묻는 사고 과정은 그대로 두고, 상황과 질문의 관점을 바꾼 변형문제입니다. 답을 외운 상태로는 풀리지 않습니다.</p>
       </li>
       <li>
-        <h2>문제와 해설이 한 곳에 있습니다</h2>
+        <h3>문제와 해설이 한 곳에 있습니다</h3>
         <p>문항마다 모범답안 본문과 도면이 함께 붙어 있습니다. 문제를 먼저 풀고, 원할 때 문항별로 해설을 엽니다.</p>
       </li>
       <li>
-        <h2>어떤 기출을 변형했는지 밝힙니다</h2>
+        <h3>어떤 기출을 변형했는지 밝힙니다</h3>
         <p>문항마다 원 기출의 회차·교시·번호를 표기합니다. 출처 표기까지만 하고 기출 원문은 게재하지 않습니다.</p>
       </li>
     </ul>
 
-    <section class="picker" aria-labelledby="picker-h">
-      <h2 id="picker-h">회차와 교시 선택</h2>
-      <div class="field">
-        <label for="sel-round">회차</label>
-        <select id="sel-round">
-          <option value="139" selected>제139회</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="sel-session">교시</label>
-        <select id="sel-session">
-          <option value="" selected>교시 선택</option>
-          <option value="1" disabled>1교시 · 준비 중</option>
-          <option value="2" disabled>2교시 · 준비 중</option>
-          <option value="3">3교시</option>
-          <option value="4" disabled>4교시 · 준비 중</option>
-        </select>
-      </div>
-      <p class="hint">공개된 문항이 있는 회차·교시만 선택할 수 있어요.</p>
-    </section>
-
-    <div class="cta-wrap">
-      <button class="go" id="go" disabled>문항 보기</button>
-    </div>
-
+    <p class="admin-entry"><button type="button" data-go="scr-a01">관리자</button></p>
   </div>
 </section>
 
-<!-- ========== 화면 2·3 · 문항 목록 / 해설 펼침 ========== -->
-<div id="screen-items" hidden>
+<!-- ================= SCR-002 · 회차 선택 ================= -->
+<section id="scr-round" class="screen" hidden>
+  <div class="land">
+    <button class="crumb-btn" data-go="scr-main">‹ 메인</button>
+    <header class="sub-head">
+      <h1>회차별</h1>
+      <p>회차와 교시를 고르면 그 시험의 변형문제를 순서대로 볼 수 있습니다.</p>
+    </header>
+
+    <div class="field">
+      <label for="sel-round">회차</label>
+      <select id="sel-round">
+        <option value="139" selected>제139회</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="sel-session">교시</label>
+      <select id="sel-session">
+        <option value="" selected>교시 선택</option>
+        <option value="1" disabled>1교시 · 준비 중</option>
+        <option value="2" disabled>2교시 · 준비 중</option>
+        <option value="3">3교시</option>
+        <option value="4" disabled>4교시 · 준비 중</option>
+      </select>
+    </div>
+    <p class="hint">공개된 문항이 있는 회차·교시만 선택할 수 있어요.</p>
+
+    <div class="cta-wrap"><button class="go" id="go" disabled>문항 보기</button></div>
+  </div>
+</section>
+
+<!-- ================= SCR-003 · 과목 선택 ================= -->
+<section id="scr-cat" class="screen" hidden>
+  <div class="land">
+    <button class="crumb-btn" data-go="scr-main">‹ 메인</button>
+    <header class="sub-head">
+      <h1>과목별</h1>
+      <p>과목을 고르면 회차와 관계없이 해당 과목의 변형문제를 모아서 봅니다.</p>
+    </header>
+    <ul class="menu">
+      <li><button type="button" data-cat-open="구조역학">
+        <span class="txt"><b>구조역학</b></span>
+        <span class="cat-count">2문항</span>
+        <span class="arw" aria-hidden="true">›</span>
+      </button></li>
+      <li><button type="button" data-cat-open="콘크리트구조">
+        <span class="txt"><b>콘크리트구조</b></span>
+        <span class="cat-count">2문항</span>
+        <span class="arw" aria-hidden="true">›</span>
+      </button></li>
+      <li><button type="button" data-cat-open="교량공학">
+        <span class="txt"><b>교량공학</b></span>
+        <span class="cat-count">1문항</span>
+        <span class="arw" aria-hidden="true">›</span>
+      </button></li>
+      <li><button type="button" data-cat-open="건설관리">
+        <span class="txt"><b>건설관리</b></span>
+        <span class="cat-count">1문항</span>
+        <span class="arw" aria-hidden="true">›</span>
+      </button></li>
+    </ul>
+    <p class="hint">문항이 있는 과목만 표시됩니다.</p>
+  </div>
+</section>
+
+<!-- ================= SCR-004 · 문제 목록 / 해설 펼침 (공용) ================= -->
+<section id="scr-list" class="screen" hidden>
   <div class="topbar">
     <div class="topbar-in">
       <button class="back" id="back">
         <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M12.5 4L6.5 10l6 6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        다시 선택
+        <span id="back-label">뒤로</span>
       </button>
-      <div class="crumb">제139회 3교시<small>변형문제 6문항 · 해설 3문항</small></div>
+      <div class="crumb"><span id="crumb-t"></span><small id="crumb-s"></small></div>
+      <button class="reshuffle" id="reshuffle" hidden>다시 섞기</button>
     </div>
   </div>
-  <main>
+  <main id="cards">
 
-<article class="item" id="item-139-3-A">
+<article class="item" id="item-139-3-A" data-cat="교량공학" data-ready="1">
   <header class="item-head">
     <span class="no">문항 1</span>
     <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 1번">
@@ -272,6 +422,8 @@ tr:last-child td{border-bottom:none}
 </figure></div>
 
   <div class="titleblock">
+    <span class="chip chip-cat">교량공학</span>
+    <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">서술형</span>
     <span class="chip">난이도 <span class="stars">★★★★☆</span></span>
     <span class="tb-action"><button class="btn toggle" type="button" data-t="139-3-A" aria-expanded="false" aria-controls="ans-139-3-A">해설보기</button></span>
@@ -312,7 +464,7 @@ tr:last-child td{border-bottom:none}
   </div>
 </article>
 
-<article class="item" id="item-139-3-B">
+<article class="item" id="item-139-3-B" data-cat="콘크리트구조" data-ready="1">
   <header class="item-head">
     <span class="no">문항 2</span>
     <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 2번">
@@ -330,6 +482,8 @@ tr:last-child td{border-bottom:none}
 </figure></div>
 
   <div class="titleblock">
+    <span class="chip chip-cat">콘크리트구조</span>
+    <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">서술형</span>
     <span class="chip">난이도 <span class="stars">★★★☆☆</span></span>
     <span class="tb-action"><button class="btn toggle" type="button" data-t="139-3-B" aria-expanded="false" aria-controls="ans-139-3-B">해설보기</button></span>
@@ -363,7 +517,7 @@ tr:last-child td{border-bottom:none}
   </div>
 </article>
 
-<article class="item" id="item-139-3-C">
+<article class="item" id="item-139-3-C" data-cat="건설관리" data-ready="1">
   <header class="item-head">
     <span class="no">문항 3</span>
     <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 3번">
@@ -376,6 +530,8 @@ tr:last-child td{border-bottom:none}
   
 
   <div class="titleblock">
+    <span class="chip chip-cat">건설관리</span>
+    <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">서술형</span>
     <span class="chip">난이도 <span class="stars">★★★☆☆</span></span>
     <span class="tb-action"><button class="btn toggle" type="button" data-t="139-3-C" aria-expanded="false" aria-controls="ans-139-3-C">해설보기</button></span>
@@ -412,7 +568,7 @@ tr:last-child td{border-bottom:none}
   </div>
 </article>
 
-<article class="item" id="item-139-3-D">
+<article class="item" id="item-139-3-D" data-cat="구조역학" data-ready="0">
   <header class="item-head">
     <span class="no">문항 4</span>
     <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 4번">
@@ -429,6 +585,8 @@ tr:last-child td{border-bottom:none}
 </figure></div>
 
   <div class="titleblock">
+    <span class="chip chip-cat">구조역학</span>
+    <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">계산형</span>
     <span class="chip">난이도 <span class="stars">★★★★☆</span></span>
     <span class="tb-action"><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
@@ -439,7 +597,7 @@ tr:last-child td{border-bottom:none}
   </div>
 </article>
 
-<article class="item" id="item-139-3-E">
+<article class="item" id="item-139-3-E" data-cat="구조역학" data-ready="0">
   <header class="item-head">
     <span class="no">문항 5</span>
     <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 5번">
@@ -456,6 +614,8 @@ tr:last-child td{border-bottom:none}
 </figure></div>
 
   <div class="titleblock">
+    <span class="chip chip-cat">구조역학</span>
+    <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">계산형</span>
     <span class="chip">난이도 <span class="stars">★★★☆☆</span></span>
     <span class="tb-action"><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
@@ -466,7 +626,7 @@ tr:last-child td{border-bottom:none}
   </div>
 </article>
 
-<article class="item" id="item-139-3-F">
+<article class="item" id="item-139-3-F" data-cat="콘크리트구조" data-ready="0">
   <header class="item-head">
     <span class="no">문항 6</span>
     <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 6번">
@@ -484,6 +644,8 @@ tr:last-child td{border-bottom:none}
 </figure></div>
 
   <div class="titleblock">
+    <span class="chip chip-cat">콘크리트구조</span>
+    <span class="chip chip-exam">제139회 3교시</span>
     <span class="chip">계산형</span>
     <span class="chip">난이도 <span class="stars">★★★★★</span></span>
     <span class="tb-action"><span class="pending">해설 준비 중</span><button class="btn" type="button" disabled>해설보기</button></span>
@@ -494,7 +656,108 @@ tr:last-child td{border-bottom:none}
   </div>
 </article>
   </main>
-</div>
+</section>
+
+
+<!-- ================= SCR-A01 · 관리자 대시보드 ================= -->
+<section id="scr-a01" class="screen admin" hidden>
+  <div class="adminbar"><div class="adminbar-in">
+    <b>관리자</b><span class="warn">프로토타입 · 인증 없음</span>
+    <button class="exit" data-go="scr-main">나가기</button>
+  </div></div>
+  <div class="admin-main">
+    <h1 class="admin-h">대시보드</h1>
+    <p class="admin-sub">처리할 일을 확인하고 각 화면으로 이동합니다.</p>
+    <div class="dash">
+      <button type="button" data-go="scr-a02">
+        <span class="n" id="d-report">0</span><span class="l">신고 처리</span><span class="d">접수·검토중 건수</span>
+      </button>
+      <button type="button" data-go="scr-a03">
+        <span class="n" id="d-extra">0</span><span class="l">추가풀이 검토</span><span class="d">검토대기·검토중 건수</span>
+      </button>
+      <button type="button" data-go="scr-a04">
+        <span class="n" id="d-quest">0</span><span class="l">문제·풀이</span><span class="d">작성중 문항 수</span>
+      </button>
+    </div>
+    <p class="mock">신고·추가풀이는 실제 데이터가 없어 예시 데이터로 채웠습니다. 상태 변경은 이 화면 안에서만 유지되며 저장되지 않습니다.</p>
+  </div>
+</section>
+
+<!-- ================= SCR-A02 · 신고 처리 ================= -->
+<section id="scr-a02" class="screen admin" hidden>
+  <div class="adminbar"><div class="adminbar-in">
+    <button class="aback" data-go="scr-a01">‹ 대시보드</button>
+    <b>신고 처리</b><span class="warn">예시 데이터</span>
+    <button class="exit" data-go="scr-main">나가기</button>
+  </div></div>
+  <div class="admin-main">
+    <h1 class="admin-h">신고 처리</h1>
+    <p class="admin-sub">반영은 원문 수정 게시로 이어집니다. 기각하면 원문은 그대로 둡니다.</p>
+    <div class="tabs" id="tab-report" role="tablist"></div>
+    <div class="rows" id="list-report"></div>
+  </div>
+</section>
+
+<!-- ================= SCR-A03 · 추가풀이 검토 ================= -->
+<section id="scr-a03" class="screen admin" hidden>
+  <div class="adminbar"><div class="adminbar-in">
+    <button class="aback" data-go="scr-a01">‹ 대시보드</button>
+    <b>추가풀이 검토</b><span class="warn">예시 데이터</span>
+    <button class="exit" data-go="scr-main">나가기</button>
+  </div></div>
+  <div class="admin-main">
+    <h1 class="admin-h">추가풀이 검토</h1>
+    <p class="admin-sub">게시하면 사용자에게 공개됩니다. 반려 사유 입력 여부는 미결 안건이라 선택 입력으로 두었습니다.</p>
+    <div class="tabs" id="tab-extra" role="tablist"></div>
+    <div class="rows" id="list-extra"></div>
+  </div>
+</section>
+
+<!-- ================= SCR-A04 · 문제·풀이 게시 ================= -->
+<section id="scr-a04" class="screen admin" hidden>
+  <div class="adminbar"><div class="adminbar-in">
+    <button class="aback" data-go="scr-a01">‹ 대시보드</button>
+    <b>문제·풀이</b>
+    <button class="exit" data-go="scr-main">나가기</button>
+  </div></div>
+  <div class="admin-main">
+    <h1 class="admin-h">문제·풀이 게시</h1>
+    <p class="admin-sub">작성중은 비공개, 게시됨은 사용자에게 공개됩니다. 모범답안이 없는 문항은 작성중으로 둡니다.</p>
+    <div class="rows" id="list-quest">
+      <div class="row"><div class="meta">
+        <div class="rt">문항 1 · 곡선교 받침 — 공용 중 손상의 원인 진단과 개선 배치</div>
+        <div class="rs">139회 3교시 · 교량공학 · 서술형 · 모범답안 있음</div>
+        <div class="acts"><button class="mini sec" data-q="139-3-A" data-act="작성중">작성중으로 내리기</button></div>
+      </div><span class="st" data-s="게시됨">게시됨</span></div>
+      <div class="row"><div class="meta">
+        <div class="rt">문항 2 · a/d에 따른 파괴모드 — 실무 부재의 설계법 판단</div>
+        <div class="rs">139회 3교시 · 콘크리트구조 · 서술형 · 모범답안 있음</div>
+        <div class="acts"><button class="mini sec" data-q="139-3-B" data-act="작성중">작성중으로 내리기</button></div>
+      </div><span class="st" data-s="게시됨">게시됨</span></div>
+      <div class="row"><div class="meta">
+        <div class="rt">문항 3 · 설계 VE — 교량 설계 시나리오 적용과 한계</div>
+        <div class="rs">139회 3교시 · 건설관리 · 서술형 · 모범답안 있음</div>
+        <div class="acts"><button class="mini sec" data-q="139-3-C" data-act="작성중">작성중으로 내리기</button></div>
+      </div><span class="st" data-s="게시됨">게시됨</span></div>
+      <div class="row"><div class="meta">
+        <div class="rt">문항 4 · 프랫 트러스 사재 영향선과 이동하중 최대 부재력</div>
+        <div class="rs">139회 3교시 · 구조역학 · 계산형 · 모범답안 없음</div>
+        <div class="acts"><button class="mini" data-q="139-3-D" data-act="게시됨">게시</button></div>
+      </div><span class="st" data-s="작성중">작성중</span></div>
+      <div class="row"><div class="meta">
+        <div class="rt">문항 5 · 중앙 탄성지지 단순보 — 강성 분담과 역산</div>
+        <div class="rs">139회 3교시 · 구조역학 · 계산형 · 모범답안 없음</div>
+        <div class="acts"><button class="mini" data-q="139-3-E" data-act="게시됨">게시</button></div>
+      </div><span class="st" data-s="작성중">작성중</span></div>
+      <div class="row"><div class="meta">
+        <div class="rt">문항 6 · PSC 합성거더 — 두 조건을 만족하는 긴장력 범위</div>
+        <div class="rs">139회 3교시 · 콘크리트구조 · 계산형 · 모범답안 없음</div>
+        <div class="acts"><button class="mini" data-q="139-3-F" data-act="게시됨">게시</button></div>
+      </div><span class="st" data-s="작성중">작성중</span></div>
+    </div>
+    <p class="mock">문항은 제139회 3교시 실제 데이터입니다. 상태 변경은 저장되지 않습니다.</p>
+  </div>
+</section>
 
 <!-- 도면 확대 -->
 <div id="lb" hidden>
@@ -510,19 +773,76 @@ tr:last-child td{border-bottom:none}
 
 <script>
 (function(){
-  var sel = document.getElementById('sel-session');
-  var go  = document.getElementById('go');
-  var s1  = document.getElementById('screen-select');
-  var s2  = document.getElementById('screen-items');
+  var EXAM = "제139회 3교시";
+  var cardsBox = document.getElementById('cards');
+  var cards = Array.prototype.slice.call(cardsBox.querySelectorAll('.item'));
+  var origin = 'scr-main';
 
+  function show(id){
+    var ss = document.querySelectorAll('.screen');
+    for(var i=0;i<ss.length;i++) ss[i].hidden = (ss[i].id !== id);
+    window.scrollTo(0,0);
+  }
+
+  /* SCR-004 공용 목록 — 필터만 바꿔 재사용한다 */
+  function openList(mode, value, from){
+    origin = from;
+    document.getElementById('back-label').textContent =
+      from === 'scr-round' ? '회차 선택' : from === 'scr-cat' ? '과목 선택' : '메인';
+
+    cards.forEach(function(c){
+      c.hidden = (mode === 'cat') ? (c.dataset.cat !== value) : false;
+      var p = c.querySelector('.ans');
+      if(p && !p.hidden){ p.hidden = true; c.classList.remove('open');
+        var o = c.querySelector('.tb-action .toggle');
+        if(o){ o.textContent = '해설보기'; o.setAttribute('aria-expanded','false'); } }
+    });
+    cardsBox.classList.toggle('ctx-round', mode === 'round');
+
+    var shown = cards.filter(function(c){ return !c.hidden; }).length;
+    var ready = cards.filter(function(c){ return !c.hidden && c.dataset.ready === '1'; }).length;
+    var rs = document.getElementById('reshuffle');
+
+    if(mode === 'round'){
+      document.getElementById('crumb-t').textContent = EXAM;
+      document.getElementById('crumb-s').textContent = '변형문제 ' + shown + '문항 · 해설 ' + ready + '문항';
+      order(cards); rs.hidden = true;
+    } else if(mode === 'cat'){
+      document.getElementById('crumb-t').textContent = value;
+      document.getElementById('crumb-s').textContent = '문항 ' + shown + '개 · 해설 ' + ready + '문항';
+      order(cards); rs.hidden = true;
+    } else {
+      document.getElementById('crumb-t').textContent = '랜덤 연습';
+      document.getElementById('crumb-s').textContent = '문항 ' + shown + '개 · 무작위 순서';
+      shuffle(); rs.hidden = false;
+    }
+    show('scr-list');
+  }
+
+  function order(list){ list.forEach(function(c){ cardsBox.appendChild(c); }); }
+  function shuffle(){
+    var a = cards.slice();
+    for(var i=a.length-1;i>0;i--){ var j = Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; }
+    order(a);
+  }
+
+  document.addEventListener('click', function(e){
+    var nav = e.target.closest('[data-go]');
+    if(nav){ show(nav.dataset.go); return; }
+
+    var rnd = e.target.closest('[data-random]');
+    if(rnd){ openList('random', null, 'scr-main'); return; }
+
+    var cat = e.target.closest('[data-cat-open]');
+    if(cat){ openList('cat', cat.dataset.catOpen, 'scr-cat'); return; }
+
+    if(e.target.closest('#back')){ show(origin); return; }
+    if(e.target.closest('#reshuffle')){ shuffle(); window.scrollTo(0,0); return; }
+  });
+
+  var sel = document.getElementById('sel-session'), go = document.getElementById('go');
   sel.addEventListener('change', function(){ go.disabled = !sel.value; });
-
-  go.addEventListener('click', function(){
-    s1.hidden = true; s2.hidden = false; window.scrollTo(0,0);
-  });
-  document.getElementById('back').addEventListener('click', function(){
-    s2.hidden = true; s1.hidden = false; window.scrollTo(0,0);
-  });
+  go.addEventListener('click', function(){ openList('round', sel.value, 'scr-round'); });
 
   /* 해설 열람·닫기 — 문항별 개별 동작 */
   document.addEventListener('click', function(e){
@@ -550,7 +870,7 @@ tr:last-child td{border-bottom:none}
 
   function base(){ return Math.max(240, lbScroll.clientWidth - 32); }
   function apply(){ lbImg.style.width = Math.round(base() * zoom) + 'px'; }
-  function open(img){
+  function openLb(img){
     lastFocus = document.activeElement;
     lbImg.src = img.dataset.full; lbImg.alt = img.alt;
     lbCap.textContent = img.dataset.cap;
@@ -558,7 +878,7 @@ tr:last-child td{border-bottom:none}
     document.body.style.overflow = 'hidden';
     document.getElementById('lb-close').focus();
   }
-  function close(){
+  function closeLb(){
     lb.hidden = true; lbImg.src = ''; document.body.style.overflow = '';
     if(lastFocus) lastFocus.focus();
   }
@@ -566,17 +886,124 @@ tr:last-child td{border-bottom:none}
 
   document.addEventListener('click', function(e){
     var z = e.target.closest('.zoom');
-    if(z){ open(z.closest('.dwg').querySelector('img')); return; }
+    if(z){ openLb(z.closest('.dwg').querySelector('img')); return; }
     var im = e.target.closest('.dwg img');
-    if(im){ open(im); return; }
+    if(im){ openLb(im); return; }
     var b = e.target.closest('.lb-bar button');
     if(!b) return;
-    if(b.id === 'lb-close') return close();
+    if(b.id === 'lb-close') return closeLb();
     if(b.dataset.z === 'in')  { zoom = Math.min(zoom * 1.4, 8); apply(); }
     if(b.dataset.z === 'out') { zoom = Math.max(zoom / 1.4, .5); apply(); }
     if(b.dataset.z === 'fit') { zoom = 1; apply(); lbScroll.scrollTo(0,0); }
   });
-  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !lb.hidden) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !lb.hidden) closeLb(); });
+})();
+</script>
+<script>
+/* ===== 관리자 화면 (프로토타입 · 인증 없음 · 저장 없음) ===== */
+(function(){
+  var REPORTS = [
+    {id:1, type:"오탈자", q:"문항 2 · a/d에 따른 파괴모드", detail:"(다) 항의 a/d 값 표기가 본문과 도면에서 다르게 보입니다. 확인 부탁드립니다.", at:"2026-08-21", st:"접수됨"},
+    {id:2, type:"오답",   q:"문항 5 · 중앙 탄성지지 단순보", detail:"②번 답의 반력 값이 제가 계산한 값과 다릅니다. 재검토 요청드립니다.", at:"2026-08-21", st:"접수됨"},
+    {id:3, type:"오분류", q:"문항 3 · 설계 VE", detail:"건설관리가 아니라 시공 과목으로 분류하는 게 맞지 않나요?", at:"2026-08-20", st:"검토중"},
+    {id:4, type:"오탈자", q:"문항 6 · PSC 합성거더", detail:"유효율 기호 표기가 문제와 해설에서 달라 보입니다.", at:"2026-08-19", st:"기각"}
+  ];
+  var EXTRAS = [
+    {id:1, author:"구조덕후", q:"문항 4 · 프랫 트러스 사재 영향선", body:"영향선을 그리지 않고 절단법으로 임계 재하위치를 먼저 잡는 풀이입니다. (예시 데이터)", at:"2026-08-21", st:"검토대기", reason:""},
+    {id:2, author:"야근왕",   q:"문항 1 · 곡선교 받침",           body:"받침 배치 대안을 표로 정리하고 개선 전후를 비교했습니다. (예시 데이터)", at:"2026-08-20", st:"검토중", reason:""},
+    {id:3, author:"합격기원", q:"문항 6 · PSC 합성거더",          body:"응력 조건 두 개를 부등식으로 놓고 범위를 좁히는 순서로 정리했습니다. (예시 데이터)", at:"2026-08-18", st:"게시됨", reason:""}
+  ];
+  var R_TABS = ["전체","접수됨","검토중","반영","기각"];
+  var E_TABS = ["전체","검토대기","검토중","게시됨","반려됨"];
+  var rTab = "전체", eTab = "전체";
+
+  function esc(t){ return String(t).replace(/[&<>"]/g, function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+
+  function tabs(el, list, cur, set){
+    el.innerHTML = list.map(function(t){
+      return '<button type="button" role="tab" aria-selected="' + (t===cur) + '" data-tab="' + t + '">' + t + '</button>';
+    }).join("");
+    el.onclick = function(e){ var b = e.target.closest("[data-tab]"); if(b){ set(b.dataset.tab); render(); } };
+  }
+
+  function reportRow(r){
+    var acts = (r.st === "접수됨" || r.st === "검토중")
+      ? '<div class="acts">' +
+        (r.st === "접수됨" ? '<button class="mini sec" data-r="' + r.id + '" data-act="검토중">검토 시작</button>' : '') +
+        '<button class="mini" data-r="' + r.id + '" data-act="반영">반영 (원문 수정 게시)</button>' +
+        '<button class="mini sec" data-r="' + r.id + '" data-act="기각">기각</button></div>'
+      : '';
+    return '<div class="row"><div class="meta">' +
+      '<div class="rt">' + esc(r.type) + ' · ' + esc(r.q) + '</div>' +
+      '<div class="rs">' + esc(r.at) + '</div>' +
+      '<div class="rbody">' + esc(r.detail) + '</div>' + acts +
+      '</div><span class="st" data-s="' + r.st + '">' + r.st + '</span></div>';
+  }
+
+  function extraRow(x){
+    var acts = (x.st === "검토대기" || x.st === "검토중")
+      ? '<div class="acts">' +
+        (x.st === "검토대기" ? '<button class="mini sec" data-x="' + x.id + '" data-act="검토중">검토 시작</button>' : '') +
+        '<button class="mini" data-x="' + x.id + '" data-act="게시됨">게시</button>' +
+        '<button class="mini sec" data-x="' + x.id + '" data-act="반려됨">반려</button></div>' +
+        '<textarea class="reason" data-reason="' + x.id + '" placeholder="반려 사유 (선택 · 표시 여부 미결)"></textarea>'
+      : (x.st === "반려됨" && x.reason ? '<div class="rbody">반려 사유: ' + esc(x.reason) + '</div>' : '');
+    return '<div class="row"><div class="meta">' +
+      '<div class="rt">' + esc(x.author) + ' · ' + esc(x.q) + '</div>' +
+      '<div class="rs">' + esc(x.at) + '</div>' +
+      '<div class="rbody">' + esc(x.body) + '</div>' + acts +
+      '</div><span class="st" data-s="' + x.st + '">' + x.st + '</span></div>';
+  }
+
+  function render(){
+    var rl = REPORTS.filter(function(r){ return rTab === "전체" || r.st === rTab; });
+    var el = EXTRAS.filter(function(x){ return eTab === "전체" || x.st === eTab; });
+    document.getElementById("list-report").innerHTML =
+      rl.length ? rl.map(reportRow).join("") : '<div class="empty">해당 상태의 신고가 없습니다.</div>';
+    document.getElementById("list-extra").innerHTML =
+      el.length ? el.map(extraRow).join("") : '<div class="empty">해당 상태의 추가풀이가 없습니다.</div>';
+    tabs(document.getElementById("tab-report"), R_TABS, rTab, function(v){ rTab = v; });
+    tabs(document.getElementById("tab-extra"), E_TABS, eTab, function(v){ eTab = v; });
+
+    document.getElementById("d-report").textContent =
+      REPORTS.filter(function(r){ return r.st === "접수됨" || r.st === "검토중"; }).length;
+    document.getElementById("d-extra").textContent =
+      EXTRAS.filter(function(x){ return x.st === "검토대기" || x.st === "검토중"; }).length;
+    document.getElementById("d-quest").textContent =
+      document.querySelectorAll('#list-quest .st[data-s="작성중"]').length;
+  }
+
+  document.addEventListener("click", function(e){
+    var b = e.target.closest("[data-act]");
+    if(!b) return;
+
+    if(b.dataset.r){
+      var r = REPORTS.filter(function(v){ return v.id === +b.dataset.r; })[0];
+      r.st = b.dataset.act;
+      render();
+      return;
+    }
+    if(b.dataset.x){
+      var x = EXTRAS.filter(function(v){ return v.id === +b.dataset.x; })[0];
+      var ta = document.querySelector('[data-reason="' + x.id + '"]');
+      if(b.dataset.act === "반려됨" && ta) x.reason = ta.value.trim();
+      x.st = b.dataset.act;
+      render();
+      return;
+    }
+    if(b.dataset.q){
+      var row = b.closest(".row"), chip = row.querySelector(".st");
+      var next = b.dataset.act;
+      chip.dataset.s = next; chip.textContent = next;
+      b.textContent = next === "게시됨" ? "작성중으로 내리기" : "게시";
+      b.dataset.act = next === "게시됨" ? "작성중" : "게시됨";
+      b.className = next === "게시됨" ? "mini sec" : "mini";
+      render();
+    }
+  });
+
+  render();
 })();
 </script>
 </body>
