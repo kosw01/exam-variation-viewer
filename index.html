@@ -154,16 +154,21 @@ main{max-width:860px;margin:0 auto;padding:12px 20px 96px}
 .ans-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
 .eyebrow{font-size:.82rem;font-weight:700;color:var(--blue-text)}
 /* R-57 적용 범위 — 해설 본문. 문제 본문과 UI는 기존 서체를 유지한다 */
-.ans-in{font-family:'HandKR',var(--sans);font-size:1.06rem;line-height:1.85;letter-spacing:0}
+/* 지정 서체는 한 굵기(400)뿐이라 획이 가늘다. 획 두께를 더해 본문 전체를 진하게 쓴다.
+   대신 굵기로는 강조를 구분할 수 없으므로 강조는 색으로 표시한다 (.ans strong) */
+.ans-in{font-family:'HandKR',var(--sans);font-size:1.06rem;line-height:1.85;letter-spacing:0;
+  color:var(--t1);-webkit-text-stroke:.42px currentColor;text-stroke:.42px currentColor}
 .ans-in .eyebrow,.ans-in .btn,.ans-in .zoom,.ans-in figcaption{font-family:var(--sans)}
 .ans-in sub{font-size:.68em;vertical-align:-.28em;line-height:0}
-.ans-in .sym{font-family:var(--sans);font-size:.67em;font-weight:300;letter-spacing:0}
-.ans p{margin:.7em 0;color:#333d4b}
-.ans ul,.ans ol{margin:.6em 0;padding-left:1.25em;color:#333d4b}
-.ans ul.sub{margin:.3em 0 .5em;padding-left:1em;color:var(--t2)}
+.ans-in .sym{font-family:var(--sans);font-size:.67em;font-weight:300;letter-spacing:0;
+  -webkit-text-stroke:.18px currentColor}
+.ans p{margin:.7em 0;color:var(--t1)}
+.ans ul,.ans ol{margin:.6em 0;padding-left:1.25em;color:var(--t1)}
+.ans ul.sub{margin:.3em 0 .5em;padding-left:1em;color:#3d4956}
 .ans li{margin:.35em 0}
 .ans li::marker{color:var(--t3)}
-.ans strong{font-weight:700;color:var(--t1)}
+/* 강조는 굵기가 아니라 색으로 (본문이 이미 진하다) */
+.ans strong{font-weight:400;color:var(--blue-text)}
 .ans .dwgs{padding:8px 0 0}
 .ans .dwg{background:var(--surface)}
 .ans .zoom{background:var(--bg);box-shadow:none}
@@ -171,7 +176,8 @@ main{max-width:860px;margin:0 auto;padding:12px 20px 96px}
 .tablewrap{overflow-x:auto;margin:1em 0;background:var(--surface);border-radius:var(--r-sm)}
 table{border-collapse:collapse;width:100%;font-size:.94rem}
 th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
-th{color:var(--t2);font-weight:700;white-space:nowrap;background:var(--surface-2)}
+th{color:var(--t1);font-weight:400;white-space:nowrap;background:var(--surface-2)}
+.ans-in th{color:var(--blue-text)}
 tr:last-child td{border-bottom:none}
 
 /* 도면 확대 */
