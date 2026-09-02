@@ -160,8 +160,8 @@ def card(no, it, exam):
 <article class="item" id="item-{it['id']}" data-cat="{html.escape(cat)}" data-ready="{'1' if ready else '0'}">
   <header class="item-head">
     <span class="no">문항 {no}</span>
-    <span class="stamp" role="note" aria-label="오마주 출처 {html.escape(hom)}">
-      <span class="stamp-k">오마주</span><span class="stamp-v">{html.escape(hom)}</span>
+    <span class="stamp" role="note" aria-label="출처 {html.escape(hom)}">
+      <span class="stamp-k">출처</span><span class="stamp-v">{html.escape(hom)}</span>
     </span>
   </header>
   <div class="head-main"><h2>{html.escape(it['title'])}</h2></div>
@@ -174,7 +174,7 @@ def card(no, it, exam):
     <span class="chip chip-exam">제{exam}</span>
     <span class="chip">{html.escape(it['type'])}</span>
     <span class="chip">난이도 <span class="stars">{html.escape(it['difficulty_stars'])}</span></span>
-    <span class="tb-action">{action}</span>
+    <span class="tb-action"><button class="btn ghost report" type="button">신고</button>{action}</span>
   </div>
 
   <div class="ans" id="ans-{it['id']}" hidden>

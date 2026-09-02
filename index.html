@@ -188,6 +188,27 @@ tr:last-child td{border-bottom:none}
 
 
 
+
+/* ================= SCR-008 · 서비스 정보 (출처표시) ================= */
+.about{display:grid;gap:10px;margin-top:4px}
+.about li{list-style:none;background:var(--surface);border-radius:var(--r-lg);padding:20px 22px;display:flex;gap:14px;align-items:flex-start}
+.about .n{flex:0 0 auto;width:26px;height:26px;border-radius:999px;background:var(--blue-soft);color:var(--blue-text);
+  display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;margin-top:2px}
+.about dt{font-size:.84rem;font-weight:600;color:var(--t3);margin-bottom:4px}
+.about dd{margin:0;font-size:1.02rem;font-weight:700;letter-spacing:-.02em;line-height:1.5}
+.about dd small{display:block;margin-top:4px;font-size:.88rem;font-weight:500;color:var(--t2);letter-spacing:0}
+.kogl{display:inline-flex;align-items:center;gap:8px;background:var(--blue-soft);color:var(--blue-text);
+  border-radius:8px;padding:7px 12px;font-size:.86rem;font-weight:700;margin-top:8px}
+.qnet{display:inline-flex;align-items:center;gap:6px;color:var(--blue-text);font-weight:700;font-size:.98rem;text-decoration:none}
+.qnet:hover{text-decoration:underline}
+.protobox{margin-top:18px;background:var(--amber-bg);color:var(--amber);border-radius:var(--r-md);padding:16px 18px;font-size:.9rem;line-height:1.6}
+
+/* 공통 푸터 (R-56) */
+.sitefoot{border-top:1px solid var(--line);margin-top:8px;padding:20px 0 34px;text-align:center}
+.sitefoot button{background:none;border:none;color:var(--t3);font-size:.86rem;font-weight:600;cursor:pointer;padding:8px 12px;border-radius:var(--r-sm)}
+.sitefoot button:hover{color:var(--blue-text);background:var(--blue-soft)}
+.screen.admin .sitefoot{display:none}
+
 /* ================= SCR-005 · 신고 입력 (모달) ================= */
 #rp{position:fixed;inset:0;z-index:60;display:flex;align-items:flex-end;justify-content:center}
 #rp .dim{position:absolute;inset:0;background:rgba(25,31,40,.45)}
@@ -269,7 +290,7 @@ tr:last-child td{border-bottom:none}
 .mini.sec:hover{background:#eef0f3;color:var(--t1)}
 .mini:disabled{background:#f0f2f4;color:var(--t4);cursor:not-allowed}
 .st{flex:0 0 auto;border-radius:999px;padding:5px 11px;font-size:.78rem;font-weight:700;white-space:nowrap;background:var(--surface-2);color:var(--t2)}
-.st[data-s="접수됨"],.st[data-s="검토대기"],.st[data-s="작성중"]{background:var(--amber-bg);color:var(--amber)}
+.st[data-s="접수"],.st[data-s="검토대기"],.st[data-s="작성중"]{background:var(--amber-bg);color:var(--amber)}
 .st[data-s="검토중"]{background:var(--blue-soft);color:var(--blue-text)}
 .st[data-s="반영"],.st[data-s="게시됨"]{background:#e7f4ec;color:#1b6b3a}
 .st[data-s="기각"],.st[data-s="반려됨"]{background:#f7e9e8;color:#9b342c}
@@ -329,8 +350,8 @@ tr:last-child td{border-bottom:none}
   <div class="land">
     <header class="hero">
       <p class="kicker">토목구조기술사</p>
-      <h1>기출을 변형한 문제로 풀고,<br>모범답안과 도면을 확인합니다.</h1>
-      <p class="lead">토목구조기술사 기출문제를 변형한 문항과 그 해설을 열람하는 서비스입니다. 로그인 없이 바로 볼 수 있습니다.</p>
+      <h1>기출문제를 풀고,<br>모범답안과 도면을 확인합니다.</h1>
+      <p class="lead">토목구조기술사 기출문제와 해설을 회차·교시·과목별로 열람하는 서비스입니다. 로그인 없이 바로 볼 수 있습니다.</p>
     </header>
 
     <h2 class="sec-h">어떻게 풀어볼까요?</h2>
@@ -355,19 +376,21 @@ tr:last-child td{border-bottom:none}
     <h2 class="sec-h">이 서비스는</h2>
     <ul class="points">
       <li>
-        <h3>기출 원문이 아닙니다</h3>
-        <p>원 기출이 묻는 사고 과정은 그대로 두고, 상황과 질문의 관점을 바꾼 변형문제입니다. 답을 외운 상태로는 풀리지 않습니다.</p>
+        <h3>기출 원문을 그대로 싣습니다</h3>
+        <p>한국산업인력공단이 공공누리 제1유형으로 개방한 제140회 이후 기출문제입니다. 출처표시는 이용 조건이므로 서비스 정보에 함께 밝힙니다.</p>
       </li>
       <li>
         <h3>문제와 해설이 한 곳에 있습니다</h3>
         <p>문항마다 모범답안 본문과 도면이 함께 붙어 있습니다. 문제를 먼저 풀고, 원할 때 문항별로 해설을 엽니다.</p>
       </li>
       <li>
-        <h3>어떤 기출을 변형했는지 밝힙니다</h3>
-        <p>문항마다 원 기출의 회차·교시·번호를 표기합니다. 출처 표기까지만 하고 기출 원문은 게재하지 않습니다.</p>
+        <h3>해설은 자체 작성물입니다</h3>
+        <p>모범답안과 답안 도면은 본 서비스가 작성했습니다. 원문과 자체 작성물의 경계를 화면에서 구분해 표시합니다.</p>
       </li>
     </ul>
 
+
+    <div class="sitefoot"><button type="button" data-go="scr-about">서비스 정보 · 공공누리 제1유형 출처표시</button></div>
     <p class="admin-entry"><button type="button" data-go="scr-a01">관리자</button></p>
   </div>
 </section>
@@ -400,6 +423,7 @@ tr:last-child td{border-bottom:none}
     <p class="hint">공개된 문항이 있는 회차·교시만 선택할 수 있어요.</p>
 
     <div class="cta-wrap"><button class="go" id="go" disabled>문항 보기</button></div>
+    <div class="sitefoot"><button type="button" data-go="scr-about">서비스 정보 · 공공누리 제1유형 출처표시</button></div>
   </div>
 </section>
 
@@ -434,6 +458,7 @@ tr:last-child td{border-bottom:none}
       </button></li>
     </ul>
     <p class="hint">문항이 있는 과목만 표시됩니다.</p>
+    <div class="sitefoot"><button type="button" data-go="scr-about">서비스 정보 · 공공누리 제1유형 출처표시</button></div>
   </div>
 </section>
 
@@ -454,8 +479,8 @@ tr:last-child td{border-bottom:none}
 <article class="item" id="item-139-3-A" data-cat="교량공학" data-ready="1">
   <header class="item-head">
     <span class="no">문항 1</span>
-    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 1번">
-      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 1번</span>
+    <span class="stamp" role="note" aria-label="출처 제139회 3교시 1번">
+      <span class="stamp-k">출처</span><span class="stamp-v">제139회 3교시 1번</span>
     </span>
   </header>
   <div class="head-main"><h2>곡선교 받침 — 공용 중 손상의 원인 진단과 개선 배치</h2></div>
@@ -513,8 +538,8 @@ tr:last-child td{border-bottom:none}
 <article class="item" id="item-139-3-B" data-cat="콘크리트구조" data-ready="1">
   <header class="item-head">
     <span class="no">문항 2</span>
-    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 2번">
-      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 2번</span>
+    <span class="stamp" role="note" aria-label="출처 제139회 3교시 2번">
+      <span class="stamp-k">출처</span><span class="stamp-v">제139회 3교시 2번</span>
     </span>
   </header>
   <div class="head-main"><h2>a/d에 따른 파괴모드 — 실무 부재의 설계법 판단</h2></div>
@@ -566,8 +591,8 @@ tr:last-child td{border-bottom:none}
 <article class="item" id="item-139-3-C" data-cat="건설관리" data-ready="1">
   <header class="item-head">
     <span class="no">문항 3</span>
-    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 3번">
-      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 3번</span>
+    <span class="stamp" role="note" aria-label="출처 제139회 3교시 3번">
+      <span class="stamp-k">출처</span><span class="stamp-v">제139회 3교시 3번</span>
     </span>
   </header>
   <div class="head-main"><h2>설계 VE — 교량 설계 시나리오 적용과 한계</h2></div>
@@ -617,8 +642,8 @@ tr:last-child td{border-bottom:none}
 <article class="item" id="item-139-3-D" data-cat="구조역학" data-ready="0">
   <header class="item-head">
     <span class="no">문항 4</span>
-    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 4번">
-      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 4번</span>
+    <span class="stamp" role="note" aria-label="출처 제139회 3교시 4번">
+      <span class="stamp-k">출처</span><span class="stamp-v">제139회 3교시 4번</span>
     </span>
   </header>
   <div class="head-main"><h2>프랫 트러스 사재 영향선과 이동하중 최대 부재력</h2></div>
@@ -646,8 +671,8 @@ tr:last-child td{border-bottom:none}
 <article class="item" id="item-139-3-E" data-cat="구조역학" data-ready="0">
   <header class="item-head">
     <span class="no">문항 5</span>
-    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 5번">
-      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 5번</span>
+    <span class="stamp" role="note" aria-label="출처 제139회 3교시 5번">
+      <span class="stamp-k">출처</span><span class="stamp-v">제139회 3교시 5번</span>
     </span>
   </header>
   <div class="head-main"><h2>중앙 탄성지지 단순보 — 강성 분담과 역산</h2></div>
@@ -675,8 +700,8 @@ tr:last-child td{border-bottom:none}
 <article class="item" id="item-139-3-F" data-cat="콘크리트구조" data-ready="0">
   <header class="item-head">
     <span class="no">문항 6</span>
-    <span class="stamp" role="note" aria-label="오마주 출처 제139회 3교시 6번">
-      <span class="stamp-k">오마주</span><span class="stamp-v">제139회 3교시 6번</span>
+    <span class="stamp" role="note" aria-label="출처 제139회 3교시 6번">
+      <span class="stamp-k">출처</span><span class="stamp-v">제139회 3교시 6번</span>
     </span>
   </header>
   <div class="head-main"><h2>PSC 합성거더 — 두 조건을 만족하는 긴장력 범위</h2></div>
@@ -702,9 +727,50 @@ tr:last-child td{border-bottom:none}
   </div>
 </article>
   </main>
+  <div class="land">
+    <div class="sitefoot"><button type="button" data-go="scr-about">서비스 정보 · 공공누리 제1유형 출처표시</button></div>
+  </div>
 </section>
 
 
+
+
+<!-- ================= SCR-008 · 서비스 정보 (출처표시) ================= -->
+<section id="scr-about" class="screen" hidden>
+  <div class="land">
+    <button class="crumb-btn" data-go="scr-main">‹ 메인</button>
+    <header class="sub-head">
+      <h1>서비스 정보</h1>
+      <p>기출 원문의 출처와 이용 조건을 밝히고, 해설이 자체 작성물임을 구분해 알립니다.</p>
+    </header>
+
+    <ul class="about">
+      <li><span class="n">1</span><dl>
+        <dt>저작물명</dt>
+        <dd>2026년 제140회 기술사 필기시험 기출문제</dd>
+      </dl></li>
+      <li><span class="n">2</span><dl>
+        <dt>작성자 · 출처</dt>
+        <dd>기술자격출제실 · 한국산업인력공단</dd>
+      </dl></li>
+      <li><span class="n">3</span><dl>
+        <dt>이용 조건</dt>
+        <dd>공공누리 제1유형 (출처표시)<small>개방일 2026-08-24. 제140회 이후 기출문제가 개방 대상입니다.</small>
+        <span class="kogl">공공누리 제1유형 · 출처표시</span></dd>
+      </dl></li>
+      <li><span class="n">4</span><dl>
+        <dt>자체 작성물</dt>
+        <dd>해설 · 모범답안 · 답안 도면은 본 서비스가 작성했습니다<small>원문은 위 출처의 저작물이며, 해설 영역의 내용과 답안 도면은 본 서비스의 작성물입니다.</small></dd>
+      </dl></li>
+      <li><span class="n">5</span><dl>
+        <dt>원문 내려받기</dt>
+        <dd><a class="qnet" href="https://www.q-net.or.kr" target="_blank" rel="noopener">Q-Net 자료실에서 원문 받기 →</a></dd>
+      </dl></li>
+    </ul>
+
+    <p class="protobox">화면 프로토타입입니다. 실린 문항은 화면 구성 확인용 샘플 데이터이며, 원문 데이터로 교체하기 전까지는 표기와 내용이 일치하지 않을 수 있습니다.</p>
+  </div>
+</section>
 
 <!-- ================= SCR-005 · 신고 입력 (모달) ================= -->
 <div id="rp" hidden role="dialog" aria-modal="true" aria-labelledby="rp-title">
@@ -719,13 +785,13 @@ tr:last-child td{border-bottom:none}
 
       <span class="rp-label">어떤 문제인가요?</span>
       <div class="rp-types" id="rp-types" role="radiogroup" aria-label="신고 유형">
-        <label><input type="radio" name="rptype" value="오탈자"><span>오탈자</span></label>
-        <label><input type="radio" name="rptype" value="오답"><span>오답</span></label>
-        <label id="rp-mis" hidden><input type="radio" name="rptype" value="오분류"><span>오분류</span></label>
+        <label><input type="radio" name="rptype" value="문제 오류"><span>문제 오류</span></label>
+        <label><input type="radio" name="rptype" value="해설 오류"><span>해설 오류</span></label>
+        <label id="rp-mis" hidden><input type="radio" name="rptype" value="분류 오류"><span>분류 오류</span></label>
       </div>
 
       <label class="rp-label" for="rp-detail">어느 부분이 잘못됐나요?</label>
-      <textarea id="rp-detail" maxlength="500" placeholder="예: 세 번째 문단의 수치 표기가 도면과 다릅니다."></textarea>
+      <textarea id="rp-detail" maxlength="500" placeholder="예: 세 번째 문단의 수치 표기가 도면과 다릅니다. 어느 부분인지 적어 주세요."></textarea>
       <span class="rp-count"><span id="rp-n">0</span> / 500</span>
 
       <p class="rp-err" id="rp-err" hidden></p>
@@ -734,7 +800,7 @@ tr:last-child td{border-bottom:none}
         <button class="btn ghost" type="button" data-rp-close>취소</button>
         <button class="btn" type="button" id="rp-submit">신고 접수</button>
       </div>
-      <p class="rp-note">화면 프로토타입입니다. 입력한 내용은 전송·저장되지 않습니다. 실제 서비스에서는 IP 기준 일일 횟수 제한이 적용됩니다.</p>
+      <p class="rp-note">문제 오류로 접수된 건은 관리자가 원문과 대조해 판정합니다. 전사 오류면 반영하고 원문 자체의 오류면 기각합니다.<br>화면 프로토타입입니다. 입력한 내용은 전송·저장되지 않으며, 실제 서비스에서는 IP 기준 일일 횟수 제한이 적용됩니다.</p>
     </div>
 
     <div id="rp-done" class="rp-done" hidden>
@@ -758,7 +824,7 @@ tr:last-child td{border-bottom:none}
     <p class="admin-sub">처리할 일을 확인하고 각 화면으로 이동합니다.</p>
     <div class="dash">
       <button type="button" data-go="scr-a02">
-        <span class="n" id="d-report">0</span><span class="l">신고 처리</span><span class="d">접수·검토중 건수</span>
+        <span class="n" id="d-report">0</span><span class="l">신고 처리</span><span class="d">접수 건수</span>
       </button>
       <button type="button" data-go="scr-a03">
         <span class="n" id="d-extra">0</span><span class="l">추가풀이 검토</span><span class="d">검토대기·검토중 건수</span>
@@ -1047,17 +1113,17 @@ tr:last-child td{border-bottom:none}
 /* ===== 관리자 화면 (프로토타입 · 인증 없음 · 저장 없음) ===== */
 (function(){
   var REPORTS = [
-    {id:1, type:"오탈자", q:"문항 2 · a/d에 따른 파괴모드", detail:"(다) 항의 a/d 값 표기가 본문과 도면에서 다르게 보입니다. 확인 부탁드립니다.", at:"2026-08-21", st:"접수됨"},
-    {id:2, type:"오답",   q:"문항 5 · 중앙 탄성지지 단순보", detail:"②번 답의 반력 값이 제가 계산한 값과 다릅니다. 재검토 요청드립니다.", at:"2026-08-21", st:"접수됨"},
-    {id:3, type:"오분류", q:"문항 3 · 설계 VE", detail:"건설관리가 아니라 시공 과목으로 분류하는 게 맞지 않나요?", at:"2026-08-20", st:"검토중"},
-    {id:4, type:"오탈자", q:"문항 6 · PSC 합성거더", detail:"유효율 기호 표기가 문제와 해설에서 달라 보입니다.", at:"2026-08-19", st:"기각"}
+    {id:1, type:"문제 오류", q:"문항 2 · a/d에 따른 파괴모드", detail:"(다) 항의 a/d 값 표기가 본문과 도면에서 다르게 보입니다. 확인 부탁드립니다.", at:"2026-08-21", st:"접수"},
+    {id:2, type:"해설 오류", q:"문항 5 · 중앙 탄성지지 단순보", detail:"②번 답의 반력 값이 제가 계산한 값과 다릅니다. 재검토 요청드립니다.", at:"2026-08-21", st:"접수"},
+    {id:3, type:"분류 오류", q:"문항 3 · 설계 VE", detail:"건설관리가 아니라 시공 과목으로 분류하는 게 맞지 않나요?", at:"2026-08-20", st:"접수"},
+    {id:4, type:"해설 오류", q:"문항 6 · PSC 합성거더", detail:"유효율 기호 표기가 문제와 해설에서 달라 보입니다.", at:"2026-08-19", st:"기각"}
   ];
   var EXTRAS = [
     {id:1, author:"구조덕후", q:"문항 4 · 프랫 트러스 사재 영향선", body:"영향선을 그리지 않고 절단법으로 임계 재하위치를 먼저 잡는 풀이입니다. (예시 데이터)", at:"2026-08-21", st:"검토대기", reason:""},
     {id:2, author:"야근왕",   q:"문항 1 · 곡선교 받침",           body:"받침 배치 대안을 표로 정리하고 개선 전후를 비교했습니다. (예시 데이터)", at:"2026-08-20", st:"검토중", reason:""},
     {id:3, author:"합격기원", q:"문항 6 · PSC 합성거더",          body:"응력 조건 두 개를 부등식으로 놓고 범위를 좁히는 순서로 정리했습니다. (예시 데이터)", at:"2026-08-18", st:"게시됨", reason:""}
   ];
-  var R_TABS = ["전체","접수됨","검토중","반영","기각"];
+  var R_TABS = ["전체","접수","반영","기각"];
   var E_TABS = ["전체","검토대기","검토중","게시됨","반려됨"];
   var rTab = "전체", eTab = "전체";
 
@@ -1072,9 +1138,8 @@ tr:last-child td{border-bottom:none}
   }
 
   function reportRow(r){
-    var acts = (r.st === "접수됨" || r.st === "검토중")
+    var acts = (r.st === "접수")
       ? '<div class="acts">' +
-        (r.st === "접수됨" ? '<button class="mini sec" data-r="' + r.id + '" data-act="검토중">검토 시작</button>' : '') +
         '<button class="mini" data-r="' + r.id + '" data-act="반영">반영 (원문 수정 게시)</button>' +
         '<button class="mini sec" data-r="' + r.id + '" data-act="기각">기각</button></div>'
       : '';
@@ -1111,7 +1176,7 @@ tr:last-child td{border-bottom:none}
     tabs(document.getElementById("tab-extra"), E_TABS, eTab, function(v){ eTab = v; });
 
     document.getElementById("d-report").textContent =
-      REPORTS.filter(function(r){ return r.st === "접수됨" || r.st === "검토중"; }).length;
+      REPORTS.filter(function(r){ return r.st === "접수"; }).length;
     document.getElementById("d-extra").textContent =
       EXTRAS.filter(function(x){ return x.st === "검토대기" || x.st === "검토중"; }).length;
     document.getElementById("d-quest").textContent =
