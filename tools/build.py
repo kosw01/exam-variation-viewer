@@ -35,13 +35,27 @@ BANNED = ("origin", "learning_objective", "variation_design",
 
 # ---------- 마크다운-라이트 렌더러 (텍스트 내용은 변경하지 않음) ----------
 
-def inline(t):
+SUB = {"\u2080": "0", "\u2081": "1", "\u2082": "2", "\u2083": "3", "\u2084": "4",
+       "\u2085": "5", "\u2086": "6", "\u2087": "7", "\u2088": "8", "\u2089": "9"}
+
+
+def inline(t, subs=False):
     t = html.escape(t, quote=False)
     t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t, flags=re.S)
+    if subs:
+        # R-57 — 유니코드 첨자는 지정 서체에도 대체 서체에도 없어 세 번째 서체로 떨어진다.
+        t = re.sub(r"[\u2080-\u2089]+",
+                   lambda m: "<sub>" + "".join(SUB[c] for c in m.group()) + "</sub>", t)
+        # R-57 — 지정 서체(한글·라틴)에 없는 글자만 대체 서체로 감싼다.
+        #        span의 0.67em이 size-adjust 67%와 같은 결과를 낸다.
+        # 문장부호(·, —, 〈〉, 【】)와 한자는 글자 높이가 한글과 같으므로 건드리지 않는다.
+        t = re.sub(r"[\u00D7\u00F7\u0370-\u03FF\u2070-\u209F\u2160-\u217F"
+                   r"\u2190-\u22FF\u2460-\u24FF]+",
+                   lambda m: f'<span class="sym">{m.group()}</span>', t)
     return t
 
 
-def render_block(text, allow_tables=True):
+def render_block(text, allow_tables=True, subs=False):
     lines = text.split("\n")
     out, i = [], 0
     while i < len(lines):
@@ -61,13 +75,13 @@ def render_block(text, allow_tables=True):
             sep = 1 if len(rows) > 1 and all(set(c) <= set("-: ") and c for c in rows[1]) else None
             out.append('<div class="tablewrap"><table>')
             if sep:
-                out.append("<thead><tr>" + "".join(f"<th>{inline(c)}</th>" for c in rows[0]) + "</tr></thead>")
+                out.append("<thead><tr>" + "".join(f"<th>{inline(c, subs)}</th>" for c in rows[0]) + "</tr></thead>")
                 body = rows[2:]
             else:
                 body = rows
             out.append("<tbody>")
             for r in body:
-                out.append("<tr>" + "".join(f"<td>{inline(c)}</td>" for c in r) + "</tr>")
+                out.append("<tr>" + "".join(f"<td>{inline(c, subs)}</td>" for c in r) + "</tr>")
             out.append("</tbody></table></div>")
             continue
 
@@ -82,7 +96,7 @@ def render_block(text, allow_tables=True):
                 start = mm.group(1) if not items else None
                 items.append(mm.group(2))
                 i += 1
-            out.append(f'<ol start="{m.group(1)}">' + "".join(f"<li>{inline(x)}</li>" for x in items) + "</ol>")
+            out.append(f'<ol start="{m.group(1)}">' + "".join(f"<li>{inline(x, subs)}</li>" for x in items) + "</ol>")
             continue
 
         # 글머리 목록 (들여쓴 항목은 하위 목록으로)
@@ -102,13 +116,13 @@ def render_block(text, allow_tables=True):
                 elif d == base and open_sub:
                     out.append("</ul>")
                     open_sub = False
-                out.append(f"<li>{inline(txt)}</li>")
+                out.append(f"<li>{inline(txt, subs)}</li>")
             if open_sub:
                 out.append("</ul>")
             out.append("</ul>")
             continue
 
-        out.append(f"<p>{inline(s)}</p>")
+        out.append(f"<p>{inline(s, subs)}</p>")
         i += 1
     return "\n".join(out)
 
@@ -147,7 +161,7 @@ def card(no, it, exam):
     if ready:
         panel_inner = f"""
       <div class="ans-head"><span class="eyebrow">모범답안</span></div>
-      {render_block(ans)}
+      {render_block(ans, subs=True)}
       {'<div class="dwgs">' + chr(10).join(figure(d, i) for i, d in enumerate(a_dwgs)) + '</div>' if a_dwgs else ''}
       <div class="ans-foot"><button class="btn ghost toggle" type="button" data-t="{it['id']}">해설 닫기</button></div>"""
         action = f'<button class="btn toggle" type="button" data-t="{it["id"]}" aria-expanded="false" aria-controls="ans-{it["id"]}">해설보기</button>'

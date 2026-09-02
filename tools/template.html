@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>기출 변형문제 열람 — 화면 프로토타입</title>
 <style>
+/* R-57 — 해설·모범답안 손글씨체. 지정 서체는 한글·라틴만 담고 있어
+   그리스 문자·수학 기호는 대체 서체가 표시한다. 대체 서체는 대문자 높이가
+   0.733em으로 지정 서체(0.491em)보다 크므로 size-adjust 67%, 굵기 300으로 맞춘다. */
+@font-face{
+  font-family:'HandKR';
+  src:url('assets/fonts/nanum-handwriting.woff2') format('woff2');
+  font-weight:400;
+  font-display:swap;
+}
+/* 지정 서체에 없는 글자는 build.py가 <span class="sym">으로 감싼다.
+   대체 서체 대문자 높이 0.733em × 0.67 = 0.491em 으로 지정 서체와 같아진다.
+   size-adjust는 local() 폴백이 OS·브라우저에 따라 해석되지 않아 쓰지 않는다. */
+</style>
+<style>
 :root{
   /* 딥블루 */
   --blue:#0f2f66;
@@ -139,6 +153,11 @@ main{max-width:860px;margin:0 auto;padding:12px 20px 96px}
 .ans-in{background:var(--bg);border-radius:var(--r-md);padding:24px 22px}
 .ans-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
 .eyebrow{font-size:.82rem;font-weight:700;color:var(--blue-text)}
+/* R-57 적용 범위 — 해설 본문. 문제 본문과 UI는 기존 서체를 유지한다 */
+.ans-in{font-family:'HandKR',var(--sans);font-size:1.06rem;line-height:1.85;letter-spacing:0}
+.ans-in .eyebrow,.ans-in .btn,.ans-in .zoom,.ans-in figcaption{font-family:var(--sans)}
+.ans-in sub{font-size:.68em;vertical-align:-.28em;line-height:0}
+.ans-in .sym{font-family:var(--sans);font-size:.67em;font-weight:300;letter-spacing:0}
 .ans p{margin:.7em 0;color:#333d4b}
 .ans ul,.ans ol{margin:.6em 0;padding-left:1.25em;color:#333d4b}
 .ans ul.sub{margin:.3em 0 .5em;padding-left:1em;color:var(--t2)}
@@ -150,7 +169,7 @@ main{max-width:860px;margin:0 auto;padding:12px 20px 96px}
 .ans .zoom{background:var(--bg);box-shadow:none}
 .ans-foot{margin-top:20px}
 .tablewrap{overflow-x:auto;margin:1em 0;background:var(--surface);border-radius:var(--r-sm)}
-table{border-collapse:collapse;width:100%;font-size:.9rem}
+table{border-collapse:collapse;width:100%;font-size:.94rem}
 th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
 th{color:var(--t2);font-weight:700;white-space:nowrap;background:var(--surface-2)}
 tr:last-child td{border-bottom:none}

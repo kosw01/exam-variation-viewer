@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>기출 변형문제 열람 — 화면 프로토타입</title>
 <style>
+/* R-57 — 해설·모범답안 손글씨체. 지정 서체는 한글·라틴만 담고 있어
+   그리스 문자·수학 기호는 대체 서체가 표시한다. 대체 서체는 대문자 높이가
+   0.733em으로 지정 서체(0.491em)보다 크므로 size-adjust 67%, 굵기 300으로 맞춘다. */
+@font-face{
+  font-family:'HandKR';
+  src:url('assets/fonts/nanum-handwriting.woff2') format('woff2');
+  font-weight:400;
+  font-display:swap;
+}
+/* 지정 서체에 없는 글자는 build.py가 <span class="sym">으로 감싼다.
+   대체 서체 대문자 높이 0.733em × 0.67 = 0.491em 으로 지정 서체와 같아진다.
+   size-adjust는 local() 폴백이 OS·브라우저에 따라 해석되지 않아 쓰지 않는다. */
+</style>
+<style>
 :root{
   /* 딥블루 */
   --blue:#0f2f66;
@@ -139,6 +153,11 @@ main{max-width:860px;margin:0 auto;padding:12px 20px 96px}
 .ans-in{background:var(--bg);border-radius:var(--r-md);padding:24px 22px}
 .ans-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
 .eyebrow{font-size:.82rem;font-weight:700;color:var(--blue-text)}
+/* R-57 적용 범위 — 해설 본문. 문제 본문과 UI는 기존 서체를 유지한다 */
+.ans-in{font-family:'HandKR',var(--sans);font-size:1.06rem;line-height:1.85;letter-spacing:0}
+.ans-in .eyebrow,.ans-in .btn,.ans-in .zoom,.ans-in figcaption{font-family:var(--sans)}
+.ans-in sub{font-size:.68em;vertical-align:-.28em;line-height:0}
+.ans-in .sym{font-family:var(--sans);font-size:.67em;font-weight:300;letter-spacing:0}
 .ans p{margin:.7em 0;color:#333d4b}
 .ans ul,.ans ol{margin:.6em 0;padding-left:1.25em;color:#333d4b}
 .ans ul.sub{margin:.3em 0 .5em;padding-left:1em;color:var(--t2)}
@@ -150,7 +169,7 @@ main{max-width:860px;margin:0 auto;padding:12px 20px 96px}
 .ans .zoom{background:var(--bg);box-shadow:none}
 .ans-foot{margin-top:20px}
 .tablewrap{overflow-x:auto;margin:1em 0;background:var(--surface);border-radius:var(--r-sm)}
-table{border-collapse:collapse;width:100%;font-size:.9rem}
+table{border-collapse:collapse;width:100%;font-size:.94rem}
 th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
 th{color:var(--t2);font-weight:700;white-space:nowrap;background:var(--surface-2)}
 tr:last-child td{border-bottom:none}
@@ -503,18 +522,18 @@ tr:last-child td{border-bottom:none}
   <div class="ans" id="ans-139-3-A" hidden>
     <div class="ans-in">
       <div class="ans-head"><span class="eyebrow">모범답안</span></div>
-      <p><strong>【핵심 키워드】 내측 들림 = 곡률 편심 비틀림·부반력 / 가이드 손상 = </strong>설계된 가동방향과 실제 신축 이동궤적의 불일치<strong> → 구속력 — 진단 = 반력·이동궤적 해석 재현 → 계측 대조</strong></p>
-<p><strong>Ⅰ. 서론</strong> — 곡선교 받침 손상은 개별 부품 열화가 아니라 <strong>배치 가정과 실거동의 불일치</strong>가 드러난 신호인 경우가 많다. 관측된 두 손상은 곡선교의 3대 특성(비틀림·신축방향·부반력) 중 각각 부반력과 이동방향 문제를 지시하므로, 진단은 이 가설에서 출발하되 계측으로 확증한다.</p>
-<p><strong>Ⅱ. 본론</strong></p>
+      <p><strong>【핵심 키워드】 내측 들림 = 곡률 편심 비틀림·부반력 / 가이드 손상 = </strong>설계된 가동방향과 실제 신축 이동궤적의 불일치<strong> <span class="sym">→</span> 구속력 — 진단 = 반력·이동궤적 해석 재현 <span class="sym">→</span> 계측 대조</strong></p>
+<p><strong><span class="sym">Ⅰ</span>. 서론</strong> — 곡선교 받침 손상은 개별 부품 열화가 아니라 <strong>배치 가정과 실거동의 불일치</strong>가 드러난 신호인 경우가 많다. 관측된 두 손상은 곡선교의 3대 특성(비틀림·신축방향·부반력) 중 각각 부반력과 이동방향 문제를 지시하므로, 진단은 이 가설에서 출발하되 계측으로 확증한다.</p>
+<p><strong><span class="sym">Ⅱ</span>. 본론</strong></p>
 <ol start="1"><li><strong>손상 A: 내측 받침 들림·잔류 이격 — 원인 추정</strong></li></ol>
 <ul>
-<li>가설: 자중·활하중 합력의 곡률 편심에 의한 상시 비틀림 → 외측 반력 집중·내측 반력 감소 → 활하중 편재하·온도 조합 시 <strong>부반력(들림)</strong> 발생. 받침 간격·경간과 곡률의 조합 등은 <strong>필수 원인이 아니라 가능한 배경 요인으로 추가 검토</strong>한다.</li>
-<li>진단 절차: ① 준공도서의 받침 배치·설계 반력 확인 → ② 현행 하중조합(편재하·온도 포함) 반력 해석 재현 → ③ 잭업 계측 또는 반력 측정으로 실반력 대조 → ④ 들림 발생 조합·빈도 특정.</li>
+<li>가설: 자중·활하중 합력의 곡률 편심에 의한 상시 비틀림 <span class="sym">→</span> 외측 반력 집중·내측 반력 감소 <span class="sym">→</span> 활하중 편재하·온도 조합 시 <strong>부반력(들림)</strong> 발생. 받침 간격·경간과 곡률의 조합 등은 <strong>필수 원인이 아니라 가능한 배경 요인으로 추가 검토</strong>한다.</li>
+<li>진단 절차: <span class="sym">①</span> 준공도서의 받침 배치·설계 반력 확인 <span class="sym">→</span> <span class="sym">②</span> 현행 하중조합(편재하·온도 포함) 반력 해석 재현 <span class="sym">→</span> <span class="sym">③</span> 잭업 계측 또는 반력 측정으로 실반력 대조 <span class="sym">→</span> <span class="sym">④</span> 들림 발생 조합·빈도 특정.</li>
 </ul>
 <ol start="2"><li><strong>손상 B: 가동받침 가이드 손상·이동 흔적 방향 불일치 — 원인 추정</strong></li></ol>
 <ul>
-<li>가설: <strong>설계된 가동방향이 실제 신축 이동궤적과 불일치</strong>하여 이동이 구속 → 가이드·앵커에 구속력 → 손상. (곡선교의 적정 가동방향은 고정점 위치·받침 배치·곡률·실제 이동궤적을 종합하여 결정되는 것이므로, 특정 방향을 정답으로 전제하지 않는다.) 다점 고정 또는 고정점 위치 부적절도 동일 증상을 유발할 수 있다.</li>
-<li>진단 절차: ① 도서에서 고정점 위치와 <strong>설계된 가동방향</strong> 확인 → ② 해석으로 <strong>실제 예상 신축 이동궤적</strong> 산정 → ③ 양자의 <strong>불일치 여부</strong>를 실측 이동 흔적(스크래치 방향)과 함께 대조 → ④ 불일치 시 구속력 크기 추정(하부구조 균열 병행 점검).</li>
+<li>가설: <strong>설계된 가동방향이 실제 신축 이동궤적과 불일치</strong>하여 이동이 구속 <span class="sym">→</span> 가이드·앵커에 구속력 <span class="sym">→</span> 손상. (곡선교의 적정 가동방향은 고정점 위치·받침 배치·곡률·실제 이동궤적을 종합하여 결정되는 것이므로, 특정 방향을 정답으로 전제하지 않는다.) 다점 고정 또는 고정점 위치 부적절도 동일 증상을 유발할 수 있다.</li>
+<li>진단 절차: <span class="sym">①</span> 도서에서 고정점 위치와 <strong>설계된 가동방향</strong> 확인 <span class="sym">→</span> <span class="sym">②</span> 해석으로 <strong>실제 예상 신축 이동궤적</strong> 산정 <span class="sym">→</span> <span class="sym">③</span> 양자의 <strong>불일치 여부</strong>를 실측 이동 흔적(스크래치 방향)과 함께 대조 <span class="sym">→</span> <span class="sym">④</span> 불일치 시 구속력 크기 추정(하부구조 균열 병행 점검).</li>
 </ul>
 <ol start="3"><li><strong>원인별 개선 대책</strong></li></ol>
 <div class="tablewrap"><table>
@@ -525,7 +544,7 @@ tr:last-child td{border-bottom:none}
 <tr><td>고정점 부적절</td><td>고정점 재배치(강성 큰 하부구조로), 수평력 분산장치 검토</td></tr>
 <tr><td>공통</td><td>교체 시 잭업 계획·단계별 교통 제어, 개선 후 반력·이동량 계측으로 검증</td></tr>
 </tbody></table></div>
-<p><strong>Ⅲ. 결론</strong> — 곡선교 받침 손상 진단의 요체는 "<strong>해석으로 배치 가정을 재현하고 계측으로 실거동과 대조</strong>"하는 것이다. 부품 교체만으로는 재발하며, 반력 불균형과 이동 궤적이라는 원인 구조를 바로잡는 재배치가 근본 대책이다. 개선 후에는 스마트 받침 등 상시 반력 계측으로 배치 가정을 지속 검증함이 바람직하다.</p>
+<p><strong><span class="sym">Ⅲ</span>. 결론</strong> — 곡선교 받침 손상 진단의 요체는 "<strong>해석으로 배치 가정을 재현하고 계측으로 실거동과 대조</strong>"하는 것이다. 부품 교체만으로는 재발하며, 반력 불균형과 이동 궤적이라는 원인 구조를 바로잡는 재배치가 근본 대책이다. 개선 후에는 스마트 받침 등 상시 반력 계측으로 배치 가정을 지속 검증함이 바람직하다.</p>
       <div class="dwgs"><figure class="dwg">
   <img src="drawings/svg/139-3-A-A01.svg" alt="메커니즘도 139-3-A-A01"
        data-full="drawings/svg/139-3-A-A01.svg" data-cap="139-3-A-A01 · 메커니즘도" loading="lazy">
@@ -563,22 +582,22 @@ tr:last-child td{border-bottom:none}
   <div class="ans" id="ans-139-3-B" hidden>
     <div class="ans-in">
       <div class="ans-head"><span class="eyebrow">모범답안</span></div>
-      <p><strong>【핵심 키워드】 a/d = 하중전달 메커니즘 판단의 주요 지표(설계법 자동 결정 기준 아님) → B/D영역 판단 → 설계법 선택 / a/d 중간 = 사인장 취성 → 최소 전단보강 규정 확인 / 대형 부재 = 사이즈 이펙트</strong></p>
-<p><strong>Ⅰ. 서론</strong> — 설계법 선택의 기준은 부재의 명칭이 아니라 <strong>하중이 지점으로 전달되는 경로</strong>다. a/d가 작을수록 보 이론(평면 유지)이 깨지고 아치작용(직접 스트럿)이 지배하므로, 각 부재의 a/d에서 메커니즘을 판정한 뒤 그에 맞는 설계법을 선택한다.</p>
-<p><strong>Ⅱ. 본론</strong></p>
+      <p><strong>【핵심 키워드】 a/d = 하중전달 메커니즘 판단의 주요 지표(설계법 자동 결정 기준 아님) <span class="sym">→</span> B/D영역 판단 <span class="sym">→</span> 설계법 선택 / a/d 중간 = 사인장 취성 <span class="sym">→</span> 최소 전단보강 규정 확인 / 대형 부재 = 사이즈 이펙트</strong></p>
+<p><strong><span class="sym">Ⅰ</span>. 서론</strong> — 설계법 선택의 기준은 부재의 명칭이 아니라 <strong>하중이 지점으로 전달되는 경로</strong>다. a/d가 작을수록 보 이론(평면 유지)이 깨지고 아치작용(직접 스트럿)이 지배하므로, 각 부재의 a/d에서 메커니즘을 판정한 뒤 그에 맞는 설계법을 선택한다.</p>
+<p><strong><span class="sym">Ⅱ</span>. 본론</strong></p>
 <div class="tablewrap"><table>
 <thead><tr><th>부재</th><th>a/d</th><th>지배 메커니즘</th><th>예상 파괴모드(무보강)</th><th>설계법과 근거</th></tr></thead>
 <tbody>
-<tr><td>(가) 코벨</td><td>≈0.7</td><td>아치작용(직접 스트럿)</td><td>스트럿 압축파쇄·지압, 상면 인장타이 파단</td><td><strong>D영역으로 판단</strong>하고 STM 또는 이에 준하는 스트럿-타이 기반 검토</td></tr>
-<tr><td>(나) 전이보</td><td>≈1.8</td><td>아치+보 혼재</td><td>사인장균열 후 전단압축/전단인장(부착 할렬)</td><td>a/d가 작고 하중·지점의 국부 전달영역(<strong>D영역) 거동이 지배적이므로 STM 적용을 우선 검토</strong> — 형상·하중 도입 위치·지점조건 병행 판단</td></tr>
-<tr><td>(다) 일반 보</td><td>≈4.5</td><td>보작용</td><td><strong>사인장 취성파괴</strong>(균열내력≈파괴내력)</td><td>일반 휨·전단식 + <strong>최소 전단보강 규정 및 적용 예외 확인</strong> — 가장 취성적 구간</td></tr>
-<tr><td>(라) 대형 무근기초</td><td>≈6.0(大)</td><td>보작용(휨-전단 경계)</td><td>휨 지배에 근접하나 <strong>큰 유효깊이의 사이즈 이펙트로 단위 전단강도가 저하</strong>되어 사인장 파괴 가능성 재부상</td><td>일반식 적용 시 <strong>크기효과 반영</strong></td></tr>
+<tr><td>(가) 코벨</td><td><span class="sym">≈</span>0.7</td><td>아치작용(직접 스트럿)</td><td>스트럿 압축파쇄·지압, 상면 인장타이 파단</td><td><strong>D영역으로 판단</strong>하고 STM 또는 이에 준하는 스트럿-타이 기반 검토</td></tr>
+<tr><td>(나) 전이보</td><td><span class="sym">≈</span>1.8</td><td>아치+보 혼재</td><td>사인장균열 후 전단압축/전단인장(부착 할렬)</td><td>a/d가 작고 하중·지점의 국부 전달영역(<strong>D영역) 거동이 지배적이므로 STM 적용을 우선 검토</strong> — 형상·하중 도입 위치·지점조건 병행 판단</td></tr>
+<tr><td>(다) 일반 보</td><td><span class="sym">≈</span>4.5</td><td>보작용</td><td><strong>사인장 취성파괴</strong>(균열내력<span class="sym">≈</span>파괴내력)</td><td>일반 휨·전단식 + <strong>최소 전단보강 규정 및 적용 예외 확인</strong> — 가장 취성적 구간</td></tr>
+<tr><td>(라) 대형 무근기초</td><td><span class="sym">≈</span>6.0(大)</td><td>보작용(휨-전단 경계)</td><td>휨 지배에 근접하나 <strong>큰 유효깊이의 사이즈 이펙트로 단위 전단강도가 저하</strong>되어 사인장 파괴 가능성 재부상</td><td>일반식 적용 시 <strong>크기효과 반영</strong></td></tr>
 </tbody></table></div>
 <ul>
-<li>판정 논리(순서가 핵심): <strong>a/d → 하중전달 메커니즘 추정 → B/D영역 판단(형상·하중 도입·지점조건 병행) → 적합한 설계법 선택.</strong> (가)(나)는 하중과 지점이 가까워 압축장이 직결되는 D영역 거동 지배 → STM 우선 검토. (다)는 보작용에서 사인장이 휨보다 먼저 도달하는 구간 → 최소 전단보강 규정(적용 예외 포함) 확인으로 방어. (라)는 균열면 골재 맞물림의 상대 기여 감소로 깊이 증가 시 전단강도가 비례 증가하지 않음.</li>
+<li>판정 논리(순서가 핵심): <strong>a/d <span class="sym">→</span> 하중전달 메커니즘 추정 <span class="sym">→</span> B/D영역 판단(형상·하중 도입·지점조건 병행) <span class="sym">→</span> 적합한 설계법 선택.</strong> (가)(나)는 하중과 지점이 가까워 압축장이 직결되는 D영역 거동 지배 <span class="sym">→</span> STM 우선 검토. (다)는 보작용에서 사인장이 휨보다 먼저 도달하는 구간 <span class="sym">→</span> 최소 전단보강 규정(적용 예외 포함) 확인으로 방어. (라)는 균열면 골재 맞물림의 상대 기여 감소로 깊이 증가 시 전단강도가 비례 증가하지 않음.</li>
 </ul>
-<p>③ (라)의 추가 고려: 크기효과 계수 반영, 무근이므로 균열 후 취성 급진 — 검토 단면 위치·1방향/2방향 구분, 시공이음·양생(온도균열)이 전단면 저하로 직결됨을 함께 관리.</p>
-<p><strong>Ⅲ. 결론</strong> — 판단의 순서는 <strong>"a/d → 하중전달 메커니즘 → B/D영역 판단 → 적합한 설계법 선택"</strong>이며, a/d는 판단의 주요 지표이지 설계법을 자동 결정하는 기준이 아니다. 실무 오류의 대부분은 (나)류 중간 부재를 일반식으로 설계하거나 (라)류 대형 부재의 크기효과를 누락하는 데서 발생하며, 최신 기준이 전단강도식에 크기·변형률 효과를 반영해가는 흐름도 같은 근거에서 이해할 수 있다.</p>
+<p><span class="sym">③</span> (라)의 추가 고려: 크기효과 계수 반영, 무근이므로 균열 후 취성 급진 — 검토 단면 위치·1방향/2방향 구분, 시공이음·양생(온도균열)이 전단면 저하로 직결됨을 함께 관리.</p>
+<p><strong><span class="sym">Ⅲ</span>. 결론</strong> — 판단의 순서는 <strong>"a/d <span class="sym">→</span> 하중전달 메커니즘 <span class="sym">→</span> B/D영역 판단 <span class="sym">→</span> 적합한 설계법 선택"</strong>이며, a/d는 판단의 주요 지표이지 설계법을 자동 결정하는 기준이 아니다. 실무 오류의 대부분은 (나)류 중간 부재를 일반식으로 설계하거나 (라)류 대형 부재의 크기효과를 누락하는 데서 발생하며, 최신 기준이 전단강도식에 크기·변형률 효과를 반영해가는 흐름도 같은 근거에서 이해할 수 있다.</p>
       <div class="dwgs"><figure class="dwg">
   <img src="drawings/svg/139-3-B-A01.svg" alt="메커니즘도 139-3-B-A01"
        data-full="drawings/svg/139-3-B-A01.svg" data-cap="139-3-B-A01 · 메커니즘도" loading="lazy">
@@ -611,16 +630,16 @@ tr:last-child td{border-bottom:none}
   <div class="ans" id="ans-139-3-C" hidden>
     <div class="ans-in">
       <div class="ans-head"><span class="eyebrow">모범답안</span></div>
-      <p><strong>【핵심 키워드】 V=F/C · 대상 선정(예: 비용모델·파레토) / 기능분석 = "하중을 전달한다·통행을 제공한다" 등 명사+동사 기능 분해 → 수단 재검토 / 한계 = 절감액 실적주의·원안 방어 → 독립성·초기 적용·LCC 기준</strong></p>
-<p><strong>Ⅰ. 서론</strong> — VE는 "싸게 만드는 기법"이 아니라 <strong>기능(F)을 기준으로 비용(C)을 재구성</strong>하는 기법이다. 본 시나리오의 요체는 상부구조 형식(강합성 박스)을 전제로 두지 않고, "하중을 전달한다·통행을 제공한다"는 기능에서 대안을 다시 여는 것이다.</p>
-<p><strong>Ⅱ. 본론</strong></p>
-<ol start="1"><li><strong>준비단계</strong>: 다분야 팀(구조·수리·시공·유지관리)+VE 리더 구성, 설계도서·수리조건·형하 제약·민원 정보 수집, 발주자 요구 기능 중요도 조사(품질모델) → <strong>대상 선정</strong>: 실무적 방법의 예로 비용모델·파레토 분석을 활용하여 상부구조가 비용 비중·개선 잠재력이 큰 항목임을 확인하고 대상 확정.</li><li><strong>분석단계(상부구조)</strong></li></ol>
+      <p><strong>【핵심 키워드】 V=F/C · 대상 선정(예: 비용모델·파레토) / 기능분석 = "하중을 전달한다·통행을 제공한다" 등 명사+동사 기능 분해 <span class="sym">→</span> 수단 재검토 / 한계 = 절감액 실적주의·원안 방어 <span class="sym">→</span> 독립성·초기 적용·LCC 기준</strong></p>
+<p><strong><span class="sym">Ⅰ</span>. 서론</strong> — VE는 "싸게 만드는 기법"이 아니라 <strong>기능(F)을 기준으로 비용(C)을 재구성</strong>하는 기법이다. 본 시나리오의 요체는 상부구조 형식(강합성 박스)을 전제로 두지 않고, "하중을 전달한다·통행을 제공한다"는 기능에서 대안을 다시 여는 것이다.</p>
+<p><strong><span class="sym">Ⅱ</span>. 본론</strong></p>
+<ol start="1"><li><strong>준비단계</strong>: 다분야 팀(구조·수리·시공·유지관리)+VE 리더 구성, 설계도서·수리조건·형하 제약·민원 정보 수집, 발주자 요구 기능 중요도 조사(품질모델) <span class="sym">→</span> <strong>대상 선정</strong>: 실무적 방법의 예로 비용모델·파레토 분석을 활용하여 상부구조가 비용 비중·개선 잠재력이 큰 항목임을 확인하고 대상 확정.</li><li><strong>분석단계(상부구조)</strong></li></ol>
 <ul>
 <li>기능 정의: 기본기능을 <strong>"하중을 전달한다"·"통행을 제공한다"·"하천 횡단을 확보한다"</strong> 로 분해하고, 2차기능("미관을 제공한다"·"유지관리를 허용한다" 등)과 함께 명사+동사로 정의 — <strong>프로젝트 목적과 기능 정의를 혼동하지 않도록 기능 단위로 분해</strong>한다. FAST로 목적–수단을 구조화하면 "강합성 박스"는 기능이 아니라 <strong>하나의 수단</strong>임이 드러남.</li>
 <li>대안 창출(비판 금지 발상): 경간 분할 변경, PSC 거더·강플레이트거더 등 형식 대안, 하부공 최적화 연계.</li>
-<li>평가: 개략 평가로 압축 → 기능 충족도(수리 안전·형하·유지관리)와 <strong>LCC(초기비+유지관리비)</strong> 로 상세 평가, 구조 검토서 첨부 → 원안 대비 성능·비용 비교표로 제안(가치향상 유형 명시).</li>
+<li>평가: 개략 평가로 압축 <span class="sym">→</span> 기능 충족도(수리 안전·형하·유지관리)와 <strong>LCC(초기비+유지관리비)</strong> 로 상세 평가, 구조 검토서 첨부 <span class="sym">→</span> 원안 대비 성능·비용 비교표로 제안(가치향상 유형 명시).</li>
 </ul>
-<ol start="3"><li><strong>실행단계</strong>: 발주자 심의·채택 → 설계 반영 → 사후관리(시공·공용 성과 모니터링, DB화).</li><li><strong>형식적 VE의 한계와 개선(견해)</strong></li></ol>
+<ol start="3"><li><strong>실행단계</strong>: 발주자 심의·채택 <span class="sym">→</span> 설계 반영 <span class="sym">→</span> 사후관리(시공·공용 성과 모니터링, DB화).</li><li><strong>형식적 VE의 한계와 개선(견해)</strong></li></ol>
 <div class="tablewrap"><table>
 <thead><tr><th>한계</th><th>개선</th></tr></thead>
 <tbody>
@@ -629,7 +648,7 @@ tr:last-child td{border-bottom:none}
 <tr><td>실시설계 말기의 요식 수행</td><td><strong>기본설계 초기 적용</strong>(개선 여지 최대 시점)</td></tr>
 <tr><td>대안 검토의 정량성 부족</td><td>BIM 물량·LCC 자동 산출 연계</td></tr>
 </tbody></table></div>
-<p><strong>Ⅲ. 결론</strong> — VE의 성패는 절차 준수가 아니라 <strong>기능분석의 깊이와 팀의 독립성</strong>에 있다. 본 시나리오처럼 형식이 전제된 설계일수록 "형식은 수단"임을 드러내는 FAST가 결정적이며, LCC 기준 평가와 초기 적용이 형식화의 처방이라 판단된다.</p>
+<p><strong><span class="sym">Ⅲ</span>. 결론</strong> — VE의 성패는 절차 준수가 아니라 <strong>기능분석의 깊이와 팀의 독립성</strong>에 있다. 본 시나리오처럼 형식이 전제된 설계일수록 "형식은 수단"임을 드러내는 FAST가 결정적이며, LCC 기준 평가와 초기 적용이 형식화의 처방이라 판단된다.</p>
       <div class="dwgs"><figure class="dwg">
   <img src="drawings/svg/139-3-C-A01.svg" alt="개념도(프로세스) 139-3-C-A01"
        data-full="drawings/svg/139-3-C-A01.svg" data-cap="139-3-C-A01 · 개념도(프로세스)" loading="lazy">
