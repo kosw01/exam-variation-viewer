@@ -203,10 +203,20 @@ def load_items():
 # ---------- 화면 생성 ----------
 
 def figure(d):
-    src = "drawings/svg/" + os.path.basename(d["svg"])
+    """SVG를 인라인으로 넣는다.
+
+    <img>로 넣으면 SVG가 격리된 문서가 되어 페이지의 웹폰트를 쓰지 못한다.
+    도면 19건이 손글씨체를 지정하고 있으므로 인라인으로 넣어야 지정대로 그려진다.
+    원본 파일은 drawings/ 에 그대로 두고 해시로 검증한다. 여기서는 바이트를 옮겨 담기만 한다.
+    """
+    svg = open(d["svg"], encoding="utf-8").read()
+    svg = re.sub(r"^\s*<\?xml[^>]*\?>\s*", "", svg)
+    svg = re.sub(r"^\s*<!DOCTYPE[^>]*>\s*", "", svg)
+    svg = re.sub(r"<metadata>.*?</metadata>", "", svg, flags=re.S)   # c2pa 매니페스트 제거
+    svg = svg.replace("<svg ", '<svg role="img" ', 1)
     cap = html.escape(d["drawing_type"])
     return f'''<figure class="dwg">
-  <img src="{src}" alt="{cap}" data-full="{src}" data-cap="{html.escape(d["drawing_id"])} · {cap}" loading="lazy">
+  <div class="dwg-canvas" data-cap="{html.escape(d["drawing_id"])} · {cap}" aria-label="{cap}">{svg}</div>
   <figcaption><span class="mono">{html.escape(d["drawing_id"])}</span> {cap}<button class="zoom" type="button">확대</button></figcaption>
 </figure>'''
 

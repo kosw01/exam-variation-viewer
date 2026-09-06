@@ -9,6 +9,12 @@
    그리스 문자·수학 기호는 대체 서체가 표시한다. 대체 서체는 대문자 높이가
    0.733em으로 지정 서체(0.491em)보다 크므로 size-adjust 67%, 굵기 300으로 맞춘다. */
 @font-face{
+  /* 도면 SVG가 이 이름으로 서체를 지정한다. 같은 파일을 별칭으로 등록한다 */
+  font-family:'Nanum DdarEGeEomMaGa';
+  src:url('assets/fonts/nanum-handwriting.woff2') format('woff2');
+  font-display:swap;
+}
+@font-face{
   font-family:'HandKR';
   src:url('assets/fonts/nanum-handwriting.woff2') format('woff2');
   font-weight:400;
@@ -127,6 +133,10 @@ main{max-width:860px;margin:0 auto;padding:12px 20px 96px}
 .dwgs{padding:12px 26px 4px;display:grid;gap:14px}
 .dwg{margin:0;background:var(--surface-2);border-radius:var(--r-md);overflow:hidden}
 .dwg img{display:block;width:100%;height:auto;max-height:58vh;object-fit:contain;background:#fff;cursor:zoom-in}
+.dwg-canvas{background:#fff;cursor:zoom-in;display:block;max-height:58vh;overflow:hidden}
+.dwg-canvas svg{display:block;width:100%;height:auto;max-height:58vh}
+.lb-scroll .dwg-canvas{max-height:none;overflow:visible;border-radius:var(--r-sm);flex:0 0 auto;background:#fff}
+.lb-scroll .dwg-canvas svg{max-height:none}
 .dwg figcaption{display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:.82rem;color:var(--t3);font-weight:500}
 .zoom{
   margin-left:auto;background:var(--surface);border:none;border-radius:999px;padding:6px 14px;
@@ -646,7 +656,7 @@ tr:last-child td{border-bottom:none}
     <button type="button" data-z="in">확대</button>
     <button type="button" id="lb-close">닫기</button>
   </div>
-  <div class="lb-scroll" id="lb-scroll"><img id="lb-img" alt=""></div>
+  <div class="lb-scroll" id="lb-scroll"><div id="lb-canvas"></div></div>
 </div>
 
 <script>
@@ -745,30 +755,32 @@ tr:last-child td{border-bottom:none}
   });
 
   /* 도면 확대 — 원본 비율 유지, 배율만 변경 */
-  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img'),
+  var lb = document.getElementById('lb'), lbCanvas = document.getElementById('lb-canvas'),
       lbCap = document.getElementById('lb-cap'), lbScroll = document.getElementById('lb-scroll'),
       zoom = 1, lastFocus = null;
 
   function base(){ return Math.max(240, lbScroll.clientWidth - 32); }
-  function apply(){ lbImg.style.width = Math.round(base() * zoom) + 'px'; }
-  function openLb(img){
+  function apply(){ lbCanvas.style.width = Math.round(base() * zoom) + 'px'; }
+  function openLb(node){
     lastFocus = document.activeElement;
-    lbImg.src = img.dataset.full; lbImg.alt = img.alt;
-    lbCap.textContent = img.dataset.cap;
+    lbCanvas.innerHTML = '';
+    lbCanvas.appendChild(node.cloneNode(true));   /* 원본 노드를 복제해 띄운다 */
+    lbCanvas.className = 'dwg-canvas';
+    lbCap.textContent = node.dataset.cap || '';
     lb.hidden = false; zoom = 1; apply();
     document.body.style.overflow = 'hidden';
     document.getElementById('lb-close').focus();
   }
   function closeLb(){
-    lb.hidden = true; lbImg.src = ''; document.body.style.overflow = '';
+    lb.hidden = true; lbCanvas.innerHTML = ''; document.body.style.overflow = '';
     if(lastFocus) lastFocus.focus();
   }
   window.addEventListener('resize', function(){ if(!lb.hidden) apply(); });
 
   document.addEventListener('click', function(e){
     var z = e.target.closest('.zoom');
-    if(z){ openLb(z.closest('.dwg').querySelector('img')); return; }
-    var im = e.target.closest('.dwg img');
+    if(z){ openLb(z.closest('.dwg').querySelector('.dwg-canvas')); return; }
+    var im = e.target.closest('.dwg-canvas');
     if(im){ openLb(im); return; }
     var b = e.target.closest('.lb-bar button');
     if(!b) return;
