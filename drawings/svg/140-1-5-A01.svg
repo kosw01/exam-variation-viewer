@@ -1,0 +1,98 @@
+<svg width="100%" viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg" font-family="Nanum DdarEGeEomMaGa, Noto Sans CJK KR, sans-serif">
+<title>140-1-5 볼트접합부의 파괴형식 (스케치)</title>
+<desc>볼트접합부의 네 가지 파괴형식. 볼트 전단파괴는 볼트 축에 직각인 면에서 볼트가 끊어지는 것, 판의 지압파괴는 볼트가 판을 눌러 구멍이 늘어나는 것, 순단면 인장파괴는 구멍으로 줄어든 단면에서 판이 끊어지는 것, 블록전단파괴는 인장면과 전단면이 함께 떨어져 덩어리가 빠지는 것이다.</desc>
+<text x="267.2" y="28" font-size="15" fill="#33312E" text-anchor="start" font-weight="700">무엇이 먼저 항복하는가로 형식이 갈린다</text>
+<path d="M 65.8 76.2 L 82.2 76.2 L 98.8 76.1 L 115.2 76.0 L 131.8 75.9 L 148.5 75.9 L 165.0 76.0 L 181.6 75.8 L 198.1 76.0" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 66.1 76.1 L 82.7 76.0 L 99.0 75.8 L 115.4 75.9 L 131.8 76.1 L 148.3 76.0 L 164.9 75.9 L 181.4 76.0 L 198.0 75.8" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 65.8 150.2 L 82.5 150.0 L 98.9 149.8 L 115.5 149.8 L 132.2 149.7 L 148.7 150.0 L 165.1 149.9 L 181.5 150.1 L 197.8 150.2" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 66.0 150.0 L 82.5 150.2 L 99.1 150.3 L 115.4 150.3 L 131.8 150.0 L 148.6 149.8 L 165.1 149.8 L 181.7 150.0 L 198.2 149.9" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 65.8 75.8 L 66.0 90.8 L 65.8 105.5 L 66.0 120.5 L 66.1 135.2 L 65.8 149.9" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 65.8 75.9 L 66.0 90.8 L 65.8 105.7 L 66.0 120.2 L 66.1 135.1 L 66.2 150.1" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 197.8 75.8 L 198.0 90.7 L 198.2 105.7 L 198.2 120.4 L 198.0 135.0 L 197.9 150.1" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 198.1 75.9 L 198.1 90.6 L 198.0 105.6 L 198.2 120.5 L 198.0 135.4 L 198.0 150.0" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 139.9 92.0 L 154.1 91.9 L 168.3 91.8 L 182.1 92.0 L 196.2 92.0 L 210.2 91.9 L 224.0 91.8 L 237.9 92.0 L 252.1 92.1" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 140.0 92.1 L 154.2 92.2 L 168.2 92.3 L 182.1 92.3 L 196.2 92.2 L 210.1 92.2 L 224.2 92.2 L 238.3 92.0 L 252.1 92.2" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 140.0 134.1 L 154.1 134.0 L 168.2 134.1 L 182.3 134.2 L 196.2 134.3 L 209.9 134.2 L 223.8 134.0 L 237.8 134.0 L 252.1 134.1" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 139.9 134.0 L 153.9 134.1 L 167.9 134.0 L 182.1 134.2 L 195.9 134.1 L 209.7 134.1 L 224.0 134.2 L 238.1 134.2 L 251.9 134.2" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 140.1 91.9 L 140.2 100.6 L 140.2 108.7 L 139.9 117.1 L 140.0 125.4 L 140.0 133.7" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 140.0 91.8 L 140.1 100.4 L 140.1 108.9 L 140.1 117.2 L 140.2 125.6 L 140.2 133.9" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 251.9 91.9 L 251.8 100.4 L 252.0 109.0 L 251.8 117.3 L 252.0 125.6 L 252.0 134.1" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 252.2 92.0 L 252.0 100.5 L 251.9 109.0 L 252.1 117.2 L 252.0 125.7 L 252.1 133.9" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<circle cx="162.0" cy="113.0" r="7.0" fill="none" stroke="#33312E" stroke-width="1.4"/>
+<path d="M 162.1 91.9 L 162.5 133.9" fill="none" stroke="#8B2E2E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 161.9 92.0 L 161.7 134.3" fill="none" stroke="#8B2E2E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 252.1 112.8 L 266.6 112.9 L 281.4 113.0 L 295.9 112.8" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 252.1 112.8 L 266.5 112.8 L 281.3 112.9 L 296.0 113.0" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 287.9 107.9 L 291.9 110.4 L 295.9 113.0" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 288.2 118.1 L 292.0 115.6 L 296.0 113.0" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="304.1" y="118" font-size="12" fill="#777" text-anchor="start" font-weight="700">P</text>
+<text x="74.0" y="64" font-size="10.5" fill="#999" text-anchor="start" font-weight="700">두 판이 겹친 이음부</text>
+<text x="99.9" y="176" font-family="Noto Sans CJK KR, sans-serif" font-size="8.8" fill="#8B2E2E" text-anchor="start" font-weight="400">①</text><text x="108.6" y="176" font-size="12.5" fill="#8B2E2E" text-anchor="start" font-weight="700">  볼트 전단파괴</text>
+<text x="107.2" y="194" font-size="11" fill="#555" text-anchor="start" font-weight="700">볼트가 끊어진다</text>
+<path d="M 380.2 76.0 L 396.5 76.1 L 413.0 76.0 L 429.4 75.8 L 445.9 76.0 L 462.5 75.9 L 479.0 76.1 L 495.6 76.0 L 512.0 76.0" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 380.0 75.8 L 396.4 76.0 L 413.1 75.9 L 429.7 75.9 L 445.9 75.7 L 462.6 75.9 L 479.1 75.9 L 495.4 75.8 L 512.1 75.6" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 379.9 150.1 L 396.5 150.0 L 413.0 150.2 L 429.5 150.1 L 446.1 149.9 L 462.7 149.9 L 479.2 150.1 L 495.8 150.2 L 512.2 149.9" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 380.0 150.1 L 396.4 149.8 L 413.2 149.9 L 429.6 149.9 L 445.8 150.1 L 462.4 149.9 L 478.9 149.9 L 495.5 149.8 L 511.9 150.0" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 380.0 76.0 L 380.0 90.7 L 379.9 105.3 L 380.1 120.2 L 380.1 135.3 L 380.1 150.1" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 380.0 76.1 L 380.2 90.8 L 380.0 105.4 L 380.1 120.2 L 380.2 135.0 L 380.2 150.0" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 511.9 76.0 L 512.0 90.8 L 511.8 105.7 L 511.9 120.4 L 511.9 135.4 L 512.0 150.3" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 512.1 75.8 L 511.9 90.5 L 512.1 105.6 L 512.2 120.6 L 511.9 135.2 L 512.1 149.8" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<circle cx="422.0" cy="113.0" r="7.0" fill="none" stroke="#33312E" stroke-width="1.4"/>
+<path d="M 422.0 105.9 L 456.2 106.3" fill="none" stroke="#8B2E2E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 421.8 106.2 L 455.9 105.9" fill="none" stroke="#8B2E2E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 422.0 120.0 L 456.1 119.8" fill="none" stroke="#8B2E2E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 422.0 120.0 L 455.7 120.2" fill="none" stroke="#8B2E2E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 456.3 106.0 L 456.2 120.0" fill="none" stroke="#8B2E2E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 456.1 106.1 L 455.9 119.8" fill="none" stroke="#8B2E2E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="476.0" y="97" font-size="10.5" fill="#8B2E2E" text-anchor="start" font-weight="700">늘어난 구멍</text>
+<path d="M 522.0 113.2 L 536.6 113.1 L 551.4 113.3 L 566.2 113.1" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 521.9 112.9 L 536.5 112.8 L 551.3 112.9 L 565.8 112.9" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 558.0 108.1 L 562.0 110.7 L 565.9 113.3" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 558.0 118.0 L 562.1 115.5 L 566.0 112.8" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="574.1" y="118" font-size="12" fill="#777" text-anchor="start" font-weight="700">P</text>
+<text x="413.8" y="176" font-family="Noto Sans CJK KR, sans-serif" font-size="8.8" fill="#8B2E2E" text-anchor="start" font-weight="400">②</text><text x="422.6" y="176" font-size="12.5" fill="#8B2E2E" text-anchor="start" font-weight="700">  판의 지압파괴</text>
+<text x="422.2" y="194" font-size="11" fill="#555" text-anchor="start" font-weight="700">구멍이 늘어난다</text>
+<path d="M 66.0 218.2 L 82.4 217.9 L 98.8 217.7 L 115.2 217.8 L 131.9 218.1 L 148.5 218.2 L 165.2 218.1 L 181.5 218.1 L 197.9 218.1" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 65.8 218.1 L 82.2 218.2 L 98.8 218.1 L 115.4 217.9 L 131.8 217.7 L 148.6 217.8 L 165.2 218.1 L 181.6 218.0 L 197.9 217.8" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 65.9 292.1 L 82.5 292.0 L 98.8 292.1 L 115.4 292.2 L 131.8 292.2 L 148.4 291.9 L 165.0 292.0 L 181.5 292.0 L 198.0 291.8" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 66.0 292.0 L 82.3 292.0 L 98.8 292.1 L 115.2 291.9 L 131.9 291.7 L 148.3 291.8 L 165.1 291.9 L 181.6 291.9 L 198.0 291.9" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 65.9 218.0 L 66.0 232.8 L 66.0 247.7 L 66.1 262.5 L 65.9 277.5 L 66.1 292.0" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 65.9 218.0 L 65.9 233.0 L 66.1 247.6 L 66.0 262.3 L 66.0 277.3 L 65.9 292.0" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 198.1 217.8 L 198.3 232.6 L 198.0 247.5 L 198.0 262.5 L 197.8 277.2 L 197.7 291.9" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 197.9 218.1 L 198.0 232.9 L 197.8 247.8 L 197.9 262.7 L 198.0 277.3 L 198.1 292.1" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<circle cx="132.0" cy="237.0" r="7.0" fill="none" stroke="#33312E" stroke-width="1.4"/>
+<circle cx="132.0" cy="273.0" r="7.0" fill="none" stroke="#33312E" stroke-width="1.4"/>
+<path d="M 132.1 219.6 L 132.2 290.0" fill="none" stroke="#8B2E2E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 132.1 219.6 L 132.2 290.0" fill="none" stroke="#8B2E2E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 208.1 254.9 L 222.9 254.8 L 237.5 255.0 L 251.9 255.1" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 208.0 255.1 L 222.8 254.9 L 237.5 254.8 L 252.0 255.0" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 243.9 250.0 L 247.9 252.6 L 252.0 255.0" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 243.8 259.9 L 247.9 257.3 L 251.9 254.8" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="260.1" y="260" font-size="12" fill="#777" text-anchor="start" font-weight="700">P</text>
+<text x="94.4" y="318" font-family="Noto Sans CJK KR, sans-serif" font-size="8.8" fill="#8B2E2E" text-anchor="start" font-weight="400">③</text><text x="103.2" y="318" font-size="12.5" fill="#8B2E2E" text-anchor="start" font-weight="700">  순단면 인장파괴</text>
+<text x="92.0" y="336" font-size="11" fill="#555" text-anchor="start" font-weight="700">구멍만큼 줄어든 단면에서</text>
+<path d="M 379.9 218.1 L 396.4 218.2 L 413.1 218.2 L 429.5 218.0 L 445.9 217.8 L 462.5 217.9 L 478.9 217.9 L 495.5 218.1 L 512.1 218.2" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 379.8 217.9 L 396.3 218.1 L 413.1 218.2 L 429.7 218.2 L 446.1 218.1 L 462.4 217.9 L 478.8 218.1 L 495.2 218.2 L 511.7 218.1" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 380.0 292.1 L 396.3 292.2 L 413.0 292.2 L 429.7 292.0 L 445.9 292.0 L 462.6 291.9 L 479.0 292.2 L 495.6 292.1 L 511.8 292.1" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 380.0 292.2 L 396.7 292.1 L 413.1 292.2 L 429.5 292.0 L 445.9 292.2 L 462.2 292.0 L 478.9 292.1 L 495.6 292.1 L 512.2 292.1" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 379.8 217.9 L 380.0 232.8 L 379.8 247.6 L 379.7 262.6 L 379.7 277.5 L 379.7 292.1" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 379.9 217.9 L 379.7 232.5 L 379.8 247.5 L 379.7 262.3 L 380.0 277.4 L 380.0 292.2" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 512.0 217.8 L 512.0 232.7 L 511.9 247.7 L 512.2 262.3 L 512.0 277.3 L 511.8 292.2" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 512.1 217.8 L 511.9 232.8 L 512.0 247.4 L 511.9 262.3 L 512.1 277.1 L 511.9 292.1" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<circle cx="420.0" cy="237.0" r="7.0" fill="none" stroke="#33312E" stroke-width="1.4"/>
+<circle cx="420.0" cy="273.0" r="7.0" fill="none" stroke="#33312E" stroke-width="1.4"/>
+<path d="M 402.2 224.7 L 442.3 224.8" fill="none" stroke="#8B2E2E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 401.9 224.7 L 441.7 224.8" fill="none" stroke="#8B2E2E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 402.3 284.9 L 442.2 285.0" fill="none" stroke="#8B2E2E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 401.9 284.6 L 441.6 285.0" fill="none" stroke="#8B2E2E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 402.1 225.0 L 401.9 284.9" fill="none" stroke="#8B2E2E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 402.0 224.8 L 402.4 284.9" fill="none" stroke="#8B2E2E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 522.1 254.9 L 536.7 255.0 L 551.2 255.2 L 565.9 255.3" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 521.9 255.1 L 536.7 255.2 L 551.4 255.1 L 566.0 255.0" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 558.0 250.0 L 562.0 252.3 L 566.1 255.0" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 558.1 259.9 L 562.2 257.5 L 566.2 255.0" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="574.1" y="260" font-size="12" fill="#777" text-anchor="start" font-weight="700">P</text>
+<text x="415.3" y="318" font-family="Noto Sans CJK KR, sans-serif" font-size="8.8" fill="#8B2E2E" text-anchor="start" font-weight="400">④</text><text x="424.0" y="318" font-size="12.5" fill="#8B2E2E" text-anchor="start" font-weight="700">  블록전단파괴</text>
+<text x="407.7" y="336" font-size="11" fill="#555" text-anchor="start" font-weight="700">인장면과 전단면이 함께</text>
+<text x="249.5" y="366" font-size="12.5" fill="#555" text-anchor="start" font-weight="700">마찰접합에서는 파괴 이전에 미끄러짐이 먼저 한계가 된다</text>
+</svg>

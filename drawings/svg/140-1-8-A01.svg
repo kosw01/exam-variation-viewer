@@ -1,0 +1,61 @@
+<svg width="100%" viewBox="0 0 700 452" xmlns="http://www.w3.org/2000/svg" font-family="Nanum DdarEGeEomMaGa, Noto Sans CJK KR, sans-serif">
+<title>140-1-8 전단중심 (스케치)</title>
+<desc>채널 단면에서 하중이 도심을 지날 때는 플랜지 전단흐름의 합력이 만드는 우력이 남아 비틀림이 생기고, 하중이 전단중심을 지날 때는 그 우력이 상쇄되어 휨만 생긴다. 전단중심은 복부 바깥쪽에 놓이며 도심과 일치하지 않는다.</desc>
+<text x="242.7" y="28" font-size="15" fill="#33312E" text-anchor="start" font-weight="700">전단중심 = 횡하중이 지나면 비틀림이 생기지 않는 점</text>
+<text x="130.2" y="62" font-family="Noto Sans CJK KR, sans-serif" font-size="9.4" fill="#8B2E2E" text-anchor="start" font-weight="400">①</text><text x="139.6" y="62" font-size="13.5" fill="#8B2E2E" text-anchor="start" font-weight="700">  하중이 도심을 지날 때</text>
+<path d="M 149.7 114.2 L 149.7 129.4 L 149.7 144.5 L 149.7 159.6 L 149.8 174.7 L 149.9 189.9 L 150.0 205.2 L 150.2 220.1 L 150.2 235.6 L 149.9 250.8 L 150.1 266.1" fill="none" stroke="#33312E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 150.2 114.2 L 150.3 129.2 L 150.0 144.2 L 149.9 159.4 L 149.7 175.0 L 149.7 190.0 L 149.9 205.1 L 149.9 220.4 L 150.0 235.3 L 150.1 250.9 L 150.2 266.1" fill="none" stroke="#33312E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 149.8 114.2 L 160.4 114.0 L 170.5 113.8 L 181.0 113.8 L 191.6 113.6 L 201.9 114.0 L 212.1 113.9" fill="none" stroke="#33312E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 149.9 114.0 L 160.3 114.2 L 170.7 114.3 L 180.9 114.4 L 191.1 114.0 L 201.7 113.8 L 212.1 113.8" fill="none" stroke="#33312E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 149.8 265.8 L 160.3 265.9 L 170.5 265.9 L 181.0 266.1 L 191.5 266.0 L 201.5 265.8 L 211.7 265.8" fill="none" stroke="#33312E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 149.8 265.9 L 160.3 266.0 L 170.4 266.1 L 181.0 265.8 L 191.5 265.9 L 201.9 266.2 L 212.1 266.2" fill="none" stroke="#33312E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 160.1 120.9 L 171.3 120.9 L 182.3 120.9 L 193.1 120.8 L 204.0 120.7" fill="none" stroke="#2B5D8A" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 160.0 121.0 L 170.9 121.2 L 181.8 121.1 L 192.7 120.9 L 203.7 121.1" fill="none" stroke="#2B5D8A" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 195.9 116.0 L 199.9 118.4 L 203.9 121.0" fill="none" stroke="#2B5D8A" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 196.0 125.9 L 199.9 123.6 L 204.1 121.2" fill="none" stroke="#2B5D8A" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 159.9 258.9 L 170.9 259.0 L 182.0 259.2 L 193.1 259.1 L 203.9 259.0" fill="none" stroke="#2B5D8A" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 159.9 258.8 L 170.9 259.1 L 182.1 259.2 L 193.0 259.1 L 204.2 258.9" fill="none" stroke="#2B5D8A" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 167.9 254.1 L 164.0 256.7 L 159.9 259.1" fill="none" stroke="#2B5D8A" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 168.1 264.1 L 164.2 261.5 L 160.2 259.0" fill="none" stroke="#2B5D8A" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 157.2 126.0 L 157.0 147.4 L 157.0 168.7 L 156.9 189.8 L 156.9 211.3 L 157.0 232.6 L 157.0 254.1" fill="none" stroke="#2B5D8A" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 157.0 125.8 L 156.9 147.3 L 157.1 168.5 L 157.2 189.9 L 156.9 211.1 L 157.1 232.6 L 157.1 253.9" fill="none" stroke="#2B5D8A" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 171.9 67.9 L 171.9 77.5 L 172.0 87.2 L 172.1 96.6 L 171.9 106.0" fill="none" stroke="#5D3A82" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 171.9 67.8 L 171.9 77.6 L 172.1 87.2 L 172.0 96.6 L 172.2 105.9" fill="none" stroke="#5D3A82" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 165.9 96.1 L 169.0 101.2 L 171.9 106.1" fill="none" stroke="#5D3A82" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 178.1 96.1 L 175.2 101.0 L 172.2 106.0" fill="none" stroke="#5D3A82" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<circle cx="172.0" cy="190.0" r="4.5" fill="#33312E"/>
+<text x="184.0" y="195" font-size="11.5" fill="#33312E" text-anchor="start" font-weight="700">도심 G</text>
+<path d="M 180.0 322.0 A 24 24 0 1 1 188.0 322.0" fill="none" stroke="#8B2E2E" stroke-width="2.0"/>
+<text x="157.9" y="382" font-size="12" fill="#8B2E2E" text-anchor="start" font-weight="700">비틀림이 남는다</text>
+<text x="165.7" y="400" font-size="11.5" fill="#555" text-anchor="start" font-weight="700">휨 + 비틀림</text>
+<text x="420.6" y="62" font-family="Noto Sans CJK KR, sans-serif" font-size="9.4" fill="#2B5D8A" text-anchor="start" font-weight="400">②</text><text x="430.1" y="62" font-size="13.5" fill="#2B5D8A" text-anchor="start" font-weight="700">  하중이 전단중심을 지날 때</text>
+<path d="M 470.2 113.9 L 470.0 129.3 L 470.0 144.4 L 469.9 159.3 L 469.9 174.8 L 470.0 189.9 L 470.1 205.4 L 470.1 220.4 L 470.0 235.6 L 470.1 250.8 L 470.2 265.8" fill="none" stroke="#33312E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 470.0 113.8 L 469.9 129.2 L 470.1 144.2 L 470.3 159.5 L 469.9 174.5 L 470.1 189.9 L 470.2 205.1 L 469.8 220.1 L 470.1 235.2 L 470.0 250.4 L 469.9 265.6" fill="none" stroke="#33312E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 469.9 114.2 L 480.3 114.0 L 490.7 114.3 L 501.0 114.2 L 511.5 113.8 L 521.9 113.8 L 532.2 114.1" fill="none" stroke="#33312E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 470.0 114.1 L 480.3 113.8 L 490.9 113.9 L 501.1 113.9 L 511.1 114.2 L 521.6 113.9 L 531.9 113.9" fill="none" stroke="#33312E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 470.0 266.0 L 480.3 265.8 L 490.6 265.7 L 501.1 265.8 L 511.5 266.1 L 521.8 266.1 L 532.3 265.9" fill="none" stroke="#33312E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 470.1 266.1 L 480.6 266.0 L 490.7 265.7 L 501.1 265.8 L 511.5 265.8 L 521.9 266.1 L 532.1 265.8" fill="none" stroke="#33312E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 480.0 121.2 L 490.9 121.1 L 502.0 121.3 L 513.2 121.1 L 524.0 120.9" fill="none" stroke="#2B5D8A" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 479.9 120.9 L 490.8 120.8 L 501.9 120.9 L 512.8 120.9 L 524.1 120.9" fill="none" stroke="#2B5D8A" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 516.0 116.1 L 520.0 118.7 L 523.9 121.3" fill="none" stroke="#2B5D8A" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 516.0 126.0 L 520.1 123.5 L 524.0 120.8" fill="none" stroke="#2B5D8A" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 480.0 259.2 L 490.9 258.9 L 501.8 258.7 L 512.7 258.8 L 523.9 259.1" fill="none" stroke="#2B5D8A" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 479.8 259.1 L 490.7 259.2 L 501.8 259.1 L 512.9 258.9 L 523.8 258.7" fill="none" stroke="#2B5D8A" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 487.9 254.1 L 484.0 256.5 L 479.8 259.1" fill="none" stroke="#2B5D8A" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 487.9 264.0 L 484.0 261.5 L 480.0 259.1" fill="none" stroke="#2B5D8A" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 477.1 125.8 L 477.1 147.3 L 476.9 168.8 L 476.9 190.2 L 477.1 211.6 L 477.3 233.0 L 477.4 254.2" fill="none" stroke="#2B5D8A" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 477.1 125.8 L 477.1 147.3 L 476.9 168.8 L 477.1 189.9 L 477.3 211.2 L 477.1 232.4 L 476.9 254.1" fill="none" stroke="#2B5D8A" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 436.0 68.2 L 435.9 77.4 L 435.8 86.7 L 435.7 96.3 L 435.9 106.1" fill="none" stroke="#2B5D8A" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 435.8 68.1 L 435.7 77.7 L 435.8 87.1 L 435.9 96.4 L 435.8 105.7" fill="none" stroke="#2B5D8A" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 429.9 96.1 L 433.0 101.0 L 435.8 106.1" fill="none" stroke="#2B5D8A" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 441.9 96.0 L 439.0 101.0 L 436.0 106.1" fill="none" stroke="#2B5D8A" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 436.1 113.8 L 436.1 133.0 L 436.0 152.1 L 435.9 171.2 L 436.1 190.2 L 436.2 209.3 L 436.3 228.1 L 436.0 247.0 L 436.2 265.9" fill="none" stroke="#CCC" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" stroke-dasharray="5 4"/>
+<circle cx="436.0" cy="190.0" r="5" fill="#FFFFFF" stroke="#2B5D8A" stroke-width="1.8"/>
+<text x="389.5" y="195" font-size="11.5" fill="#2B5D8A" text-anchor="start" font-weight="700">전단중심 S</text>
+<circle cx="492.0" cy="190.0" r="4" fill="#BBB"/>
+<text x="502.0" y="195" font-size="11" fill="#999" text-anchor="start" font-weight="700">G</text>
+<text x="452.6" y="382" font-size="12" fill="#2B5D8A" text-anchor="start" font-weight="700">비틀림이 생기지 않는다</text>
+<text x="470.2" y="400" font-size="11.5" fill="#555" text-anchor="start" font-weight="700">휨만 생긴다</text>
+<text x="237.9" y="422" font-size="12.5" fill="#555" text-anchor="start" font-weight="700">한 축에만 대칭인 단면에서는 전단중심이 도심과 일치하지 않는다</text>
+<text x="283.4" y="442" font-size="12" fill="#555" text-anchor="start" font-weight="700">두 축 대칭 단면에서는 두 점이 일치한다</text>
+</svg>

@@ -1,0 +1,75 @@
+<svg width="100%" viewBox="0 0 700 296" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans CJK KR, sans-serif">
+<title>140-3-4 2경간 연속보 하중도 (문제 도면 재작도)</title>
+<desc>지점 A, B, C로 지지된 2경간 연속보. AB구간은 길이 6 m, 단면강성 EI, 등분포하중 20 kN/m. BC구간은 길이 6 m, 단면강성 2EI, B에서 0이고 C에서 20 kN/m로 선형 증가하는 삼각형 분포하중. C점에 30 kN·m의 집중모멘트가 부모멘트를 유발하는 방향으로 작용한다.</desc>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2B2A28"/></marker></defs>
+<rect x="80.0" y="178.0" width="470.0" height="9.0" fill="#2B2A28"/>
+<path d="M 80.0 187.0 L 67.0 207.0 L 93.0 207.0 Z" fill="none" stroke="#2B2A28" stroke-width="1.2"/>
+<line x1="61.0" y1="207.0" x2="99.0" y2="207.0" stroke="#2B2A28" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="63.0" y1="207.0" x2="57.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="70.0" y1="207.0" x2="64.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="77.0" y1="207.0" x2="71.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="84.0" y1="207.0" x2="78.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="91.0" y1="207.0" x2="85.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="98.0" y1="207.0" x2="92.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M 315.0 187.0 L 302.0 207.0 L 328.0 207.0 Z" fill="none" stroke="#2B2A28" stroke-width="1.2"/>
+<line x1="296.0" y1="207.0" x2="334.0" y2="207.0" stroke="#2B2A28" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="298.0" y1="207.0" x2="292.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="305.0" y1="207.0" x2="299.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="312.0" y1="207.0" x2="306.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="319.0" y1="207.0" x2="313.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="326.0" y1="207.0" x2="320.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="333.0" y1="207.0" x2="327.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<path d="M 550.0 187.0 L 537.0 207.0 L 563.0 207.0 Z" fill="none" stroke="#2B2A28" stroke-width="1.2"/>
+<line x1="531.0" y1="207.0" x2="569.0" y2="207.0" stroke="#2B2A28" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="533.0" y1="207.0" x2="527.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="540.0" y1="207.0" x2="534.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="547.0" y1="207.0" x2="541.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="554.0" y1="207.0" x2="548.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="561.0" y1="207.0" x2="555.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="568.0" y1="207.0" x2="562.0" y2="216.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<text x="80.0" y="233.0" font-size="13" fill="#2B2A28" text-anchor="middle" font-weight="600">A</text>
+<text x="315.0" y="233.0" font-size="13" fill="#2B2A28" text-anchor="middle" font-weight="600">B</text>
+<text x="550.0" y="233.0" font-size="13" fill="#2B2A28" text-anchor="middle" font-weight="600">C</text>
+<line x1="80.0" y1="132.0" x2="315.0" y2="132.0" stroke="#2B2A28" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="80.0" y1="132.0" x2="80.0" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="101.4" y1="132.0" x2="101.4" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="122.7" y1="132.0" x2="122.7" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="144.1" y1="132.0" x2="144.1" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="165.5" y1="132.0" x2="165.5" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="186.8" y1="132.0" x2="186.8" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="208.2" y1="132.0" x2="208.2" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="229.5" y1="132.0" x2="229.5" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="250.9" y1="132.0" x2="250.9" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="272.3" y1="132.0" x2="272.3" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="293.6" y1="132.0" x2="293.6" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="315.0" y1="132.0" x2="315.0" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<text x="197.5" y="122.0" font-size="12.5" fill="#2B2A28" text-anchor="middle" font-weight="600">W1 = 20 kN/m</text>
+<line x1="315.0" y1="176.0" x2="550.0" y2="132.0" stroke="#2B2A28" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="379.1" y1="164.0" x2="379.1" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="400.5" y1="160.0" x2="400.5" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="421.8" y1="156.0" x2="421.8" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="443.2" y1="152.0" x2="443.2" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="464.5" y1="148.0" x2="464.5" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="485.9" y1="144.0" x2="485.9" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="507.3" y1="140.0" x2="507.3" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="528.6" y1="136.0" x2="528.6" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="550.0" y1="132.0" x2="550.0" y2="175.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<text x="432.5" y="122.0" font-size="12.5" fill="#2B2A28" text-anchor="middle" font-weight="600">W0 = 20 kN/m (삼각형)</text>
+<path d="M 558.0 148.0 A 24 24 0 1 1 560.0 192.0" fill="none" stroke="#2B2A28" stroke-width="1.4" marker-end="url(#ar)"/>
+<text x="602.0" y="124.0" font-size="12.5" fill="#2B2A28" text-anchor="middle" font-weight="600">M0 = 30 kN·m</text>
+<text x="602.0" y="140.0" font-size="11" fill="#666" text-anchor="middle" font-weight="400">(부모멘트 방향)</text>
+<text x="197.5" y="208.0" font-size="13" fill="#2B2A28" text-anchor="middle" font-weight="400" font-style="italic">EI</text>
+<text x="432.5" y="208.0" font-size="13" fill="#2B2A28" text-anchor="middle" font-weight="400" font-style="italic">2EI</text>
+<line x1="80.0" y1="245.0" x2="80.0" y2="261.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="315.0" y1="245.0" x2="315.0" y2="261.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="82.0" y1="253.0" x2="313.0" y2="253.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="313.0" y1="253.0" x2="82.0" y2="253.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<rect x="161.5" y="244.0" width="72" height="18" fill="#FFFFFF"/>
+<text x="197.5" y="257.0" font-size="12" fill="#2B2A28" text-anchor="middle" font-weight="400">L1 = 6 m</text>
+<line x1="315.0" y1="245.0" x2="315.0" y2="261.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="550.0" y1="245.0" x2="550.0" y2="261.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="317.0" y1="253.0" x2="548.0" y2="253.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<line x1="548.0" y1="253.0" x2="317.0" y2="253.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar)"/>
+<rect x="396.5" y="244.0" width="72" height="18" fill="#FFFFFF"/>
+<text x="432.5" y="257.0" font-size="12" fill="#2B2A28" text-anchor="middle" font-weight="400">L2 = 6 m</text>
+</svg>

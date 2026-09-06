@@ -1,0 +1,47 @@
+<svg width="100%" viewBox="0 0 700 430" xmlns="http://www.w3.org/2000/svg" font-family="Nanum DdarEGeEomMaGa, Noto Sans CJK KR, sans-serif">
+<title>140-4-1 성능목표 매트릭스 (스케치)</title>
+<desc>가로축은 지진 위험도 수준을 재현주기 순으로, 세로축은 요구 성능수준을 기능수행·즉시복구·인명보호·붕괴방지 순으로 둔 격자. 시설물 중요도에 따라 성능목표선이 이동하며, 중요도가 높을수록 같은 위험도에서 더 높은 성능을 요구하므로 선이 왼쪽 위로 옮겨간다. 목표선의 위치는 기준과 시설물에 따라 달라지며 이 그림은 두 축의 조합 구조를 보이기 위한 것이다.</desc>
+<text x="285.0" y="26" font-size="15" fill="#33312E" text-anchor="start" font-weight="700">성능목표 설정의 예 </text><text x="363.4" y="26" font-family="Noto Sans CJK KR, sans-serif" font-size="10.5" fill="#33312E" text-anchor="start" font-weight="400">—</text><text x="372.8" y="26" font-size="15" fill="#33312E" text-anchor="start" font-weight="700"> 내진 PBD</text>
+<text x="293.2" y="46" font-size="12" fill="#777" text-anchor="start" font-weight="700">요구 성능수준과 지진위험도의 조합</text>
+<path d="M 151.8 100.2 L 151.7 134.8 L 151.8 169.4 L 151.7 204.0 L 151.8 238.6 L 152.0 273.2 L 152.0 308.0" fill="none" stroke="#C9C5BE" stroke-width="1.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 267.8 100.2 L 268.0 134.7 L 267.9 169.2 L 268.0 203.8 L 268.2 238.3 L 268.2 273.3 L 268.1 307.9" fill="none" stroke="#C9C5BE" stroke-width="1.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 383.8 99.8 L 384.0 134.6 L 383.8 169.3 L 384.0 204.1 L 384.1 238.7 L 383.8 273.2 L 383.7 307.8" fill="none" stroke="#C9C5BE" stroke-width="1.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 499.8 99.8 L 500.0 134.6 L 500.2 169.5 L 500.2 204.0 L 500.0 238.5 L 499.9 273.5 L 500.0 308.2" fill="none" stroke="#C9C5BE" stroke-width="1.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 616.0 99.8 L 616.2 134.7 L 616.3 169.4 L 615.9 204.1 L 616.1 238.9 L 615.9 273.4 L 615.9 308.2" fill="none" stroke="#C9C5BE" stroke-width="1.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 152.1 99.9 L 190.9 99.9 L 229.6 99.9 L 268.1 99.8 L 306.7 99.7 L 345.1 99.7 L 383.9 100.1 L 422.7 100.2 L 461.3 99.9 L 500.1 100.1 L 538.9 100.1 L 577.5 99.8 L 615.9 99.9" fill="none" stroke="#C9C5BE" stroke-width="1.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 151.8 152.0 L 190.5 151.8 L 229.2 152.0 L 268.0 152.0 L 306.6 151.8 L 345.4 151.9 L 384.1 152.1 L 422.8 152.0 L 461.5 151.8 L 500.3 151.7 L 538.6 151.8 L 577.2 152.1 L 615.9 152.2" fill="none" stroke="#C9C5BE" stroke-width="1.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 152.1 203.9 L 190.6 204.2 L 229.5 204.2 L 268.2 204.0 L 307.0 204.0 L 345.5 204.0 L 384.1 204.0 L 422.7 204.2 L 461.1 204.2 L 500.0 204.0 L 538.5 204.0 L 577.1 204.1 L 615.9 203.9" fill="none" stroke="#C9C5BE" stroke-width="1.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 152.0 256.0 L 190.6 256.0 L 229.5 256.1 L 268.2 256.3 L 306.8 256.3 L 345.3 256.1 L 384.0 256.2 L 422.8 256.0 L 461.5 256.2 L 500.2 256.0 L 538.7 256.1 L 577.4 256.2 L 615.8 255.9" fill="none" stroke="#C9C5BE" stroke-width="1.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 151.9 308.1 L 190.6 308.0 L 229.4 308.2 L 268.0 307.9 L 306.6 307.8 L 345.1 308.0 L 383.6 308.1 L 422.3 308.2 L 461.1 308.1 L 500.0 307.9 L 538.9 308.0 L 577.6 307.8 L 616.1 308.1" fill="none" stroke="#C9C5BE" stroke-width="1.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="202.5" y="86" font-size="12.5" fill="#33312E" text-anchor="start" font-weight="700">빈발</text>
+<text x="320.0" y="86" font-size="12.5" fill="#33312E" text-anchor="start" font-weight="700">보통</text>
+<text x="435.7" y="86" font-size="12.5" fill="#33312E" text-anchor="start" font-weight="700">희소</text>
+<text x="548.2" y="86" font-size="12.5" fill="#33312E" text-anchor="start" font-weight="700">최희소</text>
+<text x="310.9" y="66" font-size="12" fill="#777" text-anchor="start" font-weight="700">지진위험도  (재현주기가 길어질수록 오른쪽)</text>
+<text x="106.4" y="132" font-size="12.5" fill="#33312E" text-anchor="start" font-weight="700">기능수행</text>
+<text x="107.9" y="184" font-size="12.5" fill="#33312E" text-anchor="start" font-weight="700">즉시복구</text>
+<text x="110.2" y="236" font-size="12.5" fill="#33312E" text-anchor="start" font-weight="700">인명보호</text>
+<text x="107.2" y="288" font-size="12.5" fill="#33312E" text-anchor="start" font-weight="700">붕괴방지</text>
+<text x="23.2" y="196" font-size="12" fill="#777" text-anchor="start" font-weight="700">요구</text>
+<text x="15.9" y="212" font-size="12" fill="#777" text-anchor="start" font-weight="700">성능수준</text>
+<text x="8.7" y="230" font-size="10.5" fill="#999" text-anchor="start" font-weight="700">(아래로 갈수록</text>
+<text x="5.4" y="246" font-size="10.5" fill="#999" text-anchor="start" font-weight="700">허용 손상 증가)</text>
+<path d="M 210.0 128.4 L 326.3 180.9 L 442.2 233.0 L 558.1 285.2" fill="none" stroke="#2B5D8A" stroke-width="2.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 209.8 128.8 L 325.8 180.4 L 441.9 232.7 L 557.7 284.4" fill="none" stroke="#2B5D8A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="582.0" y="285" font-size="12" fill="#2B5D8A" text-anchor="start" font-weight="700">일반 시설</text>
+<path d="M 210.0 128.6 L 326.1 128.4 L 442.3 180.2 L 558.2 232.3" fill="none" stroke="#8A5A22" stroke-width="2.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 210.0 128.6 L 325.6 128.8 L 441.9 180.7 L 557.6 233.0" fill="none" stroke="#8A5A22" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="582.0" y="233" font-size="12" fill="#8A5A22" text-anchor="start" font-weight="700">중요 시설</text>
+<path d="M 210.3 128.6 L 326.3 128.6 L 442.5 128.7 L 558.3 180.4" fill="none" stroke="#8B2E2E" stroke-width="2.10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 210.1 128.7 L 325.8 128.4 L 442.1 128.7 L 558.2 180.7" fill="none" stroke="#8B2E2E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="582.0" y="181" font-size="12" fill="#8B2E2E" text-anchor="start" font-weight="700">특수 시설</text>
+<path d="M 444.3 271.8 L 444.2 250.9 L 444.3 230.3 L 444.5 209.3 L 444.4 188.3 L 444.3 167.8" fill="none" stroke="#888" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" stroke-dasharray="6 4"/>
+<path d="M 444.3 271.5 L 444.1 250.6 L 444.3 229.9 L 444.2 209.1 L 444.4 188.3 L 444.2 167.7" fill="none" stroke="#888" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.55" stroke-dasharray="6 4"/>
+<path d="M 439.3 177.7 L 441.8 172.8 L 444.2 167.9" fill="none" stroke="#888" stroke-width="1.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 449.3 177.6 L 446.9 172.6 L 444.3 167.4" fill="none" stroke="#888" stroke-width="1.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="417.0" y="158" font-size="11" fill="#888" text-anchor="start" font-weight="700">중요도가 높을수록</text>
+<text x="216.4" y="342" font-size="12.5" fill="#33312E" text-anchor="start" font-weight="700">두 축의 조합으로 목표를 정하고, 해석 결과가 그 목표를 만족하는지 검증한다</text>
+<text x="258.0" y="362" font-size="11.5" fill="#777" text-anchor="start" font-weight="700">정량 지표 예 : 부재 회전각, 변형률, 잔류변위, 손상수준</text>
+<text x="238.7" y="386" font-size="11.5" fill="#999" text-anchor="start" font-weight="700">※ 내진 PBD의 예다. 작용의 종류에 따라 수준 설정 방식이 달라진다</text>
+<text x="233.5" y="404" font-size="11" fill="#999" text-anchor="start" font-weight="700">이 도해는 두 축의 조합 구조를 보이기 위한 것이며 특정 기준의 수치가 아니다</text>
+</svg>

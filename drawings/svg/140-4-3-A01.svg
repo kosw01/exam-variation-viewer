@@ -1,0 +1,118 @@
+<svg width="100%" viewBox="0 0 700 440" xmlns="http://www.w3.org/2000/svg" font-family="Nanum DdarEGeEomMaGa, Noto Sans CJK KR, sans-serif">
+<title>140-4-3 주두부 불균형모멘트와 일체화 저항 기구 (스케치)</title>
+<desc>왼쪽은 교축방향 입면으로, 좌우 캔틸레버의 하중 차이가 교각 상면에 불균형모멘트로 전달되는 모습이다. 문제가 정한 축에서 이 성분은 교축직각방향인 y축 둘레 모멘트에 해당한다. 오른쪽은 주두부와 교각을 일체화해 저항하는 기구로, PC강봉의 인장과 임시 콘크리트 블록의 압축이 이루는 우력이 불균형모멘트를 받는다. 저항모멘트는 인장력과 두 힘 사이 거리의 곱이다.</desc>
+<text x="108.9" y="30" font-family="Noto Sans CJK KR, sans-serif" font-size="10.5" fill="#8B2E2E" text-anchor="start" font-weight="400">①</text><text x="119.4" y="30" font-size="15" fill="#8B2E2E" text-anchor="start" font-weight="700">  좌우 불균형이 만드는 모멘트</text>
+<text x="156.7" y="50" font-size="11.5" fill="#888" text-anchor="start" font-weight="700">교축방향 입면</text>
+<path d="M 45.7 128.2 L 61.1 128.2 L 76.6 128.1 L 92.0 128.0 L 107.6 127.9 L 123.2 127.9 L 138.7 128.0 L 154.3 127.7 L 169.7 128.0 L 184.9 128.0 L 200.5 128.1 L 216.0 128.1 L 231.5 127.8 L 246.7 128.0 L 262.0 127.9 L 277.5 127.9 L 292.9 128.2 L 308.3 128.1 L 323.8 127.8" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 46.2 128.2 L 61.7 128.0 L 76.9 127.8 L 92.2 127.8 L 107.5 128.2 L 122.9 128.0 L 138.5 127.9 L 154.0 128.0 L 169.6 127.7 L 185.1 128.1 L 200.6 128.1 L 216.0 128.1 L 231.2 128.2 L 246.7 128.3 L 262.2 128.0 L 277.6 128.0 L 293.0 128.1 L 308.5 128.0 L 324.2 128.2" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 45.8 144.2 L 61.5 144.0 L 76.7 143.8 L 92.3 143.8 L 108.0 143.6 L 123.4 144.0 L 138.8 143.9 L 154.1 144.1 L 169.3 144.2 L 184.6 144.0 L 200.4 144.1 L 216.0 143.8 L 231.2 143.7 L 246.7 144.1 L 262.1 144.2 L 277.7 144.0 L 293.3 144.1 L 308.7 144.0 L 324.2 143.8" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 45.9 144.0 L 61.4 144.2 L 77.0 144.3 L 92.2 144.4 L 107.5 144.0 L 123.3 143.8 L 138.8 143.8 L 154.3 144.0 L 169.8 143.9 L 185.0 144.0 L 200.3 143.8 L 216.1 144.1 L 231.6 144.0 L 246.9 144.3 L 262.4 144.2 L 277.7 144.2 L 293.0 144.3 L 308.6 144.3 L 324.3 144.0" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 45.8 127.8 L 46.0 133.3 L 45.8 138.6 L 46.0 144.1" fill="none" stroke="#33312E" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 45.8 127.9 L 46.0 133.3 L 45.8 138.7 L 46.0 143.8" fill="none" stroke="#33312E" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 323.8 127.8 L 324.0 133.3 L 324.2 138.8 L 324.2 144.0" fill="none" stroke="#33312E" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 324.1 127.9 L 324.1 133.1 L 324.0 138.7 L 324.2 144.1" fill="none" stroke="#33312E" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 160.9 144.0 L 161.1 159.5 L 161.3 174.9 L 161.1 190.9 L 161.2 206.4 L 161.3 221.9 L 161.0 237.4 L 160.9 253.1 L 161.1 268.9 L 160.8 284.4 L 161.0 300.0" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 161.0 144.2 L 161.3 159.9 L 161.3 175.6 L 161.1 191.2 L 161.2 206.7 L 161.2 222.2 L 161.2 237.8 L 161.3 253.3 L 161.1 269.0 L 160.9 284.7 L 161.2 300.2" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 195.0 144.2 L 195.1 159.6 L 195.2 175.3 L 195.4 191.1 L 195.2 206.8 L 194.9 222.3 L 194.7 237.6 L 194.7 253.2 L 195.1 269.0 L 195.2 284.5 L 195.1 300.0" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 194.8 144.0 L 194.9 159.7 L 194.9 175.2 L 195.1 191.1 L 194.9 206.5 L 194.7 222.1 L 195.0 237.8 L 195.2 253.5 L 194.8 269.1 L 194.7 284.4 L 194.9 300.2" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 132.1 299.9 L 147.5 300.2 L 162.9 299.9 L 177.9 299.9 L 193.4 299.8 L 208.7 299.7 L 224.0 299.9" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 132.0 299.8 L 147.4 300.0 L 162.8 300.1 L 178.1 300.0 L 193.5 300.0 L 208.8 299.9 L 224.2 300.0" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 135.8 300.2 L 132.5 304.9 L 128.9 310.1" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 148.1 300.0 L 144.7 305.0 L 141.2 309.9" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 159.9 300.0 L 156.4 304.9 L 152.9 310.0" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 172.0 299.9 L 168.4 305.1 L 165.1 310.2" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 184.0 300.0 L 180.4 305.0 L 177.1 310.1" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 195.9 300.1 L 192.4 305.0 L 189.0 310.2" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 208.1 300.0 L 204.4 304.9 L 200.8 310.0" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 219.9 300.1 L 216.4 305.0 L 213.0 310.2" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="134.6" y="260" font-size="11.5" fill="#777" text-anchor="start" font-weight="700">교각</text>
+<path d="M 49.9 101.9 L 59.9 102.0 L 70.0 102.2 L 80.1 102.1 L 89.9 102.0" fill="none" stroke="#999" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 49.9 101.8 L 59.9 102.1 L 70.1 102.2 L 80.0 102.1 L 90.2 101.9" fill="none" stroke="#999" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 50.2 102.0 L 50.0 110.1 L 50.0 118.0 L 49.9 125.8" fill="none" stroke="#999" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 50.0 101.8 L 49.9 110.0 L 50.1 117.9 L 50.2 125.9" fill="none" stroke="#999" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 90.0 101.9 L 90.2 110.2 L 90.1 118.2 L 90.1 126.3" fill="none" stroke="#999" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 89.9 102.1 L 89.9 109.9 L 90.0 118.1 L 89.8 125.9" fill="none" stroke="#999" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 281.8 102.2 L 293.5 102.3 L 304.8 102.2 L 316.2 101.9 L 328.0 101.9" fill="none" stroke="#999" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 281.9 102.0 L 293.4 102.2 L 305.0 102.3 L 316.5 102.4 L 328.0 102.3" fill="none" stroke="#999" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 281.9 102.1 L 282.0 110.0 L 282.0 118.2 L 282.0 126.1" fill="none" stroke="#999" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 282.0 102.1 L 281.9 109.8 L 282.2 117.9 L 282.1 125.9" fill="none" stroke="#999" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 328.0 102.0 L 328.1 109.9 L 328.2 117.8 L 328.1 125.9" fill="none" stroke="#999" stroke-width="1.30" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 328.0 102.0 L 327.8 110.1 L 328.0 118.0 L 327.8 126.2" fill="none" stroke="#999" stroke-width="0.95" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="294.8" y="80" font-size="11" fill="#888" text-anchor="start" font-weight="700">작업차</text>
+<path d="M 70.2 62.0 L 70.0 74.1 L 70.0 86.0 L 69.9 97.8" fill="none" stroke="#8B2E2E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 70.0 61.8 L 69.9 74.0 L 70.1 85.9 L 70.2 97.9" fill="none" stroke="#8B2E2E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 64.9 88.1 L 67.6 93.0 L 69.9 98.1" fill="none" stroke="#8B2E2E" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 74.9 87.9 L 72.5 92.8 L 70.0 98.0" fill="none" stroke="#8B2E2E" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 304.9 44.1 L 305.0 62.0 L 305.0 80.2 L 305.0 98.1" fill="none" stroke="#8B2E2E" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 305.0 44.1 L 304.9 61.8 L 305.2 79.9 L 305.1 97.9" fill="none" stroke="#8B2E2E" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 299.9 87.9 L 302.5 92.8 L 305.0 98.0" fill="none" stroke="#8B2E2E" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 310.0 88.1 L 307.5 93.0 L 305.1 97.9" fill="none" stroke="#8B2E2E" stroke-width="1.50" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="256.2" y="180" font-size="13" fill="#8B2E2E" text-anchor="start" font-weight="700">불균형모멘트</text>
+<text x="250.4" y="198" font-size="12" fill="#8B2E2E" text-anchor="start" font-weight="700">y축 둘레  (Myy)</text>
+<text x="247.3" y="222" font-size="11" fill="#555" text-anchor="start" font-weight="700">시공 시차 </text><text x="278.3" y="222" font-family="Noto Sans CJK KR, sans-serif" font-size="7.7" fill="#555" text-anchor="start" font-weight="400">·</text><text x="282.6" y="222" font-size="11" fill="#555" text-anchor="start" font-weight="700"> 자중차</text>
+<text x="249.5" y="239" font-size="11" fill="#555" text-anchor="start" font-weight="700">작업하중 </text><text x="279.2" y="239" font-family="Noto Sans CJK KR, sans-serif" font-size="7.7" fill="#555" text-anchor="start" font-weight="400">·</text><text x="283.5" y="239" font-size="11" fill="#555" text-anchor="start" font-weight="700"> 풍하중</text>
+<path d="M 56.0 351.9 L 69.5 352.1 L 82.7 352.2 L 96.1 352.3" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 55.9 352.1 L 69.3 351.9 L 82.6 352.1 L 95.9 351.9" fill="none" stroke="#33312E" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 90.0 348.0 L 93.0 349.9 L 96.1 351.9" fill="none" stroke="#33312E" stroke-width="1.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 56.2 352.0 L 56.1 340.7 L 56.2 329.4 L 56.2 317.9" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 56.0 352.0 L 55.9 340.6 L 56.0 329.4 L 56.1 318.0" fill="none" stroke="#33312E" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 52.0 323.9 L 54.1 321.0 L 56.1 318.1" fill="none" stroke="#33312E" stroke-width="1.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="106.0" y="356" font-size="11" fill="#777" text-anchor="start" font-weight="700">x  교축</text>
+<text x="62.0" y="312" font-size="11" fill="#777" text-anchor="start" font-weight="700">z  높이</text>
+<text x="100.0" y="378" font-size="11" fill="#777" text-anchor="start" font-weight="700">y  교축직각 (지면 수직)</text>
+<text x="470.5" y="30" font-family="Noto Sans CJK KR, sans-serif" font-size="10.5" fill="#2B5D8A" text-anchor="start" font-weight="400">②</text><text x="481.0" y="30" font-size="15" fill="#2B5D8A" text-anchor="start" font-weight="700">  일체화 저항 기구</text>
+<text x="491.5" y="50" font-size="11.5" fill="#888" text-anchor="start" font-weight="700">교각 상면 상세</text>
+<path d="M 407.9 110.2 L 425.9 110.2 L 444.0 110.3 L 462.2 110.1 L 480.0 109.9 L 498.0 110.2 L 516.2 110.0 L 534.1 110.2 L 552.3 110.4 L 570.1 110.0 L 588.1 109.8 L 605.9 109.7 L 623.9 109.8" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 407.9 109.9 L 425.8 109.7 L 443.9 109.9 L 461.8 109.9 L 480.1 109.8 L 497.8 110.2 L 515.9 110.0 L 534.0 109.7 L 552.1 109.8 L 570.1 109.9 L 587.9 109.9 L 606.0 109.7 L 623.9 110.1" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 408.0 150.2 L 426.0 150.4 L 443.8 150.4 L 461.9 150.1 L 479.8 150.0 L 497.7 150.1 L 515.8 149.9 L 534.1 150.0 L 552.0 150.0 L 569.7 150.1 L 588.0 150.1 L 605.7 150.3 L 623.7 150.4" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 408.2 150.1 L 426.3 149.8 L 444.4 149.8 L 462.2 149.7 L 480.2 149.6 L 498.3 149.8 L 516.4 150.1 L 534.3 149.9 L 552.3 149.7 L 570.3 150.0 L 588.3 150.2 L 606.2 150.2 L 623.9 150.1" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 408.0 110.0 L 408.1 123.3 L 408.0 136.5 L 408.2 150.0" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 407.8 109.8 L 407.7 123.2 L 407.9 136.4 L 407.7 149.8" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 624.0 109.8 L 624.0 123.1 L 623.8 136.4 L 624.1 150.0" fill="none" stroke="#33312E" stroke-width="1.60" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 624.2 110.0 L 624.0 123.4 L 624.1 136.9 L 624.2 150.3" fill="none" stroke="#33312E" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="504.5" y="132" font-size="12" fill="#777" text-anchor="start" font-weight="700">주두부</text>
+<path d="M 424.0 194.2 L 439.2 193.9 L 454.4 193.7 L 469.6 193.7 L 485.2 194.1 L 500.7 194.2 L 516.2 194.1 L 531.3 194.1 L 546.5 194.1 L 561.8 194.1 L 577.2 194.0 L 592.6 193.8 L 608.2 194.1" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 423.8 194.2 L 439.0 194.2 L 454.4 194.2 L 469.9 193.8 L 485.1 193.6 L 500.8 193.8 L 516.2 194.1 L 531.4 194.0 L 546.6 193.8 L 561.8 193.7 L 577.2 193.6 L 592.7 193.9 L 608.0 193.8" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 439.9 194.2 L 440.0 206.0 L 439.8 218.1 L 439.9 230.2 L 439.8 242.2 L 439.9 253.9 L 440.0 266.0 L 440.0 278.0 L 440.0 289.8" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 440.0 194.0 L 439.8 206.1 L 439.8 218.2 L 439.6 229.9 L 439.9 241.7 L 439.7 253.8 L 440.1 265.9 L 440.1 277.9 L 440.0 289.9" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 591.9 194.0 L 592.0 206.0 L 592.0 218.1 L 592.1 230.2 L 591.8 242.4 L 592.1 254.0 L 591.9 266.0 L 592.2 278.0 L 591.8 290.1" fill="none" stroke="#33312E" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 591.9 194.0 L 591.9 206.2 L 592.1 217.9 L 592.0 229.8 L 592.0 242.1 L 591.8 254.0 L 591.7 266.2 L 591.6 277.9 L 592.0 289.9" fill="none" stroke="#33312E" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="509.0" y="252" font-size="12" fill="#777" text-anchor="start" font-weight="700">교각</text>
+<path d="M 434.1 149.8 L 444.0 149.9 L 453.9 149.9 L 464.0 150.1 L 474.1 149.9" fill="none" stroke="#8A5A22" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 433.8 150.1 L 444.0 150.0 L 454.2 149.8 L 463.9 150.0 L 473.8 150.1" fill="none" stroke="#8A5A22" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 434.1 194.1 L 443.8 194.0 L 454.1 194.0 L 464.2 193.8 L 473.9 193.7" fill="none" stroke="#8A5A22" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 434.0 193.8 L 443.8 193.9 L 454.1 194.1 L 463.9 193.8 L 473.9 194.0" fill="none" stroke="#8A5A22" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 434.0 149.8 L 434.1 164.4 L 433.8 179.2 L 433.7 194.0" fill="none" stroke="#8A5A22" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 434.1 150.1 L 433.9 164.7 L 433.7 179.2 L 433.9 194.1" fill="none" stroke="#8A5A22" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 474.0 149.9 L 474.1 164.7 L 474.0 179.4 L 473.9 194.0" fill="none" stroke="#8A5A22" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 473.8 149.9 L 473.9 164.5 L 474.0 179.2 L 473.9 194.0" fill="none" stroke="#8A5A22" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 558.1 150.1 L 567.8 150.0 L 578.1 150.0 L 588.2 149.8 L 597.9 149.7" fill="none" stroke="#8A5A22" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 558.0 149.8 L 567.8 149.9 L 578.1 150.1 L 587.9 149.8 L 597.9 150.0" fill="none" stroke="#8A5A22" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 558.0 193.8 L 568.1 193.7 L 577.8 193.9 L 587.7 194.0 L 597.8 194.2" fill="none" stroke="#8A5A22" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 558.1 194.1 L 567.9 194.1 L 577.7 193.8 L 587.9 194.1 L 598.0 194.2" fill="none" stroke="#8A5A22" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 558.0 149.9 L 558.1 164.7 L 558.0 179.4 L 557.9 194.0" fill="none" stroke="#8A5A22" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 557.8 149.9 L 557.9 164.5 L 558.0 179.2 L 557.9 194.0" fill="none" stroke="#8A5A22" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 597.8 149.9 L 597.8 164.5 L 598.0 179.4 L 598.0 194.1" fill="none" stroke="#8A5A22" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 598.2 149.9 L 598.2 164.4 L 597.9 179.2 L 597.8 193.8" fill="none" stroke="#8A5A22" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="370.7" y="172" font-size="11.5" fill="#8A5A22" text-anchor="start" font-weight="700">임시 블록</text>
+<path d="M 402.1 171.9 L 412.2 171.8 L 422.2 172.0 L 431.9 172.1" fill="none" stroke="#AAA" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 423.8 116.1 L 423.9 136.3 L 424.0 156.4 L 423.8 176.5 L 424.0 196.6 L 423.9 217.2 L 423.8 237.4 L 424.0 257.6 L 424.1 277.7" fill="none" stroke="#2B5D8A" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 424.2 116.1 L 424.1 136.3 L 423.9 156.5 L 423.9 176.8 L 423.8 196.8 L 424.0 216.9 L 424.2 237.4 L 424.3 257.5 L 424.4 277.9" fill="none" stroke="#2B5D8A" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 608.0 116.1 L 607.8 136.5 L 608.0 156.7 L 608.2 176.7 L 607.9 197.0 L 608.1 217.2 L 608.0 237.7 L 608.1 257.8 L 607.8 278.1" fill="none" stroke="#2B5D8A" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 608.0 116.2 L 608.2 136.3 L 608.1 156.7 L 608.0 176.7 L 607.9 197.2 L 607.7 217.2 L 607.9 237.6 L 608.1 257.8 L 608.2 278.1" fill="none" stroke="#2B5D8A" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="638.0" y="128" font-size="11.5" fill="#2B5D8A" text-anchor="start" font-weight="700">PC강봉</text>
+<path d="M 633.9 125.9 L 626.7 124.7 L 619.2 123.4 L 611.8 122.1" fill="none" stroke="#AAA" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="421.3" y="298" font-size="14" fill="#2B5D8A" text-anchor="start" font-weight="700">T</text>
+<text x="605.3" y="298" font-size="14" fill="#2B5D8A" text-anchor="start" font-weight="700">T</text>
+<text x="451.3" y="216" font-size="14" fill="#8A5A22" text-anchor="start" font-weight="700">C</text>
+<text x="575.3" y="216" font-size="14" fill="#8A5A22" text-anchor="start" font-weight="700">C</text>
+<path d="M 424.1 309.9 L 424.1 320.6 L 424.2 331.2 L 424.2 342.0" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 578.1 229.9 L 578.1 267.4 L 578.0 304.7 L 578.1 342.1" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 424.0 334.0 L 449.6 334.0 L 475.2 334.1 L 500.8 333.9 L 526.5 333.9 L 552.3 334.1 L 578.1 334.1" fill="none" stroke="#33312E" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 424.0 333.9 L 449.8 334.0 L 475.3 334.1 L 501.0 334.0 L 526.7 334.1 L 552.5 334.2 L 577.9 334.2" fill="none" stroke="#33312E" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="499.3" y="326" font-size="13" fill="#33312E" text-anchor="start" font-weight="700">a</text>
+<text x="473.5" y="364" font-size="13.5" fill="#2B5D8A" text-anchor="start" font-weight="700">저항모멘트  M = T </text><text x="545.6" y="364" font-family="Noto Sans CJK KR, sans-serif" font-size="9.4" fill="#2B5D8A" text-anchor="start" font-weight="400">·</text><text x="550.9" y="364" font-size="13.5" fill="#2B5D8A" text-anchor="start" font-weight="700"> a</text>
+<text x="448.0" y="384" font-size="11.5" fill="#555" text-anchor="start" font-weight="700">강봉 용량과 거리 a가 함께 성능을 정한다</text>
+<text x="261.1" y="410" font-size="12.5" fill="#555" text-anchor="start" font-weight="700">수평력 Dx </text><text x="301.8" y="410" font-family="Noto Sans CJK KR, sans-serif" font-size="8.8" fill="#555" text-anchor="start" font-weight="400">·</text><text x="306.7" y="410" font-size="12.5" fill="#555" text-anchor="start" font-weight="700"> Dy는 스토퍼와 전단키의 전단이 받고,</text>
+<text x="248.6" y="428" font-size="12.5" fill="#555" text-anchor="start" font-weight="700">평면 회전 Mzz는 떨어져 배치된 수평반력의 우력이 받는다</text>
+</svg>

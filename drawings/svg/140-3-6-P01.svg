@@ -1,0 +1,62 @@
+<svg width="100%" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans CJK KR, sans-serif">
+<title>140-3-6 양단고정보 중앙 게르버 힌지 (문제 도면 재작도)</title>
+<desc>양단이 고정된 지간 L의 보 AB. 중앙점 C에 게르버 힌지가 설치되어 있다. A부터 C까지 구간에 등분포하중 W가 작용하고, A에서 L/4 위치에 집중하중 P가 작용한다. 치수는 왼쪽부터 L/4, L/4, L/2이며 전체가 L이다.</desc>
+<defs><marker id="ar6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2B2A28"/></marker></defs>
+<rect x="96.0" y="146.0" width="508.0" height="8.0" fill="#2B2A28"/>
+<line x1="96.0" y1="120.0" x2="96.0" y2="180.0" stroke="#2B2A28" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="96.0" y1="123.0" x2="85.0" y2="132.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="96.0" y1="132.0" x2="85.0" y2="141.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="96.0" y1="141.0" x2="85.0" y2="150.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="96.0" y1="150.0" x2="85.0" y2="159.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="96.0" y1="159.0" x2="85.0" y2="168.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="96.0" y1="168.0" x2="85.0" y2="177.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="96.0" y1="177.0" x2="85.0" y2="186.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="604.0" y1="120.0" x2="604.0" y2="180.0" stroke="#2B2A28" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="604.0" y1="123.0" x2="615.0" y2="132.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="604.0" y1="132.0" x2="615.0" y2="141.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="604.0" y1="141.0" x2="615.0" y2="150.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="604.0" y1="150.0" x2="615.0" y2="159.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="604.0" y1="159.0" x2="615.0" y2="168.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="604.0" y1="168.0" x2="615.0" y2="177.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<line x1="604.0" y1="177.0" x2="615.0" y2="186.0" stroke="#2B2A28" stroke-width="0.9" stroke-linecap="round"/>
+<text x="70.0" y="156.0" font-size="14" fill="#2B2A28" text-anchor="middle" font-weight="600">A</text>
+<text x="630.0" y="156.0" font-size="14" fill="#2B2A28" text-anchor="middle" font-weight="600">B</text>
+<circle cx="350.0" cy="150.0" r="7.5" fill="#FFFFFF" stroke="#2B2A28" stroke-width="1.8"/>
+<text x="350.0" y="180.0" font-size="14" fill="#2B2A28" text-anchor="middle" font-weight="600">C</text>
+<text x="362.0" y="180.0" font-size="11.5" fill="#666" text-anchor="start" font-weight="400">게르버 힌지</text>
+<line x1="96.0" y1="106.0" x2="350.0" y2="106.0" stroke="#2B2A28" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="96.0" y1="106.0" x2="96.0" y2="143.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar6)"/>
+<line x1="124.2" y1="106.0" x2="124.2" y2="143.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar6)"/>
+<line x1="152.4" y1="106.0" x2="152.4" y2="143.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar6)"/>
+<line x1="180.7" y1="106.0" x2="180.7" y2="143.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar6)"/>
+<line x1="208.9" y1="106.0" x2="208.9" y2="143.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar6)"/>
+<line x1="237.1" y1="106.0" x2="237.1" y2="143.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar6)"/>
+<line x1="265.3" y1="106.0" x2="265.3" y2="143.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar6)"/>
+<line x1="293.6" y1="106.0" x2="293.6" y2="143.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar6)"/>
+<line x1="321.8" y1="106.0" x2="321.8" y2="143.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar6)"/>
+<line x1="350.0" y1="106.0" x2="350.0" y2="143.0" stroke="#2B2A28" stroke-width="1.0" marker-end="url(#ar6)"/>
+<text x="257.0" y="94.0" font-size="15" fill="#2B2A28" text-anchor="middle" font-weight="600" font-style="italic">W</text>
+<line x1="223.0" y1="60.0" x2="223.0" y2="143.0" stroke="#2B2A28" stroke-width="2.0" marker-end="url(#ar6)"/>
+<text x="223.0" y="52.0" font-size="15" fill="#2B2A28" text-anchor="middle" font-weight="600" font-style="italic">P</text>
+<line x1="96.0" y1="184.0" x2="96.0" y2="254.0" stroke="#999" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="223.0" y1="184.0" x2="223.0" y2="254.0" stroke="#999" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="350.0" y1="184.0" x2="350.0" y2="254.0" stroke="#999" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="604.0" y1="184.0" x2="604.0" y2="254.0" stroke="#999" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="98.0" y1="228.0" x2="221.0" y2="228.0" stroke="#2B2A28" stroke-width="1.1" marker-end="url(#ar6)"/>
+<line x1="221.0" y1="228.0" x2="98.0" y2="228.0" stroke="#2B2A28" stroke-width="1.1" marker-end="url(#ar6)"/>
+<rect x="137.5" y="218.0" width="44" height="20" fill="#FFFFFF"/>
+<text x="159.5" y="233.0" font-size="12.5" fill="#2B2A28" text-anchor="middle" font-weight="400">L/4</text>
+<line x1="225.0" y1="228.0" x2="348.0" y2="228.0" stroke="#2B2A28" stroke-width="1.1" marker-end="url(#ar6)"/>
+<line x1="348.0" y1="228.0" x2="225.0" y2="228.0" stroke="#2B2A28" stroke-width="1.1" marker-end="url(#ar6)"/>
+<rect x="264.5" y="218.0" width="44" height="20" fill="#FFFFFF"/>
+<text x="286.5" y="233.0" font-size="12.5" fill="#2B2A28" text-anchor="middle" font-weight="400">L/4</text>
+<line x1="352.0" y1="228.0" x2="602.0" y2="228.0" stroke="#2B2A28" stroke-width="1.1" marker-end="url(#ar6)"/>
+<line x1="602.0" y1="228.0" x2="352.0" y2="228.0" stroke="#2B2A28" stroke-width="1.1" marker-end="url(#ar6)"/>
+<rect x="455.0" y="218.0" width="44" height="20" fill="#FFFFFF"/>
+<text x="477.0" y="233.0" font-size="12.5" fill="#2B2A28" text-anchor="middle" font-weight="400">L/2</text>
+<line x1="98.0" y1="254.0" x2="602.0" y2="254.0" stroke="#2B2A28" stroke-width="1.1" marker-end="url(#ar6)"/>
+<line x1="602.0" y1="254.0" x2="98.0" y2="254.0" stroke="#2B2A28" stroke-width="1.1" marker-end="url(#ar6)"/>
+<rect x="332.0" y="244.0" width="36" height="20" fill="#FFFFFF"/>
+<text x="350.0" y="259.0" font-size="13" fill="#2B2A28" text-anchor="middle" font-weight="600" font-style="italic">L</text>
+<text x="350.0" y="30.0" font-size="12.5" fill="#666" text-anchor="middle" font-weight="400">휨강성 EI는 전 지간에 걸쳐 일정</text>
+</svg>

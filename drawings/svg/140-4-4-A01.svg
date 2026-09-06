@@ -1,0 +1,61 @@
+<svg width="100%" viewBox="0 0 700 410" xmlns="http://www.w3.org/2000/svg" font-family="Nanum DdarEGeEomMaGa, Noto Sans CJK KR, sans-serif">
+<title>140-4-4 절점 처짐과 부재 신장의 관계 (스케치)</title>
+<desc>절점 O가 연직으로 델타만큼 내려갈 때 연직재의 신장은 델타와 같고, 경사재의 신장은 델타에 코사인 세타를 곱한 값이다. 변위를 부재축 방향으로 투영하기 때문이다. 경사재는 길이도 L을 코사인 세타로 나눈 값이므로, 두 효과가 함께 작용해 경사재의 부재력에는 코사인이 두 번 곱해진다.</desc>
+<text x="209.9" y="30" font-size="15" fill="#33312E" text-anchor="start" font-weight="700">적합조건 : 절점이 아래로 내려갈 때 각 부재는 얼마나 늘어나는가</text>
+<path d="M 170.9 92.2 L 188.1 92.2 L 205.4 92.1 L 222.6 92.0 L 240.0 91.9 L 257.4 91.9 L 274.8 92.0 L 292.2 91.7 L 309.4 92.0 L 326.4 92.0 L 343.8 92.1 L 361.2 92.1 L 378.5 91.8 L 395.5 92.0 L 412.6 91.9" fill="none" stroke="#33312E" stroke-width="1.70" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 171.3 92.2 L 188.7 92.0 L 205.7 91.8 L 222.8 91.8 L 239.9 92.2 L 257.2 92.0 L 274.6 91.9 L 291.9 92.0 L 309.3 91.7 L 326.6 92.1 L 343.9 92.1 L 361.2 92.1 L 378.1 92.2 L 395.5 92.3 L 412.8 92.0" fill="none" stroke="#33312E" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 177.3 91.9 L 173.1 86.9 L 168.9 82.0" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 193.5 92.0 L 189.7 86.9 L 185.8 81.8" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 210.0 92.1 L 206.0 87.0 L 202.1 82.1" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 226.5 91.9 L 222.5 87.1 L 218.6 82.0" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 242.7 92.0 L 238.6 87.0 L 234.8 82.1" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 259.4 92.1 L 255.1 87.1 L 251.1 82.0" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 275.5 92.0 L 271.6 87.0 L 267.5 82.0" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 292.2 92.0 L 288.2 87.1 L 284.0 82.2" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 308.5 92.1 L 304.3 87.1 L 300.5 82.0" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 324.8 92.0 L 321.0 86.9 L 316.9 82.0" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 341.0 92.2 L 337.2 86.9 L 333.2 82.1" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 357.7 92.0 L 353.8 87.0 L 349.8 81.9" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 373.9 92.0 L 369.9 86.9 L 365.9 82.0" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 390.5 91.9 L 386.4 87.1 L 382.5 82.2" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 406.8 92.0 L 402.7 87.0 L 398.9 82.1" fill="none" stroke="#BBB" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 292.1 92.1 L 292.1 106.2 L 292.2 120.3 L 292.1 134.0 L 291.9 148.1 L 291.9 162.2 L 291.7 176.0 L 292.0 190.2 L 291.8 204.0 L 291.7 218.2 L 291.6 232.1" fill="none" stroke="#BBB" stroke-width="1.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" stroke-dasharray="6 4"/>
+<path d="M 211.2 92.2 L 219.4 106.3 L 227.4 120.1 L 235.3 133.9 L 243.2 148.0 L 251.4 162.2 L 259.5 176.3 L 267.8 190.2 L 275.8 204.3 L 283.8 218.3 L 291.8 232.3" fill="none" stroke="#BBB" stroke-width="1.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" stroke-dasharray="6 4"/>
+<path d="M 372.7 92.1 L 364.5 106.0 L 356.8 119.8 L 348.4 134.1 L 340.3 148.0 L 332.4 162.1 L 324.2 176.1 L 316.3 190.3 L 308.3 204.1 L 299.9 217.9 L 291.9 232.2" fill="none" stroke="#BBB" stroke-width="1.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" stroke-dasharray="6 4"/>
+<path d="M 292.3 92.1 L 292.3 110.8 L 292.1 129.5 L 291.8 148.2 L 291.8 166.8 L 292.0 185.1 L 291.7 203.6 L 291.6 222.2 L 292.0 240.7 L 291.8 259.3 L 292.1 278.2" fill="none" stroke="#8A5A22" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 291.8 91.8 L 292.0 110.7 L 292.0 129.3 L 292.0 147.8 L 291.9 166.6 L 292.2 185.2 L 291.9 203.8 L 292.1 222.1 L 292.2 240.9 L 292.1 259.2 L 292.2 277.9" fill="none" stroke="#8A5A22" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 211.0 91.9 L 219.0 110.7 L 227.2 129.1 L 235.4 147.5 L 243.6 166.0 L 251.8 184.6 L 259.8 203.4 L 268.1 222.3 L 275.9 240.8 L 284.2 259.3 L 292.3 277.8" fill="none" stroke="#2B5D8A" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 211.1 91.8 L 219.1 110.6 L 227.5 129.2 L 235.4 148.0 L 243.6 166.5 L 251.5 185.3 L 259.6 203.8 L 267.7 222.1 L 276.1 240.9 L 284.2 259.2 L 292.1 277.9" fill="none" stroke="#2B5D8A" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 373.1 91.9 L 365.0 110.5 L 356.8 129.3 L 348.8 147.8 L 340.4 166.3 L 332.1 184.8 L 324.2 203.4 L 316.0 222.3 L 307.8 241.0 L 299.6 259.5 L 291.6 278.1" fill="none" stroke="#2B5D8A" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 372.9 92.0 L 365.0 110.7 L 357.0 129.1 L 348.9 148.0 L 340.5 166.4 L 332.5 185.1 L 324.3 203.4 L 316.3 222.3 L 308.0 240.7 L 299.9 259.5 L 292.1 277.9" fill="none" stroke="#2B5D8A" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<circle cx="292.0" cy="232.0" r="4" fill="none" stroke="#BBB" stroke-width="1.2"/>
+<circle cx="292.0" cy="278.0" r="5" fill="#5D3A82"/>
+<text x="274.6" y="226" font-size="13" fill="#999" text-anchor="start" font-weight="700">O</text>
+<text x="306.0" y="284" font-size="13" fill="#5D3A82" text-anchor="start" font-weight="700">O'</text>
+<path d="M 218.0 231.9 L 218.2 247.5 L 218.1 262.9 L 218.1 278.3" fill="none" stroke="#5D3A82" stroke-width="1.80" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 217.9 232.1 L 217.9 247.2 L 218.0 262.7 L 217.8 277.9" fill="none" stroke="#5D3A82" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 213.0 241.0 L 215.5 236.4 L 218.2 231.8" fill="none" stroke="#5D3A82" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 223.2 241.0 L 220.6 236.5 L 218.2 232.1" fill="none" stroke="#5D3A82" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 213.1 268.8 L 215.6 273.5 L 218.1 278.1" fill="none" stroke="#5D3A82" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 223.1 269.1 L 220.5 273.5 L 218.0 278.1" fill="none" stroke="#5D3A82" stroke-width="1.40" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 218.0 231.9 L 235.1 231.8 L 252.2 232.0 L 269.2 232.0 L 286.0 231.9" fill="none" stroke="#CCC" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" stroke-dasharray="4 3"/>
+<path d="M 217.9 277.9 L 234.8 277.8 L 252.0 277.8 L 269.1 277.8 L 286.0 278.0" fill="none" stroke="#CCC" stroke-width="0.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" stroke-dasharray="4 3"/>
+<text x="197.8" y="259" font-family="Noto Sans CJK KR, sans-serif" font-size="10.5" fill="#5D3A82" text-anchor="start" font-weight="400">δ</text>
+<text x="525.7" y="76" font-size="13" fill="#2B5D8A" text-anchor="start" font-weight="700">경사재 확대</text>
+<text x="494.1" y="94" font-size="11.5" fill="#888" text-anchor="start" font-weight="700">변위를 부재축 방향으로 투영한다</text>
+<path d="M 505.9 105.5 L 511.1 114.5 L 516.5 123.8 L 522.0 132.7 L 527.0 141.5 L 532.2 150.9 L 537.7 159.8 L 542.9 169.1 L 548.3 178.4" fill="none" stroke="#2B5D8A" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 505.9 105.1 L 511.0 114.1 L 516.4 123.4 L 521.6 132.4 L 527.1 141.5 L 532.1 150.9 L 537.4 159.8 L 542.8 168.7 L 548.1 177.8" fill="none" stroke="#2B5D8A" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 548.0 178.2 L 548.0 189.8 L 547.8 201.4 L 547.9 212.6 L 547.8 224.0" fill="none" stroke="#5D3A82" stroke-width="1.90" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 548.2 178.1 L 548.2 189.3 L 548.3 200.8 L 548.2 212.3 L 548.2 223.6" fill="none" stroke="#5D3A82" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<text x="530.2" y="205" font-family="Noto Sans CJK KR, sans-serif" font-size="9.8" fill="#5D3A82" text-anchor="start" font-weight="400">δ</text>
+<path d="M 548.0 178.0 L 553.1 186.6 L 558.0 195.1 L 563.1 203.9 L 568.2 212.7" fill="none" stroke="#2B5D8A" stroke-width="2.20" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 547.8 177.8 L 552.7 186.5 L 557.9 195.0 L 562.7 203.7 L 567.9 212.4" fill="none" stroke="#2B5D8A" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+<path d="M 548.0 223.9 L 553.0 220.9 L 557.8 218.0 L 563.0 215.4 L 568.1 212.6" fill="none" stroke="#CCC" stroke-width="1.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" stroke-dasharray="4 3"/>
+<text x="597.9" y="238" font-family="Noto Sans CJK KR, sans-serif" font-size="9.1" fill="#2B5D8A" text-anchor="start" font-weight="400">δ</text><text x="603.3" y="238" font-size="13" fill="#2B5D8A" text-anchor="start" font-weight="700"> cos </text><text x="623.2" y="238" font-family="Noto Sans CJK KR, sans-serif" font-size="9.1" fill="#2B5D8A" text-anchor="start" font-weight="400">θ</text>
+<text x="597.9" y="256" font-size="11.5" fill="#2B5D8A" text-anchor="start" font-weight="700">= 경사재의 신장</text>
+<text x="205.2" y="330" font-size="13.5" fill="#33312E" text-anchor="start" font-weight="700">연직재의 신장 = </text><text x="269.1" y="330" font-family="Noto Sans CJK KR, sans-serif" font-size="9.4" fill="#33312E" text-anchor="start" font-weight="400">δ</text>
+<text x="411.4" y="330" font-size="13.5" fill="#33312E" text-anchor="start" font-weight="700">경사재의 신장 = </text><text x="476.9" y="330" font-family="Noto Sans CJK KR, sans-serif" font-size="9.4" fill="#33312E" text-anchor="start" font-weight="400">δ</text><text x="482.5" y="330" font-size="13.5" fill="#33312E" text-anchor="start" font-weight="700"> cos </text><text x="503.1" y="330" font-family="Noto Sans CJK KR, sans-serif" font-size="9.4" fill="#33312E" text-anchor="start" font-weight="400">θ</text>
+<text x="230.1" y="354" font-size="12" fill="#555" text-anchor="start" font-weight="700">경사재는 길이도 L 을 cos </text><text x="319.4" y="354" font-family="Noto Sans CJK KR, sans-serif" font-size="8.4" fill="#555" text-anchor="start" font-weight="400">θ</text><text x="324.3" y="354" font-size="12" fill="#555" text-anchor="start" font-weight="700"> 로 나눈 값이라 더 길다. 두 효과가 겹쳐서</text>
+<text x="280.6" y="370" font-size="12.5" fill="#2B5D8A" text-anchor="start" font-weight="700">경사재 부재력에 cos 이 두 번 곱해진다</text>
+<text x="239.1" y="398" font-size="12.5" fill="#555" text-anchor="start" font-weight="700">평형식 하나로는 닫히지 않는다. 적합조건이 나머지 한 식을 준다</text>
+</svg>

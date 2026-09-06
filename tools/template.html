@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>기출 변형문제 열람 — 화면 프로토타입</title>
+<title>토목구조기술사 기출문제 열람 — 화면 프로토타입</title>
 <style>
 /* R-57 — 해설·모범답안 손글씨체. 지정 서체는 한글·라틴만 담고 있어
    그리스 문자·수학 기호는 대체 서체가 표시한다. 대체 서체는 대문자 높이가
@@ -114,7 +114,7 @@ main{max-width:860px;margin:0 auto;padding:12px 20px 96px}
 .head-main{padding:10px 26px 0}
 .item h2{margin:0;font-size:1.22rem;font-weight:700;letter-spacing:-.033em;line-height:1.45}
 
-/* 오마주 출처 칩 */
+/* 출처 표기 칩 (R-06) */
 .stamp{
   flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;
   background:var(--blue-soft);color:var(--blue-text);border-radius:999px;padding:6px 13px;white-space:nowrap;
@@ -426,23 +426,20 @@ tr:last-child td{border-bottom:none}
     <button class="crumb-btn" data-go="scr-main">‹ 메인</button>
     <header class="sub-head">
       <h1>회차별</h1>
-      <p>회차와 교시를 고르면 그 시험의 변형문제를 순서대로 볼 수 있습니다.</p>
+      <p>회차와 교시를 고르면 그 시험의 문제를 순서대로 볼 수 있습니다.</p>
     </header>
 
     <div class="field">
       <label for="sel-round">회차</label>
       <select id="sel-round">
-        <option value="139" selected>제{{ROUND}}회</option>
+        <option value="{{ROUND}}" selected>제{{ROUND}}회</option>
       </select>
     </div>
     <div class="field">
       <label for="sel-session">교시</label>
       <select id="sel-session">
         <option value="" selected>교시 선택</option>
-        <option value="1" disabled>1교시 · 준비 중</option>
-        <option value="2" disabled>2교시 · 준비 중</option>
-        <option value="3">3교시</option>
-        <option value="4" disabled>4교시 · 준비 중</option>
+{{SESSION_OPTIONS}}
       </select>
     </div>
     <p class="hint">공개된 문항이 있는 회차·교시만 선택할 수 있어요.</p>
@@ -458,7 +455,7 @@ tr:last-child td{border-bottom:none}
     <button class="crumb-btn" data-go="scr-main">‹ 메인</button>
     <header class="sub-head">
       <h1>과목별</h1>
-      <p>과목을 고르면 회차와 관계없이 해당 과목의 변형문제를 모아서 봅니다.</p>
+      <p>과목을 고르면 회차와 관계없이 해당 과목의 문제를 모아서 봅니다.</p>
     </header>
     <ul class="menu">
 {{CATLIST}}
@@ -524,7 +521,7 @@ tr:last-child td{border-bottom:none}
       </dl></li>
     </ul>
 
-    <p class="protobox">화면 프로토타입입니다. 실린 문항은 화면 구성 확인용 샘플 데이터이며, 원문 데이터로 교체하기 전까지는 표기와 내용이 일치하지 않을 수 있습니다.</p>
+    <p class="protobox">문제 본문은 공개된 문제지에서 옮겨 적은 전사본이며, 문제 도면은 원본 이미지가 아니라 같은 조건으로 다시 그린 것입니다(도면 코드 <b>-P01</b>). 답안 도면(<b>-A01</b>)과 해설은 본 서비스의 작성물입니다. 전사 과정의 오류를 발견하시면 각 문항의 신고 기능으로 알려 주세요.</p>
   </div>
 </section>
 
@@ -636,7 +633,7 @@ tr:last-child td{border-bottom:none}
     <div class="rows" id="list-quest">
 {{ADMINITEMS}}
     </div>
-    <p class="mock">문항은 제139회 3교시 실제 데이터입니다. 상태 변경은 저장되지 않습니다.</p>
+    <p class="mock">문항은 제140회 실제 데이터입니다. 상태 변경은 저장되지 않습니다.</p>
   </div>
 </section>
 
@@ -654,7 +651,7 @@ tr:last-child td{border-bottom:none}
 
 <script>
 (function(){
-  var EXAM = "제{{ROUND}}회 {{SESSION}}교시";
+  var EXAM = "제{{ROUND}}회 {s}교시";
   var cardsBox = document.getElementById('cards');
   var cards = Array.prototype.slice.call(cardsBox.querySelectorAll('.item'));
   var origin = 'scr-main';
@@ -672,7 +669,9 @@ tr:last-child td{border-bottom:none}
       from === 'scr-round' ? '회차 선택' : from === 'scr-cat' ? '과목 선택' : '메인';
 
     cards.forEach(function(c){
-      c.hidden = (mode === 'cat') ? (c.dataset.cat !== value) : false;
+      c.hidden = (mode === 'cat')   ? (c.dataset.cat !== value)
+               : (mode === 'round') ? (c.dataset.session !== String(value))
+               : false;
       var p = c.querySelector('.ans');
       if(p && !p.hidden){ p.hidden = true; c.classList.remove('open');
         var o = c.querySelector('.tb-action .toggle');
@@ -686,8 +685,8 @@ tr:last-child td{border-bottom:none}
     var rs = document.getElementById('reshuffle');
 
     if(mode === 'round'){
-      document.getElementById('crumb-t').textContent = EXAM;
-      document.getElementById('crumb-s').textContent = '변형문제 ' + shown + '문항 · 해설 ' + ready + '문항';
+      document.getElementById('crumb-t').textContent = EXAM.replace('{s}', value);
+      document.getElementById('crumb-s').textContent = '문제 ' + shown + '문항 · 해설 ' + ready + '문항';
       order(cards); rs.hidden = true;
     } else if(mode === 'cat'){
       document.getElementById('crumb-t').textContent = value;
